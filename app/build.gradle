@@ -1,0 +1,28 @@
+//代表使用插件“com.android.application”，代表当前应用模块是一个Android应用程序
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "zhufengfm.jmxgrobby.com.zhufengfm"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //将当前模块中的libs文件夹内部的所有jar包作为类库使用
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //如果使用的是“groupid：名称 ：版本号”这种方式 ，
+    // 代表从AndroidSDK或者网络中自动下载相应的jar包方式导入类库
+}
