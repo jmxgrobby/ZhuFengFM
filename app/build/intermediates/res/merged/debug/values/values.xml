@@ -9,6 +9,8 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">ZhuFengFM</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
     <!-- From: file:/E:/workspace-androidstdio/ZhuFengFM/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">

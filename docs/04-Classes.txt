@@ -1,0 +1,20 @@
+这个文件包含了所有主要累的说明
+
+1.SplashAcivity  启动扉页
+
+2 WelcomeActivity 欢迎页
+
+3 MainActivity 主界面
+
+4 Configs 包含需要用的所有常量
+
+-----------------------------------------
+主界面四个大模块的Fragment定义
+
+1 DiscoverFragment  发现整体Fragment
+
+2 CustomFragment 定制听整体Fragment
+
+3 DownLoadTingFragment  下载听
+
+4 PersonalFragment  个人
