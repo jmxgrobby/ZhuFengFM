@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context="zhufengfm.jmxgrobby.com.zhufengfm.fragment.DiscoverFragment"
+        >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerVertical="true"
+
+                />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerVertical="true"
+
+                />
+
+    </RelativeLayout>
+
+    <!-- android 5.0 新的UI内容，使用design 包来兼容-->
+    <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover_top_tab_bar"
+            app:tabIndicatorColor= "#ffff9882"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="#ffff9882"
+            />
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/discover_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+</LinearLayout>
+
+<!-- From: file:/E:/workspace-androidstdio/ZhuFengFM/app/src/main/res/layout/fragment_discover.xml -->
