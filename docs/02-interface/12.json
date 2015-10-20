@@ -1,0 +1,259 @@
+{
+  "ret": 0,
+  "list": [
+    {
+      "id": 3,
+      "name": "book",
+      "title": "有声小说",
+      "isChecked": false,
+      "orderNum": 1,
+      "coverPath": "http://fdfs.xmcdn.com/group8/M07/17/A0/wKgDYFVxM-fQsucFAAAFRHjovdg062.png",
+      "selectedSwitch": false,
+      "isFinished": true,
+      "contentType": "album"
+    },
+    {
+      "id": 2,
+      "name": "music",
+      "title": "音乐",
+      "isChecked": false,
+      "orderNum": 2,
+      "coverPath": "http://fdfs.xmcdn.com/group12/M08/17/A0/wKgDXFVxM-LyPrvZAAAGGBNsGas270.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 4,
+      "name": "entertainment",
+      "title": "综艺娱乐",
+      "isChecked": false,
+      "orderNum": 3,
+      "coverPath": "http://fdfs.xmcdn.com/group7/M09/18/07/wKgDX1VxNA7wl-64AAAH-ITaXnQ496.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 12,
+      "name": "comic",
+      "title": "相声评书",
+      "isChecked": false,
+      "orderNum": 4,
+      "coverPath": "http://fdfs.xmcdn.com/group12/M07/17/A1/wKgDXFVxNB6wGFwmAAAJnAUfyR8949.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 1,
+      "name": "news",
+      "title": "最新资讯",
+      "isChecked": false,
+      "orderNum": 5,
+      "coverPath": "http://fdfs.xmcdn.com/group16/M05/17/DD/wKgDbFVxNDnjLKBmAAAGSmFXT7I174.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 10,
+      "name": "emotion",
+      "title": "情感生活",
+      "isChecked": false,
+      "orderNum": 6,
+      "coverPath": "http://fdfs.xmcdn.com/group13/M00/17/F4/wKgDXVVxNE-Dn3qJAAAH3SPuRpU265.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 9,
+      "name": "culture",
+      "title": "历史人文",
+      "isChecked": false,
+      "orderNum": 7,
+      "coverPath": "http://fdfs.xmcdn.com/group10/M03/17/D1/wKgDaVVxNITTXy2sAAAIjfwPT_4256.png",
+      "selectedSwitch": false,
+      "isFinished": true,
+      "contentType": "album"
+    },
+    {
+      "id": 5,
+      "name": "train",
+      "title": "外语",
+      "isChecked": false,
+      "orderNum": 8,
+      "coverPath": "http://fdfs.xmcdn.com/group9/M07/17/D3/wKgDZlVxNHaQsbvIAAAHNFoJSY0160.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 13,
+      "name": "chair",
+      "title": "培训讲座",
+      "isChecked": false,
+      "orderNum": 9,
+      "coverPath": "http://fdfs.xmcdn.com/group16/M0A/17/DD/wKgDbFVxNJzhFnY2AAAHdi2anIU923.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 14,
+      "name": "baijia",
+      "title": "百家讲坛",
+      "isChecked": false,
+      "orderNum": 10,
+      "coverPath": "http://fdfs.xmcdn.com/group16/M0A/17/DE/wKgDbFVxNK3QQS62AAAG4eALmVg819.png",
+      "selectedSwitch": false,
+      "isFinished": true,
+      "contentType": "album"
+    },
+    {
+      "id": 15,
+      "name": "radioplay",
+      "title": "广播剧",
+      "isChecked": false,
+      "orderNum": 11,
+      "coverPath": "http://fdfs.xmcdn.com/group8/M09/17/CB/wKgDYVVxNL6Tn482AAAHFgsLZpo275.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 16,
+      "name": "opera",
+      "title": "戏曲",
+      "isChecked": false,
+      "orderNum": 12,
+      "coverPath": "http://fdfs.xmcdn.com/group14/M0B/17/FE/wKgDY1VxNOzin26zAAAJ4eAmlOo596.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 6,
+      "name": "kid",
+      "title": "儿童",
+      "isChecked": false,
+      "orderNum": 13,
+      "coverPath": "http://fdfs.xmcdn.com/group9/M00/17/BC/wKgDYlVxNNOSRjDBAAAI0ATW968403.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 17,
+      "name": "radio",
+      "title": "电台",
+      "isChecked": false,
+      "orderNum": 14,
+      "coverPath": "http://fdfs.xmcdn.com/group9/M00/17/BD/wKgDYlVxNOOhaf3EAAAJ21fRaXQ608.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 8,
+      "name": "finance",
+      "title": "商业财经",
+      "isChecked": false,
+      "orderNum": 15,
+      "coverPath": "http://fdfs.xmcdn.com/group9/M00/17/D6/wKgDZlVxNPrSwfGHAAAGk47lmLA449.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 18,
+      "name": "it",
+      "title": "IT科技",
+      "isChecked": false,
+      "orderNum": 16,
+      "coverPath": "http://fdfs.xmcdn.com/group15/M03/17/F3/wKgDZVVxNTSiVwUlAAAIwTCXlXQ436.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 7,
+      "name": "health",
+      "title": "健康养生",
+      "isChecked": false,
+      "orderNum": 17,
+      "coverPath": "http://fdfs.xmcdn.com/group10/M02/17/D2/wKgDaVVxNUTSNkCpAAAGw-8u1Kg956.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 20,
+      "name": "xiaoyuan",
+      "title": "校园",
+      "isChecked": false,
+      "orderNum": 19,
+      "coverPath": "http://fdfs.xmcdn.com/group11/M0A/17/C5/wKgDbVVxNS7gMKIIAAAGGsbEHx0281.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 21,
+      "name": "qiche",
+      "title": "汽车",
+      "isChecked": false,
+      "orderNum": 20,
+      "coverPath": "http://fdfs.xmcdn.com/group11/M0A/17/C6/wKgDbVVxNU3yK6NfAAAIUpQfBgM392.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 22,
+      "name": "lvyou",
+      "title": "旅游",
+      "isChecked": false,
+      "orderNum": 21,
+      "coverPath": "http://fdfs.xmcdn.com/group7/M06/18/0C/wKgDWlVxNYvSYvvjAAAH9qzvvtA562.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 23,
+      "name": "dianying",
+      "title": "电影",
+      "isChecked": false,
+      "orderNum": 22,
+      "coverPath": "http://fdfs.xmcdn.com/group10/M04/17/CD/wKgDZ1VxNZLQbdLjAAAJs3dohO8112.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 24,
+      "name": "youxi",
+      "title": "游戏",
+      "isChecked": false,
+      "orderNum": 23,
+      "coverPath": "http://fdfs.xmcdn.com/group10/M04/17/CD/wKgDZ1VxNaKiXC6uAAAIGURQCD0776.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    },
+    {
+      "id": 11,
+      "name": "other",
+      "title": "其他",
+      "isChecked": false,
+      "orderNum": 24,
+      "coverPath": "http://fdfs.xmcdn.com/group10/M04/17/CE/wKgDZ1VxNbKjiUwCAAAJCDJlvFk588.png",
+      "selectedSwitch": false,
+      "isFinished": false,
+      "contentType": "album"
+    }
+  ],
+  "msg": "成功"
+}

@@ -1,0 +1,29 @@
+{
+  "ret": 0,
+  "msg": "成功",
+  "tabs": {
+    "count": 5,
+    "list": [
+      {
+        "title": "推荐",
+        "contentType": "recommend"
+      },
+      {
+        "title": "分类",
+        "contentType": "category"
+      },
+      {
+        "title": "直播",
+        "contentType": "live"
+      },
+      {
+        "title": "榜单",
+        "contentType": "ranking"
+      },
+      {
+        "title": "主播",
+        "contentType": "anchor"
+      }
+    ]
+  }
+}

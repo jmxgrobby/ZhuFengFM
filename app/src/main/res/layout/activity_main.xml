@@ -1,16 +1,58 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
                 tools:context=".MainActivity">
+<FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></FrameLayout>
+    <RadioGroup
+            android:id="@+id/main_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <RadioButton
 
-    <TextView
-            android:text="主界面"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+                style="@style/AppTheme.MainTabItem"
+                android:id="@+id/main_tab_item_discover"
+                android:text="发现"
+                android:drawableTop="@drawable/tab4_image"
+                />
 
-</RelativeLayout>
+        <RadioButton
+                style="@style/AppTheme.MainTabItem"
+                android:text="定制听"
+                android:id="@+id/main_tab_item_customting"
+                android:drawableTop="@drawable/tab1_image"
+                />
+
+        <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="播放"
+                android:id="@+id/main_tab_item_play"
+                />
+
+        <RadioButton
+                style="@style/AppTheme.MainTabItem"
+                android:text="下载听"
+                android:id="@+id/main_tab_item_downloadting"
+                android:drawableTop="@drawable/tab2_image"
+                />
+
+        <RadioButton
+                android:drawableTop="@drawable/tab5_image"
+                android:id="@+id/main_tab_item_personal"
+                style="@style/AppTheme.MainTabItem"
+                android:text="我"
+                />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,464 @@
+{
+  "ret": 0,
+  "data": {
+    "category_count": 24,
+    "category_list": [
+      {
+        "id": 0,
+        "name": "all",
+        "title": "热门",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "治愈系",
+          "排行榜",
+          "英语",
+          "相声",
+          "新歌",
+          "老歌",
+          "访谈",
+          "脱口秀",
+          "鬼故事",
+          "评书",
+          "公开课",
+          "理财",
+          "国学",
+          "童话",
+          "声音日记",
+          "随手录",
+          "星座"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "book",
+        "title": "有声小说",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/novel.png",
+        "tag_list": [
+          "畅销书",
+          "玄幻",
+          "穿越",
+          "武侠",
+          "言情",
+          "悬疑",
+          "恐怖",
+          "都市",
+          "校园",
+          "科幻",
+          "名著",
+          "官场商战",
+          "推理",
+          "奇幻",
+          "婚姻家庭",
+          "网游"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "music",
+        "title": "音乐",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/music.png",
+        "tag_list": [
+          "排行榜",
+          "华语",
+          "日韩",
+          "粤语",
+          "流行",
+          "古典",
+          "摇滚",
+          "民谣",
+          "电子",
+          "嘻哈",
+          "爵士",
+          "电影原声",
+          "神曲",
+          "80后",
+          "90后",
+          "小清新",
+          "文艺",
+          "咖啡",
+          "午后",
+          "新歌",
+          "纯音乐",
+          "独立",
+          "钢琴曲",
+          "民乐",
+          "串烧",
+          "翻唱",
+          "模仿秀",
+          "remix",
+          "DJ",
+          "舞曲",
+          "乡村",
+          "老歌"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "entertainment",
+        "title": "综艺娱乐",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/entertainment.png",
+        "tag_list": [
+          "脱口秀",
+          "综艺节目",
+          "笑话",
+          "影视",
+          "娱乐",
+          "搞笑",
+          "真人秀",
+          "访谈",
+          "冷笑话",
+          "方言秀",
+          "笑话段子",
+          "涨姿势"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "comic",
+        "title": "相声评书",
+        "intro": "",
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M01/06/47/wKgD3lGum0OAZFyqAAD5W8rp7I8506.jpg",
+        "tag_list": [
+          "郭德纲",
+          "赵本山",
+          "单田芳",
+          "袁阔成",
+          "德云社",
+          "相声大全",
+          "评书"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "news",
+        "title": "最新资讯",
+        "intro": "",
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group2/M02/1F/8E/wKgDr1HC2Iig_SWfAAAQE5gQUCM608.jpg",
+        "tag_list": [
+          "地方新闻",
+          "军事",
+          "科技",
+          "财经",
+          "娱乐",
+          "社会",
+          "话题",
+          "国际",
+          "体育",
+          "东广新闻台",
+          "自媒体",
+          "头条",
+          "汽车"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "emotion",
+        "title": "情感生活",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/life.png",
+        "tag_list": [
+          "星座",
+          "治愈系",
+          "爱情",
+          "心理",
+          "小清新",
+          "朗诵",
+          "互动",
+          "美文"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "culture",
+        "title": "历史人文",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/social.png",
+        "tag_list": [
+          "百家讲坛",
+          "国学",
+          "人物传记",
+          "旅行",
+          "历史",
+          "哲学",
+          "纪实",
+          "艺术",
+          "社会",
+          "佛学",
+          "文化",
+          "读书"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "train",
+        "title": "外语",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/education.png",
+        "tag_list": [
+          "外语",
+          "CNN新闻",
+          "BBC新闻",
+          "VOA",
+          "托福",
+          "电影英语",
+          "老友记",
+          "沪江英语",
+          "零基础英语",
+          "单词",
+          "英文名著"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "chair",
+        "title": "培训讲座",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M01/08/37/wKgDplHfreSAB23pAAMaQONlch4584_web_large.jpg",
+        "tag_list": [
+          "公开课",
+          "职业教育",
+          "职场宝典",
+          "营销技巧",
+          "演讲与口才",
+          "管理培训",
+          "成功学"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "baijia",
+        "title": "百家讲坛",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M00/03/E6/wKgDplGe4qeANbwLAAKwSjPnrug909_web_explore.jpg",
+        "tag_list": [
+          "历史",
+          "文化",
+          "人物",
+          "帝王",
+          "清史"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "radioplay",
+        "title": "广播剧",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M01/06/47/wKgD3lGum0OAZFyqAAD5W8rp7I8506.jpg",
+        "tag_list": [
+          "广播剧",
+          "古风"
+        ]
+      },
+      {
+        "id": 16,
+        "name": "opera",
+        "title": "戏曲",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M00/03/E6/wKgDplGe4qeANbwLAAKwSjPnrug909_web_explore.jpg",
+        "tag_list": [
+          "京剧",
+          "黄梅戏",
+          "越剧",
+          "地方戏"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "kid",
+        "title": "儿童",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/kid.png",
+        "tag_list": [
+          "儿童故事",
+          "儿歌",
+          "胎教",
+          "学前教育",
+          "儿童英语",
+          "童话",
+          "影视动漫",
+          "儿童科普",
+          "儿童学习",
+          "儿童教育"
+        ]
+      },
+      {
+        "id": 17,
+        "name": "radio",
+        "title": "电台",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M01/06/47/wKgD3lGum0OAZFyqAAD5W8rp7I8506.jpg",
+        "tag_list": [
+          "音乐",
+          "娱乐",
+          "小清新",
+          "心理",
+          "治愈系",
+          "故事",
+          "美文",
+          "互动",
+          "旅行"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "finance",
+        "title": "商业财经",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/fiance.png",
+        "tag_list": [
+          "股票",
+          "理财",
+          "创业",
+          "波士堂",
+          "头脑风暴",
+          "成功人士",
+          "投资",
+          "财经评论"
+        ]
+      },
+      {
+        "id": 18,
+        "name": "it",
+        "title": "IT科技",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://fdfs.xmcdn.com/group1/M00/03/E6/wKgDplGe4qeANbwLAAKwSjPnrug909_web_explore.jpg",
+        "tag_list": [
+          "极客说",
+          "潮科技",
+          "互联网",
+          "创业汇",
+          "科学迷",
+          "公开客"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "health",
+        "title": "健康养生",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/health.png",
+        "tag_list": [
+          "养生之道",
+          "美容",
+          "美食",
+          "运动减肥",
+          "中医",
+          "女性养生"
+        ]
+      },
+      {
+        "id": 20,
+        "name": "xiaoyuan",
+        "title": "校园",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "校园广播台",
+          "校园生活",
+          "聊八卦",
+          "听音乐",
+          "学外语",
+          "公开课",
+          "侃体育",
+          "新闻资讯",
+          "行天下"
+        ]
+      },
+      {
+        "id": 21,
+        "name": "qiche",
+        "title": "汽车",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "车友汇",
+          "交通报"
+        ]
+      },
+      {
+        "id": 22,
+        "name": "lvyou",
+        "title": "旅游",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "城市印象",
+          "花样旅行",
+          "在路上"
+        ]
+      },
+      {
+        "id": 23,
+        "name": "dianying",
+        "title": "电影",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "观影指南",
+          "电影博客",
+          "影视英语",
+          "经典原声"
+        ]
+      },
+      {
+        "id": 24,
+        "name": "youxi",
+        "title": "游戏",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hot.png",
+        "tag_list": [
+          "有声小说",
+          "游戏广播",
+          "游戏音乐"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "other",
+        "title": "其他",
+        "intro": null,
+        "is_display": true,
+        "cover_path": "http://s1.xmcdn.com/css/img/common/category/hobby.png",
+        "tag_list": [
+          "美女",
+          "搞笑",
+          "音效",
+          "广告",
+          "游戏",
+          "随手录",
+          "声音日记",
+          "铃声",
+          "卖萌",
+          "配音"
+        ]
+      }
+    ]
+  }
+}

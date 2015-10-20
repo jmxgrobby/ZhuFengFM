@@ -18,3 +18,11 @@
 3 DownLoadTingFragment  下载听
 
 4 PersonalFragment  个人
+------------------------------------------
+发现部分内部子Fragment的定义
+1 DiscoverRecommendFragment 发现部分的推荐
+
+    接口11
+
+2 DiscoverCategoryFragment
+    使用的接口：12，获取分类列表

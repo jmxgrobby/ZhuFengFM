@@ -1,0 +1,259 @@
+接口说明 ：大部分使用GET请求
+所有的网址请求，请求参数顺序必须保持和文档一致
+
+1. 获取总体分类
+代表软件默认的分类信息，这个信息数据量比较少，如果Android分类能够获取
+那么这个就不需要了，可以在启动扉页中加载
+http://mobile.ximalaya.com/m/category_tag_menu
+
+2. 获取推荐页面广告
+
+发现页面 推荐栏目 最下边的广告 数据
+
+url: http://www.ximalaya.com/mobile/mall/products?device=android
+
+http://www.ximalaya.com/mobile/mall/products
+
+参数	device	android
+
+3. 获取Android专用分类
+
+url: http://mobile.ximalaya.com/m/category_tag_menu?type=user&device=android
+
+http://mobile.ximalaya.com/m/category_tag_menu
+
+参数	type	user
+	device	android
+
+4. 广告1
+
+url: http://ad.ximalaya.com/adrecord/channel?imsi=310260000000000&simSerialNumber=89014103211118510720&androidId=5404bb826a7e225d&device=android&deviceId=0
+
+http://ad.ximalaya.com/adrecord/channel
+	imsi	310260000000000
+	simSerialNumber	89014103211118510720
+	androidId	5404bb826a7e225d
+	device	android
+	deviceId	0
+
+参数说明：
+
+    imsi -> TelephonyManager 来获取    -> getSystemService(TELEPHONY_SERVICE)
+    simSerialNumber -> SIM 序列号
+    androidId   ->   android 序列号
+    device -> android
+    deviceId  ->  IMEI   TelephonyManager 来获取
+
+    以上获取需要 READ_PHONE_STATE 权限
+
+返回结果：
+
+	{"msg":"成功","ret":1}
+
+
+
+5. 启动扉页广告
+
+http://ad.ximalaya.com/ting/loading?version=4.1.7&name=loading&appid=0&device=android
+
+http://ad.ximalaya.com/ting/loading
+	version	4.1.7
+	name	loading
+	appid	0
+	device	android
+
+5. 顶部广告
+
+URL:  http://ad.ximalaya.com/ting?version=4.1.7&name=comm_top&appid=0&device=android
+
+http://ad.ximalaya.com/ting
+	version	4.1.7
+	name	comm_top
+	appid	0
+	device	android
+
+6. 应用程序默认配置信息
+
+URL: http://mobile.ximalaya.com/mobile/switch/app_set?device=android
+
+http://mobile.ximalaya.com/mobile/switch/app_set
+	device	android
+
+7. 网络定位当前位置
+
+URL: http://location.ximalaya.com/locationService/location?device=android
+
+http://location.ximalaya.com/locationService/location
+	device	android
+
+8. 发现部分 推荐分类最下面的广告信息
+
+URL: http://ad.ximalaya.com/ting?version=4.1.7.1&name=find_banner&device=android
+
+http://ad.ximalaya.com/ting
+	version	4.1.7
+	name	find_banner
+	device	android
+
+9. 猜你喜欢
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/recommend/guessYouLike/unlogin?pageSize=3&pageId=1&device=android
+
+
+http://mobile.ximalaya.com/mobile/discovery/v1/recommend/guessYouLike/unlogin
+	pageSize	3
+	pageId	1
+	device	android
+
+10. 发现部分的的栏目
+
+主界面 发现模块 顶部的TAB信息
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/tabs?device=android
+
+http://mobile.ximalaya.com/mobile/discovery/v1/tabs
+	device	android
+
+11. 发现部分的推荐
+
+URL:
+
+http://mobile.ximalaya.com/mobile/discovery/v1/recommends?channel=and-f6&device=android&includeActivity=true&includeSpecial=true&scale=2&version=4.1.7.1
+
+http://mobile.ximalaya.com/mobile/discovery/v1/recommends
+	channel	and-f6
+	device	android
+	includeActivity	true
+	includeSpecial	true
+	scale	2
+	version	4.1.7.1
+
+12. 发现部分的分类
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/categories?device=android&picVersion=10&scale=2
+
+http://mobile.ximalaya.com/mobile/discovery/v1/categories
+
+参数部分必须按照以下顺序
+
+	device	android
+	picVersion	10
+	scale	2
+
+13. 分类4 发现部分无封面的标签
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/category/tagsWithoutCover?categoryId=4&contentType=album&device=android
+
+http://mobile.ximalaya.com/mobile/discovery/v1/category/tagsWithoutCover
+
+参数：顺序必须保证一致
+
+	categoryId	4
+	contentType	album
+	device	android
+
+14. 分类4 下面推荐部分 综艺娱乐
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/category/recommends?categoryId=4&contentType=album&device=android&version=4.1.7.1
+
+
+http://mobile.ximalaya.com/mobile/discovery/v1/category/recommends
+
+参数顺序必须保证一致
+
+	categoryId	4         分类id
+	contentType	album
+	device	android
+	version	4.1.7.1
+
+
+15. 分类4 下面的广告部分 综艺娱乐
+
+URL:
+
+	http://ad.ximalaya.com/ting/category?version=4.1.7.1&device=android&category=4&scale=2
+
+
+http://ad.ximalaya.com/ting/category
+
+参数不限制顺序
+
+	version	4.1.7.1
+	device	android
+	category	4
+	scale	2
+
+16. 分类4 下面专辑列表与详情
+
+从分类部分，点击推荐的内容时
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/discovery/v1/category/album?calcDimension=hot&categoryId=4&device=android&pageId=1&pageSize=20&status=0&tagName=%E7%AC%91%E8%AF%9D%E6%AE%B5%E5%AD%90
+
+参数注意顺序
+
+http://mobile.ximalaya.com/mobile/discovery/v1/category/album
+
+	calcDimension	hot
+	categoryId	4
+	device	android
+	pageId	1
+	pageSize	20
+	status	0
+	tagName	tname名称
+
+17. 分类4. 专辑 203355 中 第一页共 20条信息的播放列表信息
+
+URL:
+
+	http://mobile.ximalaya.com/mobile/others/ca/album/track/203355/true/1/20?device=android&pageSize=20&albumId=203355&isAsc=true
+
+参数顺序
+
+18 专辑详情
+
+http://mobile.ximalaya.com/mobile/track/detail?device=android&trackId=8060450
+
+
+http://mobile.ximalaya.com/mobile/track/detail
+	device	android
+	trackId	8060450
+
+
+19 专辑评论
+
+http://mobile.ximalaya.com/mobile/track/comment?device=android&pageSize=15&pageId=1&trackId=8060450
+
+http://mobile.ximalaya.com/mobile/track/comment
+	pageSize	15
+	pageId	1
+	device	android
+	trackId	8060450
+
+
+
+20 专辑列表
+
+http://mobile.ximalaya.com/mobile/playlist/album?device=android&albumId=392497&trackId=8060450
+
+
+http://mobile.ximalaya.com/mobile/playlist/album
+	albumId	392497
+	device	android
+	trackId	8060450
+
+21 专辑相关推荐
+
+http://ar.ximalaya.com/rec-association/recommend/album?device=android&trackId=8060450
+

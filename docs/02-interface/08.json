@@ -1,0 +1,34 @@
+{
+  "ret": 0,
+  "responseId": 232398059,
+  "data": [
+    {
+      "link": "http://ad.ximalaya.com/adrecord?sdn=H4sIAAAAAAAAAKtWykhNTEktUrLKK83J0VFKzs_PzkyF8QoSixJzU0tSi4qVrKqVElM8S1JzPVOUrJRMLZRqawHYAhW1PAAAAA&ad=58&jt=http%3A%2F%2Fwww.wemart.cn%2Fv2%2Fweimao%2Findex.html%3FdisableCache%3Dtrue%26shopId%3Dshop000201506058853%23mad%2Fshop000201506058853%2F12",
+      "cover": "http://fdfs.xmcdn.com/group11/M07/48/64/wKgDbVWrQ3vT7iY0AABNfAp1cPc539.jpg",
+      "name": "",
+      "description": "",
+      "scheme": "",
+      "linkType": 1,
+      "displayType": 1,
+      "clickType": 1,
+      "openlinkType": 1,
+      "auto": false,
+      "thirdStatUrl": null,
+      "adid": 58
+    },
+    {
+      "link": "http://ad.ximalaya.com/adrecord?sdn=H4sIAAAAAAAAAKtWykhNTEktUrLKK83J0VFKzs_PzkyF8QoSixJzU0tSi4qVrKqVElM8S1JzPVOUrJRMTJRqawHQlKPCPAAAAA&ad=44&jt=http%3A%2F%2Fwap.koudaitong.com%2Fv2%2Fshowcase%2Fusercenter%3Falias%3D8wei7tux",
+      "cover": "http://fdfs.xmcdn.com/group14/M04/4B/A3/wKgDZFWvNNShmwT7AABQR4UVPOY277.jpg",
+      "name": "",
+      "description": "",
+      "scheme": "",
+      "linkType": 1,
+      "displayType": 1,
+      "clickType": 1,
+      "openlinkType": 1,
+      "auto": false,
+      "thirdStatUrl": null,
+      "adid": 44
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ret": 0,
+  "responseId": 232215353,
+  "data": [
+    {
+      "link": "http://ad.ximalaya.com/adrecord?sdn=H4sIAAAAAAAAAD2Oyw6CMBREf-WmK0iwtL6DK1ZKkLjA185UuEpDaUnpSsK_Wzcms5hM5iRnJA2KGi1JRnIZ0M7SN2pHElKYj1RKxCvKIChEJbUzQ7ODTDtU4Ac4lXAHzh4-yxDSvld4w2cuXbxmjG4on0OQH87FMQIlW4Q9Vq0J4Yp2kEbHW-pPUIqXsPJPkCkilTGtRC_key-s6NB55Cco6sxhl9VejzO24GSavunIbsfAAAAA&ad=10031&jt=http%3A%2F%2Fc.admaster.com.cn%2Fc%2Fa56917%2Cb641476%2Cc2946%2Ci0%2Cm101%2C0a0%2Cn%7BMAC%7D%2Cz%7BIDFA%7D%2Co%7BopenUDID%7D%2C0d%7BAndroidID%7D%2Cf%7BIP%7D%2C0c%7BIMEI%7D%2Ct%7BTS%7D%2Cq%7BOSVS%7D%2Cr%7BTERM%7D%2Cx%7BAPPID%7D%2Cy%7BAPPNAME%7D",
+      "cover": "http://fdfs.xmcdn.com/group9/M00/52/1F/wKgDZlW2AyfyH7DDAASR1l7HGMo108.jpg",
+      "name": "",
+      "description": "",
+      "scheme": "",
+      "linkType": 1,
+      "displayType": 1,
+      "clickType": 1,
+      "openlinkType": 0,
+      "startAt": 1438012800000,
+      "endAt": 1438358399000,
+      "adid": 10031
+    },
+    {
+      "link": "http://ad.ximalaya.com/adrecord?sdn=H4sIAAAAAAAAAKtWykhNTEktUrLKK83J0VFKzs_PzkyF8QoSixJzU0tSi4qVrKqVElM8S1JzPVOUrJQMDQyMTJRqawHQmNhpPwAAAA&ad=10024&jt=http%3A%2F%2Fclk.gentags.net%2Fclk%2Fiv-12993%2Fst-873%2Fcr-2%2Foi-284255%2For-4125%2Fadv-368%2Fpcon-0%2Fhttp%25253A%25252F%25252Fe.cn.miaozhen.com%25252Fr%25252Fk%25253D2009513%252526p%25253D6vTVG%252526dx%25253D0%252526ni%25253D__IESID__%252526mo%25253D%7BOS%7D%252526ns%25253D%7BIP%7D%252526m0%25253D%7BOpenUDID%7D%252526m0a%25253D%7BDUID%7D%252526m1%25253D%7BAndroidID1%7D%252526m1a%25253D%7BAndroidID%7D%252526m2%25253D%7BIMEI%7D%252526m4%25253D%7BAAID%7D%252526m5%25253D%7BIDFA%7D%252526m6%25253D%7BMAC1%7D%252526m6a%25253D%7BMAC%7D%252526nd%25253D__DRA__%252526np%25253D__POS__%252526nn%25253D__APP__%252526o%25253Dhttp%25253A%25252F%25252Fhd.oppo.com%25252Fm%25252F2015%25252Fr7plus%25252Forder%25252Findex.html%25253Futm_source%25253DmeijXiMaLaYa%252526utm_medium%25253DYiDongDuankjdt%252526utm_campaign%25253Dr7%252Bplus",
+      "cover": "http://fdfs.xmcdn.com/group8/M06/4D/FA/wKgDYVWyDD7BmM9aAAE1YmnCcZQ296.jpg",
+      "name": "",
+      "description": "",
+      "scheme": "",
+      "linkType": 1,
+      "displayType": 1,
+      "clickType": 1,
+      "openlinkType": 1,
+      "startAt": 1438358400000,
+      "endAt": 1438444799000,
+      "adid": 10024
+    }
+  ]
+}

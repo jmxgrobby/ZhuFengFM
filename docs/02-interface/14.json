@@ -1,0 +1,505 @@
+{
+  "tags": {
+    "maxPageId": 1,
+    "title": "更多分类",
+    "count": 21,
+    "list": [
+      {
+        "tname": "浪漫言情",
+        "category_id": 3
+      },
+      {
+        "tname": "恐怖悬疑",
+        "category_id": 3
+      },
+      {
+        "tname": "玄幻奇幻",
+        "category_id": 3
+      },
+      {
+        "tname": "历史军事",
+        "category_id": 3
+      },
+      {
+        "tname": "古言宫斗",
+        "category_id": 3
+      },
+      {
+        "tname": "探案推理",
+        "category_id": 3
+      },
+      {
+        "tname": "青春校园",
+        "category_id": 3
+      },
+      {
+        "tname": "都市生活",
+        "category_id": 3
+      },
+      {
+        "tname": "穿越架空",
+        "category_id": 3
+      },
+      {
+        "tname": "武侠传奇",
+        "category_id": 3
+      },
+      {
+        "tname": "文学名著",
+        "category_id": 3
+      },
+      {
+        "tname": "官场商战",
+        "category_id": 3
+      },
+      {
+        "tname": "科幻网游",
+        "category_id": 3
+      },
+      {
+        "tname": "诗词散文",
+        "category_id": 3
+      },
+      {
+        "tname": "QQ阅读",
+        "category_id": 3
+      },
+      {
+        "tname": "读客图书",
+        "category_id": 3
+      },
+      {
+        "tname": "果麦文化",
+        "category_id": 3
+      },
+      {
+        "tname": "中信智汇",
+        "category_id": 3
+      },
+      {
+        "tname": "博集天卷",
+        "category_id": 3
+      },
+      {
+        "tname": "速播专区",
+        "category_id": 3
+      },
+      {
+        "tname": "推理世界",
+        "category_id": 3
+      }
+    ]
+  },
+  "ret": 0,
+  "categoryContents": {
+    "ret": 0,
+    "title": "推荐内容",
+    "list": [
+      {
+        "calcDimension": "hot",
+        "tagName": "",
+        "contentType": "album",
+        "title": "最火",
+        "hasMore": true,
+        "list": [
+          {
+            "id": 356310,
+            "albumId": 356310,
+            "uid": 1266964,
+            "intro": "新浪微博：@有声的紫襟 微信公众平台：zijinvoice 《藏地密码》，以120万字的宏大架构，讲述了以西藏为背景的一个全球大探险故事，其中涉及到西藏千年秘史、藏传佛教历史遗案，以及世界上众多",
+            "nickname": "有声的紫襟",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group6/M02/0D/43/wKgDg1UmlZjg4lIoAANVXahWnYE722_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group6/M02/0D/43/wKgDg1UmlZjg4lIoAANVXahWnYE722_mobile_meduim.jpg",
+            "title": "藏地密码（紫襟演播）",
+            "tags": "有声小说",
+            "tracks": 420,
+            "tracksCounts": 420,
+            "playsCounts": 10392685,
+            "lastUptrackId": 7994931,
+            "lastUptrackTitle": "藏地密码10 第27集（微信公众平台：zijinvoice）",
+            "lastUptrackAt": 1438008935000,
+            "isFinished": 1,
+            "serialState": 1
+          },
+          {
+            "id": 321929,
+            "albumId": 321929,
+            "uid": 15767220,
+            "intro": "青春共鸣，写给你的成长之书",
+            "nickname": "雅楠",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group5/M0A/24/56/wKgDtVSqZTixQ1ZoAASujINpEJI287_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group5/M0A/24/56/wKgDtVSqZTixQ1ZoAASujINpEJI287_mobile_meduim.jpg",
+            "title": "你好，旧时光",
+            "tags": "八月长安,校园,青春",
+            "tracks": 75,
+            "tracksCounts": 75,
+            "playsCounts": 805141,
+            "lastUptrackId": 7987752,
+            "lastUptrackTitle": "75 你好，旧时光 第七十五集",
+            "lastUptrackAt": 1437973475000,
+            "isFinished": 1,
+            "serialState": 1
+          },
+          {
+            "id": 2726607,
+            "albumId": 2726607,
+            "uid": 14456974,
+            "intro": "by 地狱冥想",
+            "nickname": "地狱冥想",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group16/M00/39/4E/wKgDbFWaHzeycqj_AAYr1V5eBVU416_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group16/M00/39/4E/wKgDbFWaHzeycqj_AAYr1V5eBVU416_mobile_meduim.jpg",
+            "title": "权力野兽朱元璋",
+            "tags": "畅销书",
+            "tracks": 25,
+            "tracksCounts": 25,
+            "playsCounts": 113068,
+            "lastUptrackId": 7994691,
+            "lastUptrackTitle": "权力野兽朱元璋25：常遇春出，急先锋现！",
+            "lastUptrackAt": 1438007764000,
+            "isFinished": 1,
+            "serialState": 1
+          }
+        ]
+      },
+      {
+        "calcDimension": "hot",
+        "tagName": "浪漫言情",
+        "contentType": "album",
+        "title": "浪漫言情",
+        "hasMore": true,
+        "list": [
+          {
+            "id": 2722845,
+            "albumId": 2722845,
+            "uid": 9776929,
+            "intro": "单恋的故事犹如中毒",
+            "nickname": "大树cheerilee",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group14/M02/31/D9/wKgDY1WQ9LLCyKQwAALL_yPOiCk727_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group14/M02/31/D9/wKgDY1WQ9LLCyKQwAALL_yPOiCk727_mobile_meduim.jpg",
+            "title": "中毒",
+            "tags": "洁尘,大树,言情",
+            "tracks": 30,
+            "tracksCounts": 30,
+            "playsCounts": 79351,
+            "lastUptrackId": 7864063,
+            "lastUptrackTitle": "《中毒》29（大结局）",
+            "lastUptrackAt": 1437134419000,
+            "isFinished": 2,
+            "serialState": 2
+          },
+          {
+            "id": 2750439,
+            "albumId": 2750439,
+            "uid": 1468389,
+            "intro": " 出卖肉体的男人，监狱中的女人。 从迷恋到绝望，从相爱到相杀，那一句，声嘶力竭的质疑，那一段，痛彻心扉的哭泣，我们其实都明白，我们要的不过只是个让自己放得下的借口。 ",
+            "nickname": "西掌柜",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group14/M02/49/82/wKgDY1Ws-B7w2KukAAFFImvmess112_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group14/M02/49/82/wKgDY1Ws-B7w2KukAAFFImvmess112_mobile_meduim.jpg",
+            "title": "晚秋",
+            "tags": "都市,畅销书,汤唯",
+            "tracks": 20,
+            "tracksCounts": 20,
+            "playsCounts": 96497,
+            "lastUptrackId": 7993827,
+            "lastUptrackTitle": "晚秋20",
+            "lastUptrackAt": 1438004541000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 427584,
+            "albumId": 427584,
+            "uid": 1602873,
+            "intro": "不渝深情，最佳甜宠爱恋",
+            "nickname": "萧然小女子",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group14/M07/07/32/wKgDY1Vb9H_C0mTrAANhxKU1UZE096_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group14/M07/07/32/wKgDY1Vb9H_C0mTrAANhxKU1UZE096_mobile_meduim.jpg",
+            "title": "幸好我们曾遇见",
+            "tags": "江雪落,乔小乔,展锋",
+            "tracks": 40,
+            "tracksCounts": 40,
+            "playsCounts": 593358,
+            "lastUptrackId": 7723244,
+            "lastUptrackTitle": "40 幸好我们曾遇到【最后一集，感谢各位的支持】",
+            "lastUptrackAt": 1436396700000,
+            "isFinished": 2,
+            "serialState": 2
+          }
+        ]
+      },
+      {
+        "calcDimension": "hot",
+        "tagName": "恐怖悬疑",
+        "contentType": "album",
+        "title": "恐怖悬疑",
+        "hasMore": true,
+        "list": [
+          {
+            "id": 2727044,
+            "albumId": 2727044,
+            "uid": 8163465,
+            "intro": "无心为不老不死之身。不老不死，一般都能牛逼得惊天动地，但搞不好可能穷困潦倒讨饭万年。很不幸，无心，是后者。 无心法师是位异人，永远不老，永远不死。他不知道自己从何处来，往何处去。流浪在无边无际的岁月长",
+            "nickname": "剧舞吧云天河",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group11/M03/2F/94/wKgDbVWNCGSQ9E4kAAbyMICjDwA728_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group11/M03/2F/94/wKgDbVWNCGSQ9E4kAAbyMICjDwA728_mobile_meduim.jpg",
+            "title": "无心法师--多人合播",
+            "tags": "玄幻修仙,武侠传奇,浪漫言情",
+            "tracks": 26,
+            "tracksCounts": 26,
+            "playsCounts": 1315590,
+            "lastUptrackId": 7996161,
+            "lastUptrackTitle": "《无心法师》第二十五集",
+            "lastUptrackAt": 1438015050000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 2760075,
+            "albumId": 2760075,
+            "uid": 4932085,
+            "intro": " 六十年前，我家太爷爷是当地名气极大的风水先生，因为为警备司令破风水凶局惹祸上身，不幸身故。作为老太爷唯一传人，精通风水术的爷爷为老太爷选了一处风水绝佳的阴宅作为荫庇子孙的福地，且预言我们杨家一定会出",
+            "nickname": "_丸子_",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group16/M09/47/89/wKgDalWoqmSSKQ2HAAVl4bO6g64968_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group16/M09/47/89/wKgDalWoqmSSKQ2HAAVl4bO6g64968_mobile_meduim.jpg",
+            "title": "风水鬼师",
+            "tags": "丸子,畅销书,恐怖",
+            "tracks": 37,
+            "tracksCounts": 37,
+            "playsCounts": 545648,
+            "lastUptrackId": 7988161,
+            "lastUptrackTitle": "风水鬼师037(今天更一集，明天更三集，补上今天的一集。）",
+            "lastUptrackAt": 1437976788000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 2801441,
+            "albumId": 2801441,
+            "uid": 8597013,
+            "intro": "by 守夜人",
+            "nickname": "守夜人",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group8/M03/4C/68/wKgDYFWwXOPCcwH7AARTIQ3oeyU459_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group8/M03/4C/68/wKgDYFWwXOPCcwH7AARTIQ3oeyU459_mobile_meduim.jpg",
+            "title": "《亡灵花》（喜马拉雅出品）",
+            "tags": "守夜人讲故事,鬼故事,喜马拉雅",
+            "tracks": 6,
+            "tracksCounts": 6,
+            "playsCounts": 1324,
+            "lastUptrackId": 7995922,
+            "lastUptrackTitle": "亡灵花6",
+            "lastUptrackAt": 1438012800000,
+            "isFinished": 0,
+            "serialState": 0
+          }
+        ]
+      },
+      {
+        "calcDimension": "hot",
+        "tagName": "玄幻奇幻",
+        "contentType": "album",
+        "title": "玄幻奇幻",
+        "hasMore": true,
+        "list": [
+          {
+            "id": 2736699,
+            "albumId": 2736699,
+            "uid": 15568194,
+            "intro": " 官方《仙剑奇侠传》广播剧 仙不仙兮凡不凡，剑气随风任自然，奇梦曾惊三秋雨，侠魂如度万里山。 管平潮原著，广播剧仙剑奇侠传，由软星科技授权，喜马拉雅出品，掷地有声工作室独家制作，欢迎您的收",
+            "nickname": "掷地有声",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group15/M04/33/D1/wKgDaFWTTwHS0PIfAASwR5HkpQk122_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group15/M04/33/D1/wKgDaFWTTwHS0PIfAASwR5HkpQk122_mobile_meduim.jpg",
+            "title": "《仙剑奇侠传》官方广播剧",
+            "tags": "仙剑奇侠传,掷地有声,管平潮",
+            "tracks": 12,
+            "tracksCounts": 12,
+            "playsCounts": 317723,
+            "lastUptrackId": 7993239,
+            "lastUptrackTitle": "仙剑奇侠传-11",
+            "lastUptrackAt": 1438002000000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 2684034,
+            "albumId": 2684034,
+            "uid": 2342717,
+            "intro": " 有个白狐儿脸，佩双刀绣冬春雷，要做那天下第一。湖底有白发老魁爱吃荤。缺门牙老仆背剑匣。山上有个骑青牛的年轻师叔祖，不敢下山。有个骑熊猫扛向日葵不太冷的少女杀手。 这个江湖，高人出行要注重出尘装扮，女",
+            "nickname": "大斌",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group8/M03/27/B0/wKgDYVWDlKfCZ-R1AAPdLnzrWiM637_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group8/M03/27/B0/wKgDYVWDlKfCZ-R1AAPdLnzrWiM637_mobile_meduim.jpg",
+            "title": "雪中悍刀行",
+            "tags": "名著,大斌小说,武侠",
+            "tracks": 520,
+            "tracksCounts": 520,
+            "playsCounts": 21375271,
+            "lastUptrackId": 8000221,
+            "lastUptrackTitle": "雪中悍刀行（十一） - 逍遥游春秋46",
+            "lastUptrackAt": 1438051509000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 475491,
+            "albumId": 475491,
+            "uid": 14982048,
+            "intro": " 600年前的涿鹿之战，究竟是谁和谁的战争？长春真人西行途中，在撒马尔罕城发现了什么让他畏惧不已的事物？欧洲中世纪的女巫迫害，到底是为了何种原因？龙虎山天师张彦頨的寻宝活动，寻找到了怎样的恐怖存在？明",
+            "nickname": "有声演播蜘蛛",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group16/M08/15/C3/wKgDalVuz4TgvXYpAAxIrtNYBWI65_mobile_meduim.jpeg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group16/M08/15/C3/wKgDalVuz4TgvXYpAAxIrtNYBWI65_mobile_meduim.jpeg",
+            "title": "觉醒日",
+            "tags": "蜘蛛,唐缺,奇幻小说",
+            "tracks": 51,
+            "tracksCounts": 51,
+            "playsCounts": 745083,
+            "lastUptrackId": 7805579,
+            "lastUptrackTitle": "觉醒日051【终】",
+            "lastUptrackAt": 1436857511000,
+            "isFinished": 2,
+            "serialState": 2
+          }
+        ]
+      },
+      {
+        "calcDimension": "hot",
+        "tagName": "历史军事",
+        "contentType": "album",
+        "title": "历史军事",
+        "hasMore": true,
+        "list": [
+          {
+            "id": 2735048,
+            "albumId": 2735048,
+            "uid": 9955197,
+            "intro": "by 光影部落李明",
+            "nickname": "光影部落李明",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group11/M09/31/6C/wKgDa1WQodDywrOJAATsQ9ASE-8230_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group11/M09/31/6C/wKgDa1WQodDywrOJAATsQ9ASE-8230_mobile_meduim.jpg",
+            "title": "大清灭亡启示录",
+            "tags": "畅销书,推理",
+            "tracks": 15,
+            "tracksCounts": 15,
+            "playsCounts": 57489,
+            "lastUptrackId": 7987828,
+            "lastUptrackTitle": "大清灭亡启示录15",
+            "lastUptrackAt": 1437974142000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 2661360,
+            "albumId": 2661360,
+            "uid": 20467257,
+            "intro": "by 杨枪枪",
+            "nickname": "杨枪枪",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group12/M07/2B/00/wKgDW1WICSeDBmNSAAQemJoW6OI895_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group12/M07/2B/00/wKgDW1WICSeDBmNSAAQemJoW6OI895_mobile_meduim.jpg",
+            "title": "其实我们一直活在春秋战国",
+            "tags": "春秋战国,历史人文,畅销书",
+            "tracks": 40,
+            "tracksCounts": 40,
+            "playsCounts": 176591,
+            "lastUptrackId": 7997195,
+            "lastUptrackTitle": "第39回：唇亡齿寒（微信平台：tingjianQQ）",
+            "lastUptrackAt": 1438045200000,
+            "isFinished": 0,
+            "serialState": 0
+          },
+          {
+            "id": 462344,
+            "albumId": 462344,
+            "uid": 1501188,
+            "intro": "那多三国事件簿 作者 那多 演播 秋华 后期音效制作 莳乐 喜马拉雅出品 作者那多授权录制，版权所有，请勿侵权转载。 1那多三国事件薄之桃园三结义 2那多三国事件簿之曹操登场 3那多三",
+            "nickname": "聆听秋华",
+            "albumCoverUrl290": "http://fdfs.xmcdn.com/group15/M00/11/37/wKgDaFVn2lSjkAIyAAUb0CzKks8185_mobile_meduim.jpg",
+            "coverMiddle": "http://fdfs.xmcdn.com/group15/M00/11/37/wKgDaFVn2lSjkAIyAAUb0CzKks8185_mobile_meduim.jpg",
+            "title": "那多三国事件簿（已完结 搞笑非悬疑）",
+            "tags": "畅销书,三国,爆笑",
+            "tracks": 56,
+            "tracksCounts": 56,
+            "playsCounts": 334650,
+            "lastUptrackId": 7939548,
+            "lastUptrackTitle": "那多三国事件簿-56 乱起凤仪亭19（全系列完）",
+            "lastUptrackAt": 1437655621000,
+            "isFinished": 1,
+            "serialState": 1
+          }
+        ]
+      }
+    ]
+  },
+  "hasRecommendedZones": false,
+  "focusImages": {
+    "ret": 0,
+    "list": [
+      {
+        "id": 2111,
+        "shortTitle": "衣香鬓影（长效图-小说）",
+        "longTitle": "衣香鬓影（长效图-小说）",
+        "pic": "http://fdfs.xmcdn.com/group6/M01/AC/2C/wKgDg1UKcO_DsoJ4AAGx5DtnlnE362_android_large.jpg",
+        "type": 2,
+        "url": "",
+        "uid": 1021189,
+        "albumId": 356182,
+        "isShare": false,
+        "is_External_url": false
+      },
+      {
+        "id": 3270,
+        "shortTitle": "狗日的战争（长效图-小说）",
+        "longTitle": "狗日的战争（长效图-小说）",
+        "pic": "http://fdfs.xmcdn.com/group9/M05/35/10/wKgDYlWU3HbyUIXdAAG8dYhPEdw357_android_large.jpg",
+        "type": 2,
+        "uid": 16316170,
+        "albumId": 2735598,
+        "isShare": false,
+        "is_External_url": false
+      },
+      {
+        "id": 3352,
+        "shortTitle": "仙剑奇侠传（小说）",
+        "longTitle": "仙剑奇侠传（小说）",
+        "pic": "http://fdfs.xmcdn.com/group12/M08/3C/0B/wKgDXFWdExDTEVpQAAHRMHaTYzo475_android_large.jpg",
+        "type": 2,
+        "uid": 15568194,
+        "albumId": 2736699,
+        "isShare": false,
+        "is_External_url": false
+      },
+      {
+        "id": 2070,
+        "shortTitle": "荒村公寓（长效图-小说）",
+        "longTitle": "荒村公寓（长效图-小说）",
+        "pic": "http://fdfs.xmcdn.com/group6/M0B/91/CB/wKgDg1UCpgzz_Q2vAAHly4L02FE564_android_large.jpg",
+        "type": 2,
+        "url": "",
+        "uid": 20115042,
+        "albumId": 351027,
+        "isShare": false,
+        "is_External_url": false
+      },
+      {
+        "id": 3102,
+        "shortTitle": "人生需要揭穿（长效图-小说）",
+        "longTitle": "人生需要揭穿（长效图-小说）",
+        "pic": "http://fdfs.xmcdn.com/group15/M06/26/D3/wKgDaFWCoZzC-KyUAAGsWwjm0xk573_android_large.jpg",
+        "type": 2,
+        "uid": 2096969,
+        "albumId": 2649245,
+        "isShare": false,
+        "is_External_url": false
+      },
+      {
+        "id": 2937,
+        "shortTitle": "有声化平台",
+        "longTitle": "有声化平台",
+        "pic": "http://fdfs.xmcdn.com/group11/M0A/44/4F/wKgDbVWlwGjyhhkZAAHpjWG_c1Y202_android_large.jpg",
+        "type": 4,
+        "url": "http://ma.ximalaya.com/",
+        "isShare": false,
+        "is_External_url": false
+      }
+    ],
+    "title": "分类焦点图"
+  },
+  "msg": "成功"
+}
