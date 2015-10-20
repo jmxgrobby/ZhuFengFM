@@ -1,18 +1,20 @@
 package zhufengfm.jmxgrobby.com.zhufengfm;
 
-import android.graphics.drawable.Drawable;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.*;
 import android.util.Log;
-import android.widget.RadioButton;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.CustomFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.DiscoverFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.DownLoadTingFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.PersonalFragment;
 
 
-public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener {
+public class MainActivity extends FragmentActivity implements View.OnClickListener {
     /**
      * 主界面中第一层fragment 发现 定制听 下载听 我
      *
@@ -23,20 +25,16 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     private FragmentTransaction tx;
     private FragmentManager manager;
 
-    private RadioButton test;
+    private TextView  discover_text,download_text,custom_text,personal_text;
+    private ImageView discover_image,download_image,custom_image,personal_image;
 
     private static boolean isLoad = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.main_tab_bar);
-        radioGroup.setOnCheckedChangeListener(this);
-        test = (RadioButton) findViewById(R.id.main_tab_item_discover);
-        // TODO 将以下代码整合成一个方法
-        Drawable[] compoundDrawables = test.getCompoundDrawables();
-        compoundDrawables[1].setBounds(0,0,80,80);
-        test.setCompoundDrawables(compoundDrawables[0],compoundDrawables[1],compoundDrawables[2],compoundDrawables[3]);
+
+        initTabBar();
 
         if(savedInstanceState==null){
             fragments = new Fragment[4];
@@ -50,6 +48,30 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
             isLoad = true;
         }
 
+    }
+
+    private void initTabBar() {
+        View discover_layout = findViewById(R.id.main_tab_item_discover_layout);
+        View custom_layout = findViewById(R.id.main_tab_item_custom_layout);
+        View download_layout = findViewById(R.id.main_tab_item_download_layout);
+        View personal_layout = findViewById(R.id.main_tab_item_personal_layout);
+        setEvent(discover_layout, custom_layout, download_layout, personal_layout);
+
+        discover_image = (ImageView) findViewById(R.id.main_tab_item_discover_image);
+        custom_image = (ImageView) findViewById(R.id.main_tab_item_custom_image);
+        download_image = (ImageView) findViewById(R.id.main_tab_item_download_image);
+        personal_image = (ImageView) findViewById(R.id.main_tab_item_personal_image);
+
+        discover_text = (TextView) findViewById(R.id.main_tab_item_discover_text);
+        custom_text = (TextView) findViewById(R.id.main_tab_item_custom_text);
+        download_text = (TextView) findViewById(R.id.main_tab_item_download_text);
+        personal_text = (TextView) findViewById(R.id.main_tab_item_personal_text);
+
+    }
+
+    private void setEvent(View... view) {
+        for(int i = 0;i<view.length;i++)
+            view[i].setOnClickListener(this);
     }
 
     @Override
@@ -71,36 +93,7 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
         tx.commit();
     }
 
-    @Override
-    public void onCheckedChanged(RadioGroup group, int checkedId) {
-        int index = 0;
-        switch (checkedId) {
-            case R.id.main_tab_item_discover:
-                index = 0;
-                break;
-            case R.id.main_tab_item_customting:
-                index = 1;
-                break;
-            case R.id.main_tab_item_downloadting:
-                index = 2;
-                break;
-            case R.id.main_tab_item_personal:
-                index = 3;
-                break;
-        }
-        int length = fragments.length;
-        manager = getSupportFragmentManager();
-        tx = manager.beginTransaction();
-        for (int i = 0; i < length; i++) {
-            if (i == index)
-                tx.show(fragments[i]);
-            else
-                tx.hide(fragments[i]);
-        }
 
-        tx.commit();
-        current = index;
-    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -115,4 +108,57 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
         super.onSaveInstanceState(outState);
     }
 
+    @Override
+    public void onClick(View v) {
+        resetAll();
+
+        int index = 0;
+        int length = fragments.length;
+        manager = getSupportFragmentManager();
+        tx = manager.beginTransaction();
+        switch (v.getId()) {
+            case R.id.main_tab_item_discover_layout:
+                discover_text.setTextColor(Color.rgb(0xf6,0x00,0x00));
+                discover_image.setImageResource(R.mipmap.tab4_down);
+                index = 0;
+                break;
+            case R.id.main_tab_item_custom_layout:
+                custom_text.setTextColor(Color.rgb(0xf6,0x00,0x00));
+                custom_image.setImageResource(R.mipmap.tab1_down);
+                index=1;
+                break;
+            case R.id.main_tab_item_download_layout:
+                download_text.setTextColor(Color.rgb(0xf6,0x00,0x00));
+                download_image.setImageResource(R.mipmap.tab2_down);
+                index=2;
+                break;
+            case R.id.main_tab_item_personal_layout:
+                personal_text.setTextColor(Color.rgb(0xf6,0x00,0x00));
+                personal_image.setImageResource(R.mipmap.tab5_down);
+                index =3;
+                break;
+        }
+        for (int i = 0; i < length; i++) {
+            if (i == index)
+                tx.show(fragments[i]);
+            else
+                tx.hide(fragments[i]);
+        }
+
+        tx.commit();
+    }
+
+    private void resetAll() {
+        discover_text.setTextColor(Color.BLACK);
+        discover_image.setImageResource(R.mipmap.tab4);
+
+        custom_text.setTextColor(Color.BLACK);
+        custom_image.setImageResource(R.mipmap.tab1);
+
+        download_text.setTextColor(Color.BLACK);
+        download_image.setImageResource(R.mipmap.tab2);
+
+        personal_text.setTextColor(Color.BLACK);
+        personal_image.setImageResource(R.mipmap.tab5);
+    }
 }

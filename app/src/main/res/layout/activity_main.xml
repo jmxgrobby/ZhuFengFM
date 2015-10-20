@@ -10,49 +10,120 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         ></FrameLayout>
-    <RadioGroup
-            android:id="@+id/main_tab_bar"
+
+
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_margin="5dp"
             >
-        <RadioButton
-
-                style="@style/AppTheme.MainTabItem"
-                android:id="@+id/main_tab_item_discover"
-                android:text="发现"
-                android:drawableTop="@drawable/tab4_image"
-                />
-
-        <RadioButton
-                style="@style/AppTheme.MainTabItem"
-                android:text="定制听"
-                android:id="@+id/main_tab_item_customting"
-                android:drawableTop="@drawable/tab1_image"
-                />
-
-        <RadioButton
+        <LinearLayout
+                android:id="@+id/main_tab_item_discover_layout"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:enabled="false"
-                android:text="播放"
-                android:id="@+id/main_tab_item_play"
-                />
+                android:layout_gravity="bottom"
+                >
+            <ImageView
+                    android:id="@+id/main_tab_item_discover_image"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tab4_down"
+                    />
+            <TextView
+                    android:id="@+id/main_tab_item_discover_text"
+                    android:layout_below="@id/main_tab_item_discover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff60000"
+                    android:text="发现"/>
+        </LinearLayout>
 
-        <RadioButton
-                style="@style/AppTheme.MainTabItem"
-                android:text="下载听"
-                android:id="@+id/main_tab_item_downloadting"
-                android:drawableTop="@drawable/tab2_image"
+        <LinearLayout
+                android:id="@+id/main_tab_item_custom_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                >
+            <ImageView
+                    android:id="@+id/main_tab_item_custom_image"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tab1"
+                    />
+            <TextView
+                    android:id="@+id/main_tab_item_custom_text"
+                    android:layout_below="@id/main_tab_item_custom_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="定制听"/>
+        </LinearLayout>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/play_icon_new"
                 />
+        <LinearLayout
+                android:id="@+id/main_tab_item_download_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                >
+            <ImageView
+                    android:id="@+id/main_tab_item_download_image"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tab2"
+                    />
+            <TextView
+                    android:id="@+id/main_tab_item_download_text"
+                    android:layout_below="@id/main_tab_item_download_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="下载听"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/main_tab_item_personal_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                >
+            <ImageView
+                    android:id="@+id/main_tab_item_personal_image"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tab5"
+                    />
+            <TextView
+                    android:id="@+id/main_tab_item_personal_text"
+                    android:layout_below="@id/main_tab_item_personal_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我"/>
+        </LinearLayout>
+    </LinearLayout>
 
-        <RadioButton
-                android:drawableTop="@drawable/tab5_image"
-                android:id="@+id/main_tab_item_personal"
-                style="@style/AppTheme.MainTabItem"
-                android:text="我"
-                />
-    </RadioGroup>
 
 </LinearLayout>
