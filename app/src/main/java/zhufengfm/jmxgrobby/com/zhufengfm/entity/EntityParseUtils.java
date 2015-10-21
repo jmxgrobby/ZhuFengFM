@@ -1,10 +1,12 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.entity;
 
+import com.jmxgrobby.utils.MyLog;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommenItem;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendAlbums;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +19,7 @@ import java.util.List;
  */
 
 /**
- * 一切实体的list解析生成累
+ * 一切实体的list解析生成类
  */
 public class EntityParseUtils {
     public EntityParseUtils() {
@@ -53,7 +55,45 @@ public class EntityParseUtils {
         return ret;
     }
 
-    public static List<DiscoverRecommenItem> parseDiscovrRecommend(JSONObject jsonObject) {
-        return null;
+    public static List<DiscoverRecommenItem> parseDiscoverRecomments(JSONObject jsonObject) {
+        List<DiscoverRecommenItem> ret = null;
+        if (jsonObject != null) {
+            try {
+                int code = jsonObject.getInt("ret");
+                if(code==Configs.TASK_RESULT_OK){
+                    ret = new LinkedList<>();
+                    //小编推荐内容解析
+                    JSONObject object = jsonObject.getJSONObject("editorRecommendAlbums");
+                    DiscoverRecommendAlbums editorRecommend =
+                            new DiscoverRecommendAlbums();
+                    editorRecommend.parseJSON(object);
+                    ret.add(editorRecommend);
+
+                    // TODO 解析精品听单
+
+
+                    // TODO 解析发现新奇
+
+                    //热门推荐内容解析
+                    JSONObject hotobject = jsonObject.getJSONObject("hotRecommends");
+                    MyLog.d("debug11",hotobject.toString());
+                    JSONArray hotlist = hotobject.getJSONArray("list");
+                    for (int i = 0; i < hotlist.length(); i++) {
+                        JSONObject discoverRecommendAlbumJSON = hotlist.getJSONObject(i);
+                        DiscoverRecommendAlbums e =
+                                new DiscoverRecommendAlbums();
+                        e.parseJSON(discoverRecommendAlbumJSON);
+                        ret.add(e);
+                    }
+
+
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return ret;
     }
 }

@@ -11,7 +11,6 @@
     ]
   },
   "ret": 0,
-  //发现新奇
   "discoveryColumns": {
     "ret": 0,
     "title": "发现新奇",
@@ -70,51 +69,49 @@
     ],
     "locationInHotRecommend": 0
   },
-    //小编推荐
   "editorRecommendAlbums": {
     "ret": 0,
     "title": "小编推荐",
     "hasMore": true,
     "list": [
       {
-        "albumId": 3005249,
-        "coverLarge": "http://fdfs.xmcdn.com/group16/M01/7A/D3/wKgDbFYKqqHCamtQAAIv621_oBE247_mobile_large.jpg",
-        "title": "3D环绕音乐",
-        "tags": "翻唱|原创,文艺|小众,清新|催眠",
-        "tracks": 75,
-        "playsCounts": 133347,
+        "albumId": 263048,
+        "coverLarge": "http://fdfs.xmcdn.com/group15/M03/5A/FD/wKgDZVXIRUXChMZ_AATxbambh7I561_mobile_large.jpg",
+        "title": "感情感悟说",
+        "tags": "爱情,互动,脱口秀",
+        "tracks": 197,
+        "playsCounts": 5319108,
         "isFinished": 0,
         "serialState": 0,
-        "trackId": 9333769,
-        "trackTitle": "3D:睡不着就听听星夜的声音"
+        "trackId": 9383867,
+        "trackTitle": "越是相爱就越容易吵架"
       },
       {
-        "albumId": 222885,
-        "coverLarge": "http://fdfs.xmcdn.com/group6/M0A/B1/66/wKgDg1UMAumSUUUXAAUK_-QFgJ0834_mobile_large.jpg",
-        "title": "非常不着调",
-        "tags": "笑话,脱口秀,流行",
-        "tracks": 198,
-        "playsCounts": 37088371,
+        "albumId": 3049464,
+        "coverLarge": "http://fdfs.xmcdn.com/group13/M04/82/26/wKgDXVYY9BrgHQ2qAAVrrypzw50944_mobile_large.jpg",
+        "title": "双子爸爸的超级西游记",
+        "tags": "Michael钱儿爸爸,木朵爸爸,西游记",
+        "tracks": 8,
+        "playsCounts": 770938,
         "isFinished": 0,
         "serialState": 0,
-        "trackId": 9312053,
-        "trackTitle": "每次看选秀节目,都能有故事听"
+        "trackId": 9185708,
+        "trackTitle": "超级西游记:美猴王诞生"
       },
       {
-        "albumId": 2991922,
-        "coverLarge": "http://fdfs.xmcdn.com/group12/M09/75/F1/wKgDXFYCabDifAXPAAMVnFG1EIM871_mobile_large.jpg",
-        "title": "乌盆记（想不到的推理结局）",
-        "tags": "畅销书,悬疑,恐怖",
-        "tracks": 33,
-        "playsCounts": 708323,
-        "isFinished": 2,
-        "serialState": 2,
-        "trackId": 8939178,
-        "trackTitle": "乌盆记:史上最恐怖的小说"
+        "albumId": 422294,
+        "coverLarge": "http://fdfs.xmcdn.com/group11/M07/04/6E/wKgDbVVTLuKyw0FcAAJFBqgof8I645_mobile_large.png",
+        "title": "星座奇葩事",
+        "tags": "星座话题,啪啪啪,每周星座",
+        "tracks": 24,
+        "playsCounts": 124230,
+        "isFinished": 0,
+        "serialState": 0,
+        "trackId": 9360427,
+        "trackTitle": "犯了错会被原谅的星座"
       }
     ]
   },
-  //发现新奇后面的一堆听听听
   "hotRecommends": {
     "ret": 0,
     "title": "热门推荐",
@@ -132,36 +129,36 @@
             "coverLarge": "http://fdfs.xmcdn.com/group14/M01/88/16/wKgDY1Ykr3qxQP8AAAHNANft9_M980_mobile_large.jpg",
             "title": "习大大访英，8个民生“彩蛋”等着你！",
             "tags": "头条,话题,国际",
-            "tracks": 6,
-            "playsCounts": 1701,
+            "tracks": 7,
+            "playsCounts": 12489,
             "isFinished": 0,
             "serialState": 0,
             "trackId": 9355623,
             "trackTitle": "舌尖上的英国,尝尝这十种美食"
           },
           {
-            "albumId": 3063425,
-            "coverLarge": "http://fdfs.xmcdn.com/group7/M07/84/90/wKgDX1Yd92SBhcFUAAD9m7neT3E300_mobile_large.jpg",
-            "title": "曾经国考“女状元”，如今月薪2600",
-            "tags": "头条,话题,社会",
-            "tracks": 13,
-            "playsCounts": 16693,
+            "albumId": 3091084,
+            "coverLarge": "http://fdfs.xmcdn.com/group16/M03/89/2D/wKgDalYnKuehUN2vAAGkUwYyopE772_mobile_large.jpg",
+            "title": "《南山南》侵权开撕，你挺谁",
+            "tags": "头条,话题,娱乐",
+            "tracks": 7,
+            "playsCounts": 0,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9373916,
-            "trackTitle": "为何这些公务员岗位被无视"
+            "trackId": 9376900,
+            "trackTitle": "商演侵权，南山南到底是谁的？"
           },
           {
-            "albumId": 2998398,
-            "coverLarge": "http://fdfs.xmcdn.com/group13/M04/78/3F/wKgDXlYFJo6w5U8XAAG459Xxv6M451_mobile_large.jpg",
-            "title": "元气少女情报局",
-            "tags": "互联网,潮科技,科学迷",
-            "tracks": 5,
-            "playsCounts": 19121,
+            "albumId": 3091122,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M07/89/8F/wKgDYVYnU9GSh4vzAACY0Vhhcs4189_mobile_large.jpg",
+            "title": "百度阿里缩减招聘 IT男求安慰",
+            "tags": "头条,话题,社会",
+            "tracks": 9,
+            "playsCounts": 0,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9353555,
-            "trackTitle": "智能戒指来了,苹果婊买不买?"
+            "trackId": 8018350,
+            "trackTitle": "你觉得百度变娘炮了吗？"
           }
         ]
       },
@@ -174,40 +171,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 2978788,
-            "coverLarge": "http://fdfs.xmcdn.com/group11/M03/93/F3/wKgDbVYklKejngHRAAFCd32QQWg124_mobile_large.jpg",
-            "title": "岛田流杀人事件：大鹏讲故事",
-            "tags": "恐怖悬疑,推理世界,探案推理",
-            "tracks": 10,
-            "playsCounts": 13604,
+            "albumId": 2808630,
+            "coverLarge": "http://fdfs.xmcdn.com/group7/M0A/77/1C/wKgDX1YC7q-g0fRFAAHs-KMQrpU632_mobile_large.jpg",
+            "title": "地师 - 轩林演播",
+            "tags": "风水,悬疑,鬼故事",
+            "tracks": 67,
+            "playsCounts": 759381,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9050494,
-            "trackTitle": "怪异杀人案，传奇推理世界"
+            "trackId": 8268938,
+            "trackTitle": "一代地气宗师的传奇故事"
           },
           {
-            "albumId": 2784944,
-            "coverLarge": "http://fdfs.xmcdn.com/group15/M0B/84/09/wKgDaFYdRUby_C-QAARbrj0-JAg517_mobile_large.jpg",
-            "title": "小涛鬼话-铁柱播讲",
-            "tags": "悬疑,恐怖,都市",
-            "tracks": 34,
-            "playsCounts": 1171144,
-            "isFinished": 0,
-            "serialState": 0,
-            "trackId": 7939927,
-            "trackTitle": "鬼话连篇直击内心恐惧"
-          },
-          {
-            "albumId": 3006526,
-            "coverLarge": "http://fdfs.xmcdn.com/group11/M05/93/F4/wKgDbVYklPahQHbHAACq5G_bbxM491_mobile_large.jpg",
-            "title": "少年诗篇",
-            "tags": "畅销书,名著,剧情",
-            "tracks": 12,
-            "playsCounts": 1749,
+            "albumId": 2926448,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M08/6E/87/wKgDYFXxPF7R2G3eAAM2XJ4drsg524_mobile_large.jpg",
+            "title": "良言写意",
+            "tags": "畅销书,言情,都市",
+            "tracks": 27,
+            "playsCounts": 283646,
             "isFinished": 1,
             "serialState": 1,
-            "trackId": 9132409,
-            "trackTitle": "尘埃落定，父辈旧事依然上演"
+            "trackId": 8797035,
+            "trackTitle": "复仇背后究竟是毁灭还是圆满"
+          },
+          {
+            "albumId": 2947148,
+            "coverLarge": "http://fdfs.xmcdn.com/group15/M03/6C/6C/wKgDaFXtP6Tz_YTFAAY46IF97-M933_mobile_large.jpg",
+            "title": "民企教父沈万三",
+            "tags": "官场商战,畅销书",
+            "tracks": 41,
+            "playsCounts": 324514,
+            "isFinished": 1,
+            "serialState": 1,
+            "trackId": 8778538,
+            "trackTitle": "沈万三巧妙游走于乱世"
           }
         ]
       },
@@ -220,6 +217,18 @@
         "hasMore": true,
         "list": [
           {
+            "albumId": 361252,
+            "coverLarge": "http://fdfs.xmcdn.com/group15/M03/10/B4/wKgDaFVmq5bxWGuXAACjRmYFkA0460_mobile_large.jpg",
+            "title": "咬电台脱口秀",
+            "tags": "咬电台,脱口秀",
+            "tracks": 47,
+            "playsCounts": 260399,
+            "isFinished": 0,
+            "serialState": 0,
+            "trackId": 9390354,
+            "trackTitle": "又到九月九，聊聊重阳节的事"
+          },
+          {
             "albumId": 2994971,
             "coverLarge": "http://fdfs.xmcdn.com/group15/M0A/77/48/wKgDaFYDvjjAuC7vAAHj9Fhch3Q329_mobile_large.jpg",
             "title": "不八卦会死",
@@ -228,32 +237,20 @@
             "playsCounts": 0,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9293052,
-            "trackTitle": "歌手平安，演绎张国荣经典歌曲"
+            "trackId": 9345900,
+            "trackTitle": "《夏洛特烦恼》赢在哪？"
           },
           {
-            "albumId": 2994986,
-            "coverLarge": "http://fdfs.xmcdn.com/group11/M08/83/9D/wKgDbVYDvRGzNlTMAADBGbvqMhc820_mobile_large.jpg",
-            "title": "只为喷饭而生",
-            "tags": "笑话段子",
-            "tracks": 93,
-            "playsCounts": 9,
+            "albumId": 205766,
+            "coverLarge": "http://fdfs.xmcdn.com/group4/M06/CF/FB/wKgDs1P4TxvgUXYNAAPfcS3halQ980_mobile_large.jpg",
+            "title": "海阳现场秀(脱口秀精编)",
+            "tags": "海阳现场秀,脱口秀,文艺之声",
+            "tracks": 439,
+            "playsCounts": 19823785,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9334877,
-            "trackTitle": "你手上这个味儿我太熟了"
-          },
-          {
-            "albumId": 2995004,
-            "coverLarge": "http://fdfs.xmcdn.com/group16/M04/77/73/wKgDbFYDu-ex_EMJAACVgfiozpI955_mobile_large.jpg",
-            "title": "涨涨姿势",
-            "tags": "涨姿势",
-            "tracks": 66,
-            "playsCounts": 0,
-            "isFinished": 0,
-            "serialState": 0,
-            "trackId": 9357310,
-            "trackTitle": "地球上五个没有法律的地方"
+            "trackId": 9393939,
+            "trackTitle": "世上还有比恋爱更复杂的东西？"
           }
         ]
       },
@@ -266,40 +263,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 2961484,
-            "coverLarge": "http://fdfs.xmcdn.com/group12/M03/6F/EB/wKgDW1X2AJmxmB0fABmNfMngQSU552_mobile_large.jpg",
-            "title": "君臣斗",
-            "tags": "评书,单口相声,幽默",
-            "tracks": 22,
-            "playsCounts": 515797,
+            "albumId": 5154,
+            "coverLarge": "http://fdfs.xmcdn.com/group2/M00/06/A4/wKgDr1F7eXaS9baZAAEd05uVdt8701_mobile_large.jpg",
+            "title": "岳云鹏相声精选集",
+            "tags": "相声",
+            "tracks": 24,
+            "playsCounts": 28300098,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 8744085,
-            "trackTitle": "刘罗锅智斗和珅"
+            "trackId": 466261,
+            "trackTitle": "岳云鹏&孙越-树没叶"
           },
           {
-            "albumId": 232010,
-            "coverLarge": "http://fdfs.xmcdn.com/group3/M09/34/A1/wKgDsVMUW4ahQ5bPAAKYNfY0WlA448_mobile_large.jpg",
-            "title": "爆笑郭德纲相声",
-            "tags": "相声,郭德纲",
-            "tracks": 29,
-            "playsCounts": 8360717,
+            "albumId": 618,
+            "coverLarge": "http://fdfs.xmcdn.com/group1/M00/02/22/wKgDrVCkWsaTjc-AAAG6xAiVp0E077_mobile_large.jpg",
+            "title": "侯耀文石富宽对口相声大全",
+            "tags": "侯耀文,石富宽,对口相声",
+            "tracks": 41,
+            "playsCounts": 1441933,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 50340,
-            "trackTitle": "太平歌词《五龙捧圣》"
+            "trackId": 34580,
+            "trackTitle": "老艺术家演绎《八扇屏》"
           },
           {
-            "albumId": 2677428,
-            "coverLarge": "http://fdfs.xmcdn.com/group4/M02/33/81/wKgDtFM7sF_gsG-eAAgg4LSHVVU104_mobile_large.jpg",
-            "title": "隋唐演义",
-            "tags": "评书,单田芳评书",
-            "tracks": 215,
-            "playsCounts": 9632172,
+            "albumId": 982,
+            "coverLarge": "http://fdfs.xmcdn.com/group1/M00/03/24/wKgDrVC0kcWCr9eaAAF1VxhhwFY217_mobile_large.jpg",
+            "title": "相声瓦舍合辑相声来了",
+            "tags": "相声瓦舍,冯翊纲",
+            "tracks": 42,
+            "playsCounts": 900890,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 61496,
-            "trackTitle": "单田芳评书，隋唐演义第二章"
+            "trackId": 47811,
+            "trackTitle": "不一样的台湾相声"
           }
         ]
       },
@@ -312,40 +309,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 2899051,
-            "coverLarge": "http://fdfs.xmcdn.com/group12/M07/87/BD/wKgDXFYloWLBFZFBAAEF8-2WMz0986_mobile_large.jpg",
-            "title": "听，四季在歌唱",
-            "tags": "春,夏,秋",
-            "tracks": 17,
+            "albumId": 2744696,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M08/35/95/wKgDYVWVB4iRYqLLAAH4bjKKTpg966_mobile_large.jpg",
+            "title": "水哥！上酸菜！",
+            "tags": "华语,音乐,脱口秀",
+            "tracks": 2,
+            "playsCounts": 22891,
+            "isFinished": 0,
+            "serialState": 0,
+            "trackId": 9379533,
+            "trackTitle": "水哥说事儿:胖子都是基友股"
+          },
+          {
+            "albumId": 3091240,
+            "coverLarge": "http://fdfs.xmcdn.com/group13/M02/89/84/wKgDXVYnBQ-yIt77AAC_LOYKwUc397_mobile_large.jpg",
+            "title": "人人都是文艺范儿",
+            "tags": "主播|节目,午后.咖啡",
+            "tracks": 7,
             "playsCounts": 0,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9357427,
-            "trackTitle": "秋意正浓,我们爱在一起"
+            "trackId": 9385501,
+            "trackTitle": "两个字的傲娇歌单,爱听不听"
           },
           {
-            "albumId": 242817,
-            "coverLarge": "http://fdfs.xmcdn.com/group15/M02/88/A3/wKgDaFYmGH2R5CJ6AAD4rPsFJcM731_mobile_large.jpg",
-            "title": "单曲循环的清新翻唱",
-            "tags": "流行,翻唱,华语",
-            "tracks": 37,
-            "playsCounts": 4757807,
+            "albumId": 3048203,
+            "coverLarge": "http://fdfs.xmcdn.com/group14/M07/89/49/wKgDY1Ym8EGS-0ZkAAOn-k-bTr0185_mobile_large.jpg",
+            "title": "让你颅内高潮的3D音乐",
+            "tags": "纯音乐,催眠|解压",
+            "tracks": 49,
+            "playsCounts": 47685,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9323537,
-            "trackTitle": "罗艺恒首度翻唱中国风:青花瓷"
-          },
-          {
-            "albumId": 2865921,
-            "coverLarge": "http://fdfs.xmcdn.com/group13/M04/7A/C8/wKgDXlYKagCx_aJNAAEwomzWTSc758_mobile_large.jpg",
-            "title": "深夜，一起入眠",
-            "tags": "催眠,睡前,音乐",
-            "tracks": 17,
-            "playsCounts": 3,
-            "isFinished": 0,
-            "serialState": 0,
-            "trackId": 9284697,
-            "trackTitle": "想你的夜,你在听吗?"
+            "trackId": 9178057,
+            "trackTitle": "3D环绕曲30秒后高潮迭起"
           }
         ]
       },
@@ -358,40 +355,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 323554,
-            "coverLarge": "http://fdfs.xmcdn.com/group9/M01/71/D9/wKgDYlX5MIyBdLeWAAA7R-rTuj8617_mobile_large.jpg",
-            "title": "温暖下午茶",
-            "tags": "治愈系,小清新,心理",
-            "tracks": 2166,
-            "playsCounts": 698796,
+            "albumId": 3082746,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M09/88/23/wKgDYVYksfKjgggrAAFFkBcK-ZM792_mobile_large.jpg",
+            "title": "家人已老，何处重阳",
+            "tags": "心情故事",
+            "tracks": 9,
+            "playsCounts": 0,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9365107,
-            "trackTitle": "你养过一只狗狗吗？"
+            "trackId": 9395086,
+            "trackTitle": "你养我长大，我陪你变老"
           },
           {
-            "albumId": 1072864,
-            "coverLarge": "http://fdfs.xmcdn.com/group16/M0B/10/B5/wKgDalVmu4ewmMHAAAFPUko4NBM544_mobile_large.jpg",
-            "title": "与柠香约",
-            "tags": "治愈系,爱情,配乐散文",
-            "tracks": 38,
-            "playsCounts": 992016,
+            "albumId": 262929,
+            "coverLarge": "http://fdfs.xmcdn.com/group5/M08/FB/FC/wKgDtlSZgSbSt807AAL4MZe1gqY177_mobile_large.jpg",
+            "title": "只能谈情 不能说爱",
+            "tags": "爱情,小清新,治愈系",
+            "tracks": 46,
+            "playsCounts": 1283819,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9363010,
-            "trackTitle": "亲爱的，下一个不见得会更好"
+            "trackId": 9388443,
+            "trackTitle": "康熙走了，我的少女时代落幕了"
           },
           {
-            "albumId": 422195,
-            "coverLarge": "http://fdfs.xmcdn.com/group14/M03/6E/FF/wKgDY1XyrNeANdzhAACbSYc8wio296_mobile_large.jpg",
-            "title": "她他的秘密",
-            "tags": "两性,情感,秘密",
-            "tracks": 25,
-            "playsCounts": 2134338,
+            "albumId": 258083,
+            "coverLarge": "http://fdfs.xmcdn.com/group5/M00/27/D9/wKgDtVOIOVCiib4_AARXdJ4jlfg669_mobile_large.jpg",
+            "title": "明日梦想家【周二】",
+            "tags": "奋斗,都市夜归人,梦想家",
+            "tracks": 73,
+            "playsCounts": 4470760,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9316796,
-            "trackTitle": "男人真的是用下半身思考吗"
+            "trackId": 9382983,
+            "trackTitle": "致你我不得安宁的青春"
           }
         ]
       },
@@ -404,40 +401,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 3081991,
-            "coverLarge": "http://fdfs.xmcdn.com/group12/M01/87/3C/wKgDW1YkZczD0MV8AAFZcLd2SkE867_mobile_large.jpg",
-            "title": "奇葩三国说（第1-4卷）合辑",
-            "tags": "历史人文",
-            "tracks": 119,
-            "playsCounts": 4107,
-            "isFinished": 0,
-            "serialState": 0,
-            "trackId": 9353503,
-            "trackTitle": "蔡康永&侯文咏:奇葩三国说"
+            "albumId": 193590,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M02/6F/49/wKgDYVXyc2GQpPnlAAGYDBuI6RU358_mobile_large.jpg",
+            "title": "百家讲坛【2015】",
+            "tags": "历史,国学,学术",
+            "tracks": 213,
+            "playsCounts": 7231056,
+            "isFinished": 1,
+            "serialState": 1,
+            "trackId": 9184378,
+            "trackTitle": "说历史:杨家将-悲情杨令公"
           },
           {
-            "albumId": 3066387,
-            "coverLarge": "http://fdfs.xmcdn.com/group14/M03/85/29/wKgDY1YfWgPhvW6AAADQCq3u9HI848_mobile_large.jpg",
-            "title": "小欢说",
-            "tags": "国学新说,佛学心灵,野史奇闻",
-            "tracks": 1,
-            "playsCounts": 389,
+            "albumId": 297226,
+            "coverLarge": "http://fdfs.xmcdn.com/group5/M04/7F/B6/wKgDtVRkEOHwYVTAAAKlGG8AxHU864_mobile_large.jpg",
+            "title": "悲喜剧 | 做才是得到",
+            "tags": "治愈系,心理,索达吉堪布",
+            "tracks": 50,
+            "playsCounts": 630876,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9370631,
-            "trackTitle": "小欢说:各种夏洛,特,烦恼！"
+            "trackId": 9392872,
+            "trackTitle": "心善的话，做什么都会积功累德"
           },
           {
-            "albumId": 3055568,
-            "coverLarge": "http://fdfs.xmcdn.com/group9/M0A/82/AD/wKgDZlYbNg7DCUscAAM99qHsC90734_mobile_large.jpg",
-            "title": "聆听生活故事第二季",
-            "tags": "名人档案,地方人文,野史奇闻",
-            "tracks": 9,
-            "playsCounts": 3486,
+            "albumId": 393931,
+            "coverLarge": "http://fdfs.xmcdn.com/group6/M03/62/5C/wKgDg1U54XejCvptAAFz1oJ1IE4251_mobile_large.jpg",
+            "title": "国家人文历史",
+            "tags": "人物传记,历史,人物",
+            "tracks": 45,
+            "playsCounts": 1606657,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9364780,
-            "trackTitle": "创业为什么要找对目标"
+            "trackId": 9398004,
+            "trackTitle": "张爱玲为何选择不当母亲"
           }
         ]
       },
@@ -450,40 +447,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 362175,
-            "coverLarge": "http://fdfs.xmcdn.com/group6/M07/AA/E9/wKgDhFULCCzzGsDtAACI9eLDEhI806_mobile_large.jpg",
-            "title": "小余老师说",
-            "tags": "培训讲座",
-            "tracks": 35,
-            "playsCounts": 1256094,
+            "albumId": 412677,
+            "coverLarge": "http://fdfs.xmcdn.com/group9/M01/42/F4/wKgDYlWknrbRvWfaAAMldOgu_sM875_mobile_large.jpg",
+            "title": "【快学不倦】5分钟职场微培训",
+            "tags": "职场,培训,发展",
+            "tracks": 75,
+            "playsCounts": 583044,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9353978,
-            "trackTitle": "雷锋真的是好榜样吗？"
+            "trackId": 9323554,
+            "trackTitle": "经理给我穿小鞋，怎么破？"
           },
           {
-            "albumId": 431574,
-            "coverLarge": "http://fdfs.xmcdn.com/group15/M06/34/34/wKgDZVWTfefh7eneAADC1TO1J4k057_mobile_large.jpg",
-            "title": "无忧职场说",
-            "tags": "涨姿势,脱口秀,职场",
-            "tracks": 43,
-            "playsCounts": 219590,
+            "albumId": 389178,
+            "coverLarge": "http://fdfs.xmcdn.com/group6/M0B/61/A9/wKgDg1U5uV3gznnuAAMp_F3zAHI016_mobile_large.jpg",
+            "title": "科技 未来",
+            "tags": "培训讲座",
+            "tracks": 17,
+            "playsCounts": 83507,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9233031,
-            "trackTitle": "面试拷问：一场堪比谍战的表演"
+            "trackId": 9160974,
+            "trackTitle": "智能电网，改变你我的生活"
           },
           {
-            "albumId": 327608,
-            "coverLarge": "http://fdfs.xmcdn.com/group6/M00/5D/B2/wKgDhFU5va2Ae9bYAAK6ySXJjko098_mobile_large.jpg",
-            "title": "人文 艺术",
-            "tags": "培训讲座",
-            "tracks": 28,
-            "playsCounts": 54304,
+            "albumId": 2778818,
+            "coverLarge": "http://fdfs.xmcdn.com/group15/M02/47/3D/wKgDZVWn_NagZRjpAALqXOuziII075_mobile_large.jpg",
+            "title": "职场碰碰车",
+            "tags": "职场,工作,碰撞",
+            "tracks": 5,
+            "playsCounts": 10689,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 8478127,
-            "trackTitle": "简里里：抑郁的价值"
+            "trackId": 9229832,
+            "trackTitle": "那些怕老板的人到底在怕什么"
           }
         ]
       },
@@ -496,40 +493,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 3054974,
-            "coverLarge": "http://fdfs.xmcdn.com/group10/M03/82/48/wKgDaVYarrKxFvW9AAVwXlVkLEc082_mobile_large.jpg",
-            "title": "恨吞天下",
-            "tags": "广播剧",
-            "tracks": 1,
-            "playsCounts": 34619,
+            "albumId": 3063591,
+            "coverLarge": "http://fdfs.xmcdn.com/group8/M05/84/66/wKgDYFYeCDLyKx57AAcKDu77XZc465_mobile_large.png",
+            "title": "只有你听到",
+            "tags": "现代剧,校园言情,纯爱漫画",
+            "tracks": 2,
+            "playsCounts": 3649,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9211356,
-            "trackTitle": "为中国七千万留守儿童而作"
+            "trackId": 8750009,
+            "trackTitle": "三个极富治愈效果的短篇故事"
           },
           {
-            "albumId": 3054144,
-            "coverLarge": "http://fdfs.xmcdn.com/group7/M0A/82/AC/wKgDX1YaZfmxRERsAAIPoP-gdwQ364_mobile_large.jpg",
-            "title": "【KA.U】校园灵异耽美剧《水滴声声》",
-            "tags": "现代剧,耽美剧",
+            "albumId": 3065341,
+            "coverLarge": "http://fdfs.xmcdn.com/group15/M0A/84/9D/wKgDaFYeaWayt1DqAAC3DAbMzKE723_mobile_large.jpg",
+            "title": "缠绵往事",
+            "tags": "CV剧,现代剧",
             "tracks": 1,
-            "playsCounts": 1761,
+            "playsCounts": 1139,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9207883,
-            "trackTitle": "到底是情人之泪，还是冤魂哭泣"
+            "trackId": 9266501,
+            "trackTitle": "一段往事，带你走进灵异的世界"
           },
           {
-            "albumId": 3049992,
-            "coverLarge": "http://fdfs.xmcdn.com/group11/M02/75/04/wKgDa1YZDiGCKh1gAATS8aOpY2c690_mobile_large.jpg",
-            "title": "【龙音社】超大阵容仙侠古风短剧《龙人传说》",
+            "albumId": 3063981,
+            "coverLarge": "http://fdfs.xmcdn.com/group12/M04/83/D9/wKgDXFYeNGKihvpqAAD0GYDwY5E164_mobile_large.jpg",
+            "title": "落花时节又逢君",
             "tags": "古风剧",
             "tracks": 2,
-            "playsCounts": 2295,
+            "playsCounts": 6013,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 2221631,
-            "trackTitle": "超大阵容仙侠古风短剧"
+            "trackId": 9260205,
+            "trackTitle": "我欲渡你成仙，却被你渡成了人"
           }
         ]
       },
@@ -542,40 +539,40 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 2770131,
-            "coverLarge": "http://fdfs.xmcdn.com/group14/M01/5F/00/wKgDZFXRc86SBlX_AAdc_LdTESA262_mobile_large.jpg",
-            "title": "【4岁+】芭比公主系列故事",
-            "tags": "儿童",
-            "tracks": 13,
-            "playsCounts": 953412,
+            "albumId": 257813,
+            "coverLarge": "http://fdfs.xmcdn.com/group5/M01/63/36/wKgDtVOygRLTfiE4AATGSSgr1kA848_mobile_large.jpg",
+            "title": "【一千零一夜】睡前故事",
+            "tags": "儿童故事,童话,睡觉故事",
+            "tracks": 408,
+            "playsCounts": 99735182,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9294496,
-            "trackTitle": "【芭比故事】拯救群星之旅"
+            "trackId": 9358752,
+            "trackTitle": "【飞飞姐姐】三只小猪盖房子"
           },
           {
-            "albumId": 260744,
-            "coverLarge": "http://fdfs.xmcdn.com/group4/M05/9F/82/wKgDs1PeOaLRV-XVAAcOTv16ohg714_mobile_large.jpg",
-            "title": "晚安妈妈睡前故事",
-            "tags": "儿童教育,睡前故事,儿童故事",
-            "tracks": 103,
-            "playsCounts": 2370029,
+            "albumId": 2897220,
+            "coverLarge": "http://fdfs.xmcdn.com/group10/M00/73/A6/wKgDZ1X9afnxFpDjAAH9vHmdZGg128_mobile_large.jpg",
+            "title": "德国亲子成长小百科",
+            "tags": "儿童故事,胎教,学前教育",
+            "tracks": 15,
+            "playsCounts": 811993,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 8145094,
-            "trackTitle": "【晚安妈妈】小时候的夏天"
+            "trackId": 9389172,
+            "trackTitle": "【成长小百科】我不怕换牙"
           },
           {
-            "albumId": 3049464,
-            "coverLarge": "http://fdfs.xmcdn.com/group13/M04/82/26/wKgDXVYY9BrgHQ2qAAVrrypzw50944_mobile_large.jpg",
-            "title": "双子爸爸的超级西游记",
-            "tags": "Michael钱儿爸爸,木朵爸爸,西游记",
-            "tracks": 8,
-            "playsCounts": 699300,
+            "albumId": 366486,
+            "coverLarge": "http://fdfs.xmcdn.com/group7/M03/76/A5/wKgDWlYCSY6jnMtaAAKJylNanGo855_mobile_large.jpg",
+            "title": "晶晶姐姐讲故事（原创视频）每日更新",
+            "tags": "儿童故事,睡前故事,讲故事",
+            "tracks": 235,
+            "playsCounts": 192259,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9358124,
-            "trackTitle": "【超级西游记】如意金箍棒出世"
+            "trackId": 9044193,
+            "trackTitle": "【晶晶姐姐讲故事】冰激凌宫殿"
           }
         ]
       },
@@ -588,40 +585,40 @@
         "hasMore": true,
         "list": [
           {
+            "albumId": 262212,
+            "coverLarge": "http://fdfs.xmcdn.com/group14/M06/46/17/wKgDY1WnHOiSlIV-ACAvhZ9T2sQ835_mobile_large.png",
+            "title": "潘吉Jenny告诉你--学英语聊美国",
+            "tags": "外语,白领,美国",
+            "tracks": 107,
+            "playsCounts": 790526,
+            "isFinished": 0,
+            "serialState": 0,
+            "trackId": 9401153,
+            "trackTitle": "怎么听懂印度口音？"
+          },
+          {
             "albumId": 2909250,
             "coverLarge": "http://fdfs.xmcdn.com/group13/M07/66/51/wKgDXVXf0Hzyk5aoAAPwlxbh7ZU207_mobile_large.jpg",
             "title": "英语啪啪啪，爆笑学口语",
             "tags": "外语,脱口秀,口语",
-            "tracks": 42,
-            "playsCounts": 621172,
+            "tracks": 43,
+            "playsCounts": 649223,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9373328,
-            "trackTitle": "英语学习方法我只说一遍！"
-          },
-          {
-            "albumId": 2897088,
-            "coverLarge": "http://fdfs.xmcdn.com/group10/M07/70/2C/wKgDaVX2fQCShE56AAF2wN7b9LY912_mobile_large.jpg",
-            "title": "念念电台-女神經带你念念英文",
-            "tags": "外语,电台,英文歌",
-            "tracks": 40,
-            "playsCounts": 450496,
-            "isFinished": 0,
-            "serialState": 0,
-            "trackId": 9364189,
-            "trackTitle": "听了这节目心情太好啦！"
+            "trackId": 9395430,
+            "trackTitle": "你你你，你啥意思？"
           },
           {
             "albumId": 322417,
             "coverLarge": "http://fdfs.xmcdn.com/group5/M07/22/AD/wKgDtlSqSUyhUwKxAAemW9j_Yxw622_mobile_large.jpg",
             "title": "英语新闻脱口秀2015",
             "tags": "英语新闻,时事,外语",
-            "tracks": 196,
-            "playsCounts": 2537873,
+            "tracks": 197,
+            "playsCounts": 2560897,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9354357,
-            "trackTitle": "情趣用品热销！中国人好开放！"
+            "trackId": 9400340,
+            "trackTitle": "老人索要“带孙费”应该吗？"
           }
         ]
       },
@@ -634,36 +631,36 @@
         "hasMore": true,
         "list": [
           {
-            "albumId": 3056408,
-            "coverLarge": "http://fdfs.xmcdn.com/group9/M09/83/EA/wKgDYlYeCrzjl3D4AAgXvjYu-h8609_mobile_large.png",
-            "title": "英雄联盟",
-            "tags": "游戏广播",
-            "tracks": 4,
-            "playsCounts": 25124,
+            "albumId": 2906686,
+            "coverLarge": "http://fdfs.xmcdn.com/group7/M09/66/21/wKgDX1Xe4NbAurHdAABVXV2YH5A496_mobile_large.jpg",
+            "title": "LOL那些事",
+            "tags": "游戏",
+            "tracks": 17,
+            "playsCounts": 18504,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9294547,
-            "trackTitle": "辣个拎着斧子追你八条街的男人"
+            "trackId": 9393937,
+            "trackTitle": "克隆作战大攻略"
           },
           {
             "albumId": 2760750,
             "coverLarge": "http://fdfs.xmcdn.com/group9/M09/42/B6/wKgDYlWjt_uBXW2JAAXJKSXnb3w750_mobile_large.jpg",
             "title": "游戏联萌",
             "tags": "游戏",
-            "tracks": 148,
-            "playsCounts": 3047879,
+            "tracks": 151,
+            "playsCounts": 3079572,
             "isFinished": 0,
             "serialState": 0,
-            "trackId": 9338728,
-            "trackTitle": "游戏中的爱情"
+            "trackId": 9384320,
+            "trackTitle": "玩个游戏玩成了备胎"
           },
           {
             "albumId": 2732742,
             "coverLarge": "http://fdfs.xmcdn.com/group15/M06/3E/14/wKgDaFWemReRaB0WAAOjlsGP4WU852_mobile_large.jpg",
             "title": "萌神带你飞",
             "tags": "游戏广播,游戏音乐,神吐槽",
-            "tracks": 40,
-            "playsCounts": 494587,
+            "tracks": 41,
+            "playsCounts": 499153,
             "isFinished": 0,
             "serialState": 0,
             "trackId": 9338684,
@@ -673,62 +670,62 @@
       }
     ]
   },
-  //头部viewpager
   "focusImages": {
     "ret": 0,
     "list": [
       {
-        "id": 4791,
-        "shortTitle": "苏得一抖的10个虐恋广播剧",
-        "longTitle": "苏得一抖的10个虐恋广播剧",
-        "pic": "http://fdfs.xmcdn.com/group14/M0A/88/A7/wKgDZFYmFcLgyMbqAAGl4wrzmwI901_android_large.jpg",
-        "type": 9,
-        "specialId": 408,
-        "subType": 2,
+        "id": 4803,
+        "shortTitle": "后代太放浪，传世佳作被逼问世",
+        "longTitle": "后代太放浪，传世佳作被逼问世",
+        "pic": "http://fdfs.xmcdn.com/group7/M06/89/B2/wKgDX1YnYCHzvag3AAIoDepSnPg420_android_large.jpg",
+        "type": 3,
+        "uid": 1389489,
+        "trackId": 9297041,
         "isShare": false,
         "is_External_url": false
       },
       {
-        "id": 4790,
-        "shortTitle": "扶老人险才3块",
-        "longTitle": "扶老人险才3块",
-        "pic": "http://fdfs.xmcdn.com/group16/M06/88/A9/wKgDbFYmEGXh_B64AAHIfsKkZvI002_android_large.jpg",
+        "id": 4804,
+        "shortTitle": "购物出人命，香港游怎么了",
+        "longTitle": "购物出人命，香港游怎么了",
+        "pic": "http://fdfs.xmcdn.com/group8/M08/89/98/wKgDYVYnYLiC6t4dAAFmwYP1KGo368_android_large.jpg",
         "type": 2,
         "uid": 30495264,
-        "albumId": 3086917,
+        "albumId": 3091287,
         "isShare": false,
         "is_External_url": false
       },
       {
-        "id": 4768,
-        "shortTitle": "比亚迪（3首页广告 1020）",
-        "longTitle": "比亚迪（3首页广告 1020）",
-        "pic": "http://fdfs.xmcdn.com/group15/M01/87/DC/wKgDaFYksh2Q19f9AAGNt6nm-Kg508_android_large.jpg",
-        "type": 4,
-        "url": "http://mall.bydauto.com.cn/index.php/drive/index/tang/memo/ximalaya/",
+        "id": 4769,
+        "shortTitle": "迈锐宝（3首页广告 1021）",
+        "longTitle": "迈锐宝（3首页广告 1021）",
+        "pic": "http://fdfs.xmcdn.com/group7/M07/88/24/wKgDWlYksprztcSGAAGAzuNQNms650_android_large.jpg",
+        "type": 10,
+        "url": "http://e.cn.miaozhen.com/r/k=2012898&p=6wppm&ro=sm&dx=0&rt=2&ns={IP}&ni=__IESID__&v=__LOC__&nd=__DRA__&np=__POS__&nn=__APP__&vo=3e0ec62cc&vr=2&o=http://m.chevrolet.com.cn/v2/malibu/?utm_source=ximalaya-M&utm_medium=HS-201509068_MOB66-2_55292735&utm_content=SGMMRK2015000294&utm_campaign=SP-CH1501223_55292735",
+        "third_url": "http://g.cn.miaozhen.com/x/k=2012898&p=6wppm&dx=0&rt=2&ns={IP}&ni=__IESID__&v=__LOC__&nd=__DRA__&np=__POS__&nn=__APP__&o=",
         "isShare": false,
         "is_External_url": true
       },
       {
-        "id": 4792,
-        "shortTitle": "万一单身一辈子，照样活的精彩！",
-        "longTitle": "万一单身一辈子，照样活的精彩！",
-        "pic": "http://fdfs.xmcdn.com/group12/M01/88/3C/wKgDW1YmFk-Qio3DAAGbEgmZ6BM067_android_large.jpg",
+        "id": 4805,
+        "shortTitle": "浮夸是种病，得治！",
+        "longTitle": "浮夸是种病，得治！",
+        "pic": "http://fdfs.xmcdn.com/group7/M01/89/A9/wKgDWlYnYWfB4VR0AAH7mSu83qw624_android_large.jpg",
         "type": 3,
-        "uid": 1014665,
-        "trackId": 9289211,
+        "uid": 4834063,
+        "trackId": 9256050,
         "isShare": false,
         "is_External_url": false
       },
       {
-        "id": 4789,
-        "shortTitle": "魅族发布会（首页合作图）",
-        "longTitle": "魅族发布会（首页合作图）",
-        "pic": "http://fdfs.xmcdn.com/group16/M0A/88/A9/wKgDbFYmDrrCceKcAAEzdLKQVf0559_android_large.jpg",
+        "id": 4806,
+        "shortTitle": "炒股其实很简单",
+        "longTitle": "炒股其实很简单",
+        "pic": "http://fdfs.xmcdn.com/group10/M07/88/F8/wKgDZ1YnYbaAn9C4AAPcFx3UTwI149_android_large.jpg",
         "type": 4,
-        "url": "http://m.ximalaya.com/xlive/18",
-        "isShare": true,
-        "is_External_url": false
+        "url": "http://dwz.cn/241a01",
+        "isShare": false,
+        "is_External_url": true
       },
       {
         "id": 4745,
@@ -741,24 +738,24 @@
         "is_External_url": true
       },
       {
-        "id": 4793,
-        "shortTitle": "空战之父“波爷”：德国人有多怕他？",
-        "longTitle": "空战之父“波爷”：德国人有多怕他？",
-        "pic": "http://fdfs.xmcdn.com/group15/M05/88/A2/wKgDaFYmFqGS6f0uAAFiX5xE0Nw616_android_large.jpg",
+        "id": 4808,
+        "shortTitle": "太监是如何炼成的……",
+        "longTitle": "太监是如何炼成的……",
+        "pic": "http://fdfs.xmcdn.com/group8/M06/89/9A/wKgDYVYnYkjzbNB2AAJUiQt-wu0568_android_large.jpg",
         "type": 3,
-        "uid": 19269846,
-        "trackId": 9240040,
+        "uid": 1000241,
+        "trackId": 9312950,
         "isShare": false,
         "is_External_url": false
       },
       {
-        "id": 4639,
-        "shortTitle": "青春是一场毁灭的虐恋（小说）",
-        "longTitle": "青春是一场毁灭的虐恋（小说）",
-        "pic": "http://fdfs.xmcdn.com/group16/M01/87/FD/wKgDbFYkzSGDQMGrAAPeByPvVT8388_android_large.jpg",
-        "type": 2,
-        "uid": 21900198,
-        "albumId": 2866405,
+        "id": 4801,
+        "shortTitle": "重阳节",
+        "longTitle": "重阳节",
+        "pic": "http://fdfs.xmcdn.com/group16/M01/89/23/wKgDbFYnCyTRlof6AAHuqrb1rtI717_android_large.jpg",
+        "type": 9,
+        "specialId": 409,
+        "subType": 2,
         "isShare": false,
         "is_External_url": false
       }
@@ -766,8 +763,6 @@
     "title": "焦点图"
   },
   "msg": "成功",
-
-  //精品听单
   "specialColumn": {
     "ret": 0,
     "title": "精品听单",
@@ -775,20 +770,20 @@
     "list": [
       {
         "columnType": 1,
+        "specialId": 289,
+        "title": "社交必备7本说话利器",
+        "subtitle": "让本来就讨人喜欢的你，更讨人喜欢\r\n",
+        "footnote": "7张专辑",
+        "coverPath": "http://fdfs.xmcdn.com/group6/M09/74/5F/wKgDg1U-9J6BhKC2AAGyb9CziWk197_mobile_small.jpg",
+        "contentType": "1"
+      },
+      {
+        "columnType": 1,
         "specialId": 341,
         "title": "10首一听就沦陷的翻唱歌曲",
         "subtitle": "不是每首歌只有一种演绎，\r\n一样的曲，不一样的声音，全新的灵魂",
         "footnote": "10首声音",
         "coverPath": "http://fdfs.xmcdn.com/group15/M0A/49/59/wKgDaFWsxeiwY96kAAG65jaPa5Q193_mobile_small.jpg",
-        "contentType": "2"
-      },
-      {
-        "columnType": 1,
-        "specialId": 407,
-        "title": "6大魔幻小说遇上传统评书",
-        "subtitle": "当魔幻小说与传统评书进行碰撞；当霍比特人走进了传统书馆；当炼金术士被搬上了相声舞台……你还有什么不能期待？！\r\n\r\n论相声观众的自我修养：与时俱进听相声！\r\n",
-        "footnote": "6首声音",
-        "coverPath": "http://fdfs.xmcdn.com/group8/M08/85/C7/wKgDYFYg0sGjHosoAAFm3QF8YhI264_mobile_small.jpg",
         "contentType": "2"
       }
     ]

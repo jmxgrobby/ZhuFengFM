@@ -20,7 +20,7 @@ public class DiscoverRecommendTask extends BaseTask{
 
     @Override
     protected TaskResult doInBackground(String... params) {
-        TaskResult ret = null;
+        TaskResult ret = new TaskResult();
         ret.action = Configs.TASK_ACTION_DISCOVER_RECOMMENDS;
         JSONObject jsonObject = ClientAPI.getDiscoverRecommend("and-f6", true, true);
 
@@ -28,7 +28,7 @@ public class DiscoverRecommendTask extends BaseTask{
             try {
                 ret.resultCode = jsonObject.getInt("ret");
                 //解析数据
-                ret.data = EntityParseUtils.parseDiscovrRecommend(jsonObject);
+                ret.data = EntityParseUtils.parseDiscoverRecomments(jsonObject);
             } catch (JSONException e) {
                 e.printStackTrace();
             }

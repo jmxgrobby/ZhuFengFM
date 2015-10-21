@@ -7,13 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ListView;
 import com.jmxgrobby.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.DiscoverCategory;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.BaseFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.DiscoverCategoryTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +25,7 @@ import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
 public class DiscoverCategoryFragment extends BaseFragment implements TaskCallback {
 
 
+    private ListView listView;
     public DiscoverCategoryFragment() {
         // Required empty public constructor
     }
@@ -36,7 +41,9 @@ public class DiscoverCategoryFragment extends BaseFragment implements TaskCallba
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_discover_category, container, false);
+        View view =inflater.inflate(R.layout.fragment_discover_category, container, false);
+        listView = (ListView) view.findViewById(R.id.discover_categoryfragment_listview);
+        return view;
     }
 
 
@@ -53,7 +60,9 @@ public class DiscoverCategoryFragment extends BaseFragment implements TaskCallba
                 // TODO 结果从发现 - 分类 任务中返回的，获取的就是分类
                 if(result.resultCode==Configs.TASK_RESULT_OK){
                     // TODO 加载成功
-                    MyLog.d("测试","成功");
+//                    List<DiscoverCategory> list = (List<DiscoverCategory>) result.data;
+//                    int length = list.size();
+//                    int sum = length/6;
                 }else {
                     // TODO 加载失败
                     MyLog.d("测试","失败");

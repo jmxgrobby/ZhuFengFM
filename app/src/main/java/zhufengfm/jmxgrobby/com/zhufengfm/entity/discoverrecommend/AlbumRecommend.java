@@ -10,6 +10,10 @@ import zhufengfm.jmxgrobby.com.zhufengfm.entity.AlbumBasic;
  * Email: jmxgrobby@163.com
  * Date: 15-10-21
  */
+
+/**
+ * 发现推荐内部一个专辑推荐，组合成一个“小编推荐”
+ */
 public class AlbumRecommend extends AlbumBasic{
     /*
     {
@@ -18,7 +22,6 @@ public class AlbumRecommend extends AlbumBasic{
         "serialState": 0,
         "playsCounts": 133347,
         "isFinished": 0,
-
         "trackId": 9333769,
         "trackTitle": "3D:睡不着就听听星夜的声音"
         }
@@ -28,6 +31,38 @@ public class AlbumRecommend extends AlbumBasic{
     private int isFinished;
     private long trackId;
     private String trackTitle;
+
+    public long getPlayCounts() {
+        return playCounts;
+    }
+
+    public void setPlayCounts(long playCounts) {
+        this.playCounts = playCounts;
+    }
+
+    public int getIsFinished() {
+        return isFinished;
+    }
+
+    public void setIsFinished(int isFinished) {
+        this.isFinished = isFinished;
+    }
+
+    public long getTrackId() {
+        return trackId;
+    }
+
+    public void setTrackId(long trackId) {
+        this.trackId = trackId;
+    }
+
+    public String getTrackTitle() {
+        return trackTitle;
+    }
+
+    public void setTrackTitle(String trackTitle) {
+        this.trackTitle = trackTitle;
+    }
 
     public void parseJSON(JSONObject jsonObject){
         super.parseJSON(jsonObject);

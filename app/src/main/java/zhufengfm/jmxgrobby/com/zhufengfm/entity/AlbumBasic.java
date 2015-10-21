@@ -21,6 +21,7 @@ public class AlbumBasic {
      * coverLarge : http://fdfs.xmcdn.com/group16/M01/7A/D3/wKgDbFYKqqHCamtQAAIv621_oBE247_mobile_large.jpg
      * title : 3D环绕音乐
      * tracks : 75
+     * trackTitle
      */
 
     private long albumId;
@@ -29,6 +30,10 @@ public class AlbumBasic {
     private long tracks;
     private String tags;
 
+
+
+
+
     public void parseJSON(JSONObject json){
         if (json != null) {
             try {
@@ -36,7 +41,7 @@ public class AlbumBasic {
                 coverLarge = json.getString("coverLarge");
                 title = json.getString("title");
                 tracks = json.getLong("tracks");
-                tags = json.getString("tags");
+                tags = json.optString("tags");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
