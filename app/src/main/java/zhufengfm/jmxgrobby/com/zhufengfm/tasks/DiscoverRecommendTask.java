@@ -1,6 +1,12 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.tasks;
 
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
+import zhufengfm.jmxgrobby.com.zhufengfm.client.ClientAPI;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.EntityParseUtils;
+
 /**
  * Created
  * Author: jmxgrobby
@@ -14,6 +20,19 @@ public class DiscoverRecommendTask extends BaseTask{
 
     @Override
     protected TaskResult doInBackground(String... params) {
-        return null;
+        TaskResult ret = null;
+        ret.action = Configs.TASK_ACTION_DISCOVER_RECOMMENDS;
+        JSONObject jsonObject = ClientAPI.getDiscoverRecommend("and-f6", true, true);
+
+        if (jsonObject != null) {
+            try {
+                ret.resultCode = jsonObject.getInt("ret");
+                //解析数据
+                ret.data = EntityParseUtils.parseDiscovrRecommend(jsonObject);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        return ret;
     }
 }

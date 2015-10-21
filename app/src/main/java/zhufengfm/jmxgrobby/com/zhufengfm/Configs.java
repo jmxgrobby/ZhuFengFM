@@ -21,4 +21,5 @@ public class Configs {
 
     //是否为开发版本
     public static final boolean  ISDEBUG = true;
+    public static final int TASK_ACTION_DISCOVER_RECOMMENDS = 2;
 }

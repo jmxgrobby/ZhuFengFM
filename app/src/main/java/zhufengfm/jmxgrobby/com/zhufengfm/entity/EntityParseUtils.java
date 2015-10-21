@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommenItem;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -50,5 +51,9 @@ public class EntityParseUtils {
 
         }
         return ret;
+    }
+
+    public static List<DiscoverRecommenItem> parseDiscovrRecommend(JSONObject jsonObject) {
+        return null;
     }
 }
