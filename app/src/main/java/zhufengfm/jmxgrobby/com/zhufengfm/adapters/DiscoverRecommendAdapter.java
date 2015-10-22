@@ -6,15 +6,13 @@ import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import com.lidroid.xutils.bitmap.core.BitmapSize;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.*;
+import zhufengfm.jmxgrobby.com.zhufengfm.widgets.SpecialItemView;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -31,6 +29,11 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
     private List<DiscoverRecommenItem> list;
     private BitmapUtils bitmapUtils;
     private BitmapDisplayConfig config;
+    private View.OnClickListener onClickListener;
+
+    public void setOnClickListener(View.OnClickListener onClickListener){
+        this.onClickListener = onClickListener;
+    }
 
     public DiscoverRecommendAdapter(Context context, List<DiscoverRecommenItem> list) {
         this.context = context;
@@ -89,6 +92,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
         return ret;
     }
 
+
     /**
      * 加载 专辑推荐的Item 小编推荐 入门推荐爱你
      * @param position
@@ -107,6 +111,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
         if(holder==null){
             holder = new AlbumViewHolder();
             holder.txtMore = (TextView) ret.findViewById(R.id.recommend_album_more);
+            holder.txtMore.setOnClickListener(onClickListener);
             holder.txtTitle = (TextView) ret.findViewById(R.id.recommend_album_title);
 
             holder.albumIcons = new ImageView[3];
@@ -117,7 +122,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
                 holder.albumIcons[i] = (ImageView) findView(ret,"recommend_album_icon_"+i);
                 holder.albumNames[i] = (TextView) findView(ret,"recommend_album_name_"+i);
                 holder.trackNames[i] = (TextView) findView(ret,"recommend_album_track_"+i);
-
+                holder.albumIcons[i].setOnClickListener(onClickListener);
             }
 
             ret.setTag(holder);
@@ -125,14 +130,8 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
        //3 获取内容
         DiscoverRecommendAlbums albums = (DiscoverRecommendAlbums) list.get(position);
         holder.txtTitle.setText(albums.getTitle());
+        holder.txtMore.setTag(position);
 
-
-        holder.txtMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context,"点击了更多",Toast.LENGTH_SHORT).show();
-            }
-        });
 
         if(!albums.isHasMore())
             holder.txtMore.setVisibility(View.INVISIBLE);
@@ -142,12 +141,8 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
             holder.albumNames[i].setText(recommend.getTitle());
             holder.trackNames[i].setText(recommend.getTrackTitle());
             bitmapUtils.display(holder.albumIcons[i], recommend.getCoverLarge(), config);
-            holder.albumIcons[i].setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(context,"点击了"+recommend.getTitle(),Toast.LENGTH_SHORT).show();
-                }
-            });
+            String tag = position +":"+i;
+            holder.albumIcons[i].setTag(tag);
         }
         return ret;
     }
@@ -204,14 +199,68 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
      *  精品听单
      * @param position
      * @param contentView
-     * @param viewGroup
+     * @param parent
      * @return
      */
-    private View bindSpecialView(int position,View contentView,ViewGroup viewGroup){
+    private View bindSpecialView(int position,View contentView,ViewGroup parent){
         View ret = null;
+        if(contentView!=null)
+            ret = contentView;
+        else{
+            ret = LayoutInflater.from(context)
+                    .inflate(R.layout.discover_recommend_speial_item
+                            , parent, false);
+
+        }
+        SpecialViewHolder holder = (SpecialViewHolder) ret.getTag();
+        if (holder == null) {
+            holder = new SpecialViewHolder();
+            holder.txtMore = (TextView) ret.findViewById(R.id.recommend_special_more);
+            holder.txtTitle = (TextView) ret.findViewById(R.id.recommend_special_title);
+            holder.itemContainer = (LinearLayout) ret.findViewById(R.id.recommend_special_layout);
+            ret.setTag(holder);
+        }
+        //获取数据 显示数据
+        DiscoverRecommendSpecial item = (DiscoverRecommendSpecial) list.get(position);
+        holder.txtTitle.setText(item.getTitle());
+        if(!item.isHasMore())
+            holder.txtMore.setVisibility(View.INVISIBLE);
+        // 清空旧的LinearLayout数据，根据听单的item来添加
+        holder.itemContainer.removeAllViews();
+        List<SpecialItem> datas = item.getDatas();
+        if(datas!=null){
+            int index =-1;
+            int itemCount = datas.size();
+            for (SpecialItem specialItem : datas) {
+                index++;
+                SpecialItemView itemView = new SpecialItemView(context);
+
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT
+                        , ViewGroup.LayoutParams.WRAP_CONTENT);
+                itemView.setLayoutParams(params);
+
+                holder.itemContainer.addView(itemView);
+                //设置听单的内容
+                itemView.setTitle(specialItem.getTitle());
+                itemView.setSubTitle(specialItem.getSubtitle());
+                itemView.setNumber(specialItem.getFootnote());
+                itemView.showBottomLine(true);
+                itemView.setImageBitmap(bitmapUtils,specialItem.getCoverPath());
+                if(index==itemCount-1){
+                    itemView.showBottomLine(false);
+                }
+
+            }
+        }
         return ret;
     }
 
+    private static class SpecialViewHolder{
+        public TextView txtTitle;
+        public TextView txtMore;
+        //存储SpecialItemView
+         public LinearLayout itemContainer;
+    }
 
     @Override
     public int getViewTypeCount() {

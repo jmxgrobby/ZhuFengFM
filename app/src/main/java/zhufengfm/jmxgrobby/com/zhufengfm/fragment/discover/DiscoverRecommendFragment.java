@@ -6,11 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.jmxgrobby.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.adapters.DiscoverRecommendAdapter;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.AlbumRecommend;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommenItem;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendAlbums;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.BaseFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.DiscoverRecommendTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
@@ -18,7 +21,7 @@ import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DiscoverRecommendFragment extends BaseFragment implements TaskCallback {
+public class DiscoverRecommendFragment extends BaseFragment implements TaskCallback, View.OnClickListener {
 
 
     private DiscoverRecommendAdapter adapter;
@@ -34,6 +37,7 @@ public class DiscoverRecommendFragment extends BaseFragment implements TaskCallb
         super.onCreate(savedInstanceState);
         list = new LinkedList<>();
         adapter = new DiscoverRecommendAdapter(getActivity(), list);
+        adapter.setOnClickListener(this);
     }
 
     @Override
@@ -90,5 +94,19 @@ public class DiscoverRecommendFragment extends BaseFragment implements TaskCallb
             }
         }
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        Object tag = v.getTag();
+        if(tag instanceof  String){
+            String[] strings = ((String) tag).split(":");
+            DiscoverRecommendAlbums item = (DiscoverRecommendAlbums) list.get(Integer.parseInt(strings[0]));
+            AlbumRecommend albumRecommend = item.getList().get(Integer.parseInt(strings[1]));
+            Toast.makeText(getActivity(), "点击了" + albumRecommend.getTitle(), Toast.LENGTH_SHORT).show();
+        }else if(tag instanceof  Integer){
+            DiscoverRecommendAlbums item = (DiscoverRecommendAlbums) list.get((int) tag);
+            Toast.makeText(getActivity(), "点击了更多" + item.getTitle(), Toast.LENGTH_SHORT).show();
+        }
     }
 }

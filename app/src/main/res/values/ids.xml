@@ -4,4 +4,5 @@
     <item  type="id" name="special_item_icon" />
     <item type="id"  name="special_item_title"/>
     <item type="id"  name="special_item_subTitle"/>
-</resources>
+    <item type="id"  name="special_item_number"
+/></resources>

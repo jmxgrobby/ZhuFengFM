@@ -2,25 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\Androidstidio\AndroidStdiosdk1\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-5dc05a0c5ef199f8ba3fa92d5c349c38861aa6ca.jar" />
-    </item>
-    <item
         jar="E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
         <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\classes-750403bcbc4cfad445ac958fe1add4e03e3b00c6.jar" />
-    </item>
-    <item
-        jar="E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\classes-df32d38066720fec3589038c3387f323048ee741.jar" />
     </item>
     <item
         jar="E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
@@ -42,6 +28,20 @@
         revision="23.0.1"
         sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
         <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14-6e3c27b3ac22366e6e10bfde26ee864bd612cfd0.jar" />
+    </item>
+    <item
+        jar="D:\Androidstidio\AndroidStdiosdk1\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-5dc05a0c5ef199f8ba3fa92d5c349c38861aa6ca.jar" />
+    </item>
+    <item
+        jar="E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="E:\studio_workspace\ZhuFengFM\app\build\intermediates\pre-dexed\debug\classes-df32d38066720fec3589038c3387f323048ee741.jar" />
     </item>
 
 </items>

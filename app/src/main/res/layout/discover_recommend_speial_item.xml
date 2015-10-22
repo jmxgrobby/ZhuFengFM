@@ -16,9 +16,10 @@
             android:text="更多"
             />
     <LinearLayout
+            android:id="@+id/recommend_special_layout"
             android:layout_below="@id/recommend_special_more"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             ></LinearLayout>
 </RelativeLayout>

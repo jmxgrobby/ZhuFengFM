@@ -12,6 +12,11 @@ import java.util.List;
  */
 public class DiscoverRecommendSpecial extends DiscoverRecommenItem {
     List<SpecialItem> datas ;
+
+    public List<SpecialItem> getDatas() {
+        return datas;
+    }
+
     @Override
     public void parseJSON(JSONObject json) {
         super.parseJSON(json);
