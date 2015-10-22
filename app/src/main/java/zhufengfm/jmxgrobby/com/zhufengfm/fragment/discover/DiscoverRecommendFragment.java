@@ -42,7 +42,7 @@ public class DiscoverRecommendFragment extends BaseFragment implements TaskCallb
         // Inflate the layout for this fragment
         View inflate = inflater.inflate(R.layout.fragment_discover_recommend, container, false);
         listview = (ListView) inflate.findViewById(R.id.discover_recommend_listview);
-        listview.setEnabled(false);
+        //listview.setEnabled(false);
         listview.setAdapter(adapter);
         return inflate;
     }
