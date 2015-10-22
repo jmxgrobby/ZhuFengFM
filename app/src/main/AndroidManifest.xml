@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="zhufengfm.jmxgrobby.com.zhufengfm" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,8 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- android:configChanges="orientation|keyboardHidden|screenSize"
-        这句话可以在横竖屏切换的时候不销毁Activity-->
+        <!--
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        这句话可以在横竖屏切换的时候不销毁Activity
+        -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -28,6 +31,10 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name=".AlbumDetailActivity"
+            android:label="@string/title_activity_album_detail" >
         </activity>
     </application>
 

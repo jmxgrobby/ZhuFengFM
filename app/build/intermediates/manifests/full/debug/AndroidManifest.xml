@@ -38,6 +38,10 @@
             android:name="zhufengfm.jmxgrobby.com.zhufengfm.WelcomeActivity"
             android:label="@string/title_activity_welcome" >
         </activity>
+        <activity
+            android:name="zhufengfm.jmxgrobby.com.zhufengfm.AlbumDetailActivity"
+            android:label="@string/title_activity_album_detail" >
+        </activity>
     </application>
 
 </manifest>

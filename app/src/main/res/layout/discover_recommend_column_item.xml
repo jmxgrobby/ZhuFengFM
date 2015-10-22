@@ -3,27 +3,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
     <TextView
-            android:id="@+id/recommend_special_title"
+            android:id="@+id/recommend_column_title"
             android:drawableLeft="@mipmap/finding_title_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="精品听单"
+            android:text="发现新奇"
             android:gravity="center"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             />
-    <TextView
-            android:id="@+id/recommend_special_more"
-            android:paddingRight="5dp"
-            android:paddingTop="5dp"
-            android:text="更多"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
     <LinearLayout
-            android:id="@+id/recommend_special_layout"
-            android:layout_below="@id/recommend_special_more"
+            android:id="@+id/recommend_column_layout"
+            android:layout_below="@id/recommend_column_title"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

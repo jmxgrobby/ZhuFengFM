@@ -7,11 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import com.jmxgrobby.utils.MyLog;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import com.lidroid.xutils.bitmap.core.BitmapSize;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.*;
+import zhufengfm.jmxgrobby.com.zhufengfm.widgets.ColumnItemView;
 import zhufengfm.jmxgrobby.com.zhufengfm.widgets.SpecialItemView;
 
 import java.lang.reflect.Field;
@@ -85,7 +87,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
             ret  = bindAlbumsView(position,convertView,parent);
         }else if(item instanceof DiscoverRecommenColumns){//发现新奇
             ret  = bindColumnView(position,convertView,parent);
-        }else if(item instanceof DiscoverRecommendSpecial){//精品听单
+        }else if(item instanceof SpecialRecommend){//精品听单
             ret  = bindSpecialView(position,convertView,parent);
         }
 
@@ -187,12 +189,62 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
      *
      * @param position
      * @param contentView
-     * @param viewGroup
+     * @param parent
      * @return
      */
-    private View bindColumnView(int position,View contentView,ViewGroup viewGroup){
+    private View bindColumnView(int position,View contentView,ViewGroup parent){
         View ret = null;
+        if(contentView!=null){
+            ret = contentView;
+        }else{
+            ret = LayoutInflater.from(context)
+                    .inflate(R.layout.discover_recommend_column_item,parent,false);
+        }
+        ColumnViewHolder holder = (ColumnViewHolder) ret.getTag();
+        if(holder==null){
+            holder = new ColumnViewHolder();
+            holder.txtTitle = (TextView) ret.findViewById(R.id.recommend_column_title);
+            holder.layout = (LinearLayout) ret.findViewById(R.id.recommend_column_layout);
+            ret.setTag(holder);
+        }
+
+        // TODO  数据的截取
+        DiscoverRecommenColumns columns = (DiscoverRecommenColumns) list.get(position);
+        holder.txtTitle.setText(columns.getTitle());
+        holder.layout.removeAllViews();
+        List<ColumnsRecommendItem> listColumns = columns.getList();
+        if(listColumns!=null){
+            int index =-1;
+            int length = listColumns.size();
+            for (ColumnsRecommendItem column : listColumns) {
+                index++;
+                ColumnItemView itemView = new ColumnItemView(context);
+
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams
+                        (ViewGroup.LayoutParams.MATCH_PARENT
+                        , ViewGroup.LayoutParams.WRAP_CONTENT);
+                itemView.setLayoutParams(params);
+
+                holder.layout.addView(itemView);
+                //设置发现新奇的内容
+                itemView.setTitle(column.getTitle());
+                itemView.setInfo(column.getSubtitle());
+                itemView.setImageBitmap(bitmapUtils,column.getCoverPath(),config);
+                itemView.showBottomLine(true);
+                if(index==length-1){
+                    itemView.showBottomLine(false);
+                }
+
+            }
+        }
+
+
         return ret;
+    }
+
+    private static  class  ColumnViewHolder{
+        public TextView txtTitle;
+        public LinearLayout  layout;
     }
 
     /**
@@ -220,18 +272,19 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
             holder.itemContainer = (LinearLayout) ret.findViewById(R.id.recommend_special_layout);
             ret.setTag(holder);
         }
+
         //获取数据 显示数据
-        DiscoverRecommendSpecial item = (DiscoverRecommendSpecial) list.get(position);
+        SpecialRecommend item = (SpecialRecommend) list.get(position);
         holder.txtTitle.setText(item.getTitle());
         if(!item.isHasMore())
             holder.txtMore.setVisibility(View.INVISIBLE);
         // 清空旧的LinearLayout数据，根据听单的item来添加
         holder.itemContainer.removeAllViews();
-        List<SpecialItem> datas = item.getDatas();
+        List<DiscoverRecommendSpecialItem> datas = item.getDatas();
         if(datas!=null){
             int index =-1;
             int itemCount = datas.size();
-            for (SpecialItem specialItem : datas) {
+            for (DiscoverRecommendSpecialItem specialItem : datas) {
                 index++;
                 SpecialItemView itemView = new SpecialItemView(context);
 
@@ -245,7 +298,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
                 itemView.setSubTitle(specialItem.getSubtitle());
                 itemView.setNumber(specialItem.getFootnote());
                 itemView.showBottomLine(true);
-                itemView.setImageBitmap(bitmapUtils,specialItem.getCoverPath());
+                itemView.setImageBitmap(bitmapUtils,specialItem.getCoverPath(),config);
                 if(index==itemCount-1){
                     itemView.showBottomLine(false);
                 }
@@ -276,7 +329,7 @@ public class DiscoverRecommendAdapter extends BaseAdapter {
             i  = 0;
         }else if(item instanceof DiscoverRecommenColumns){//发现新奇
             i  = 1;
-        }else if(item instanceof DiscoverRecommendSpecial) {//精品听单
+        }else if(item instanceof SpecialRecommend) {//精品听单
             i = 2;
         }
         return i;

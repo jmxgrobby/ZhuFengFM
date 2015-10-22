@@ -4,6 +4,7 @@
              android:layout_height="match_parent"
              android:id="@+id/discover_recommend_listview"
              android:dividerHeight="@dimen/discover_recommend_list_divider_height"
+            android:descendantFocusability="afterDescendants"
              tools:context="zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover.DiscoverRecommendFragment">
 
 </ListView>

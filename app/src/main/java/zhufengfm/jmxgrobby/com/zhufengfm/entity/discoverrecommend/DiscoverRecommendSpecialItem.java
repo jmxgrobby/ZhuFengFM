@@ -11,7 +11,7 @@ import zhufengfm.jmxgrobby.com.zhufengfm.entity.Parsable;
 /**
  * 一个精品听单的数据实体
  */
-public class SpecialItem implements Parsable{
+public class DiscoverRecommendSpecialItem implements Parsable{
 
     private int columnType ;
     private long specialId ;

@@ -11,7 +11,7 @@ public class DiscoverRecommenItem {
 		if (jsonObject != null) {
 			try {
 				title = jsonObject.getString("title");
-				hasMore = jsonObject.getBoolean("hasMore");
+				hasMore = jsonObject.optBoolean("hasMore");
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}

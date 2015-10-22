@@ -238,6 +238,13 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="column_item_icon" type="id"/>
+    <item name="column_item_info" type="id"/>
+    <item name="column_item_title" type="id"/>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -299,6 +306,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_album_detail">AlbumDetailActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->

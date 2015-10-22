@@ -5,11 +5,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
-import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommenItem;
-import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendAlbums;
-import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendSpecial;
-import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.SpecialItem;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.*;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -57,12 +55,16 @@ public class EntityParseUtils {
         return ret;
     }
 
-    public static List<DiscoverRecommenItem> parseDiscoverRecomments(JSONObject jsonObject) {
+    public static HashMap<String,Object> parseDiscoverRecomments(JSONObject jsonObject) {
+
+        HashMap<String,Object> result = null;
         List<DiscoverRecommenItem> ret = null;
+        List<DiscoverRecommendHead> headList = null;
         if (jsonObject != null) {
             try {
                 int code = jsonObject.getInt("ret");
                 if(code==Configs.TASK_RESULT_OK){
+                    result = new HashMap<>();
                     ret = new LinkedList<>();
                     //小编推荐内容解析
                     JSONObject object = jsonObject.getJSONObject("editorRecommendAlbums");
@@ -71,10 +73,10 @@ public class EntityParseUtils {
                     editorRecommend.parseJSON(object);
                     ret.add(editorRecommend);
 
-                    // TODO 解析精品听单
+                    // 解析精品听单
                     JSONObject specialColumnJson = jsonObject.getJSONObject("specialColumn");
 
-                    DiscoverRecommendSpecial discoverRecomendSpecial = new DiscoverRecommendSpecial() ;
+                    SpecialRecommend discoverRecomendSpecial = new SpecialRecommend() ;
 
                     discoverRecomendSpecial.parseJSON(specialColumnJson);
 
@@ -82,7 +84,12 @@ public class EntityParseUtils {
 
 
 
-                    // TODO 解析发现新奇
+                    //  解析发现新奇
+                    JSONObject columnsObject = jsonObject.getJSONObject("discoveryColumns");
+                    DiscoverRecommenColumns recommenColumns = new DiscoverRecommenColumns();
+                    recommenColumns.parseJSON(columnsObject);
+                    ret.add(recommenColumns);
+
 
                     //热门推荐内容解析
                     JSONObject hotobject = jsonObject.getJSONObject("hotRecommends");
@@ -96,14 +103,26 @@ public class EntityParseUtils {
                         ret.add(e);
                     }
 
+                    result.put("list",ret);
 
-
+                    //解析头部
+                    JSONObject headObject = jsonObject.getJSONObject("focusImages");
+                    JSONArray  headArray = headObject.getJSONArray("list");
+                    headList = new LinkedList<>();
+                    for (int i = 0; i < headArray.length(); i++) {
+                        JSONObject headObj = headArray.getJSONObject(i);
+                        DiscoverRecommendHead discoverRecommendHead =
+                                new DiscoverRecommendHead();
+                        discoverRecommendHead.parseJSON(headObj);
+                        headList.add(discoverRecommendHead);
+                    }
+                    result.put("head",headList);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        return ret;
+        return result;
     }
 }

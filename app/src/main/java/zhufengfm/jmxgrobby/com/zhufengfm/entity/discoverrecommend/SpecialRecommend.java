@@ -10,10 +10,10 @@ import java.util.List;
 /**
  * 精品听单的推荐，内部包含多个听单信息
  */
-public class DiscoverRecommendSpecial extends DiscoverRecommenItem {
-    List<SpecialItem> datas ;
+public class SpecialRecommend extends DiscoverRecommenItem {
+    List<DiscoverRecommendSpecialItem> datas ;
 
-    public List<SpecialItem> getDatas() {
+    public List<DiscoverRecommendSpecialItem> getDatas() {
         return datas;
     }
 
@@ -21,9 +21,7 @@ public class DiscoverRecommendSpecial extends DiscoverRecommenItem {
     public void parseJSON(JSONObject json) {
         super.parseJSON(json);
         if (json != null) {
-
             JSONArray list = null;
-
             try {
                 list = json.getJSONArray("list");
                 int len = list.length() ;
@@ -36,7 +34,7 @@ public class DiscoverRecommendSpecial extends DiscoverRecommenItem {
                     for (int i = 0; i < len; i++) {
                         JSONObject jsonObject = list.getJSONObject(i) ;
 
-                        SpecialItem specialtem = new SpecialItem() ;
+                        DiscoverRecommendSpecialItem specialtem = new DiscoverRecommendSpecialItem() ;
 
                         specialtem.parseJson(jsonObject);
 

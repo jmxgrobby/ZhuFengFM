@@ -13,6 +13,7 @@
             android:paddingTop="5dp"
             />
     <TextView
+            android:focusable="true"
             android:paddingRight="5dp"
             android:paddingTop="5dp"
             android:id="@+id/recommend_album_more"
@@ -35,12 +36,14 @@
                 android:paddingRight="5dp"
                 >
             <ImageView
+
                     android:id="@+id/recommend_album_icon_0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                    android:src="@mipmap/ic_launcher"
                     />
             <TextView
+
                     android:id="@+id/recommend_album_name_0"
                     android:layout_alignBottom="@id/recommend_album_icon_0"
                     android:text="感情感悟说"

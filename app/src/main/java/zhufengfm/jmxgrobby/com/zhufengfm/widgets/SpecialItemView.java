@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.jmxgrobby.utils.DimensionUtil;
 import com.lidroid.xutils.BitmapUtils;
+import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 
 /**
@@ -188,7 +189,7 @@ public class SpecialItemView extends RelativeLayout {
         imgArrow.setImageResource(resId);
     }
 
-    public void setImageBitmap(BitmapUtils bitmapUtils,String url) {
-        bitmapUtils.display(imageIcon,url);
+    public void setImageBitmap(BitmapUtils bitmapUtils,String url,BitmapDisplayConfig config) {
+        bitmapUtils.display(imageIcon,url,config);
     }
 }
