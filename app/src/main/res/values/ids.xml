@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义ID可以用R。id.xxx来访问-->
+    <item  type="id" name="special_item_icon" />
+    <item type="id"  name="special_item_title"/>
+    <item type="id"  name="special_item_subTitle"/>
+</resources>

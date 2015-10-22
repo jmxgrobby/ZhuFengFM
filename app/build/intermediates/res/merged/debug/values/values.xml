@@ -194,6 +194,9 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="discover_recommend_list_divider_height">10dp</dimen>
     <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="fab_border_width">0.5dp</dimen>
@@ -238,6 +241,13 @@
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="special_item_icon" type="id"/>
+    <item name="special_item_subTitle" type="id"/>
+    <item name="special_item_title" type="id"/>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->

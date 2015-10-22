@@ -16,17 +16,18 @@
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/title_logo"
                 android:layout_centerVertical="true"
-
+                android:layout_margin="10dp"
                 />
 
         <ImageView
+                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/ic_search_normal"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-
                 />
 
     </RelativeLayout>

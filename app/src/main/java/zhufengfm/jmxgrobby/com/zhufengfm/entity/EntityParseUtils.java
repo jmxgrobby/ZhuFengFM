@@ -7,6 +7,8 @@ import org.json.JSONObject;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommenItem;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendAlbums;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendSpecial;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.SpecialItem;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -70,6 +72,14 @@ public class EntityParseUtils {
                     ret.add(editorRecommend);
 
                     // TODO 解析精品听单
+                    JSONObject specialColumnJson = jsonObject.getJSONObject("specialColumn");
+
+                    DiscoverRecommendSpecial discoverRecomendSpecial = new DiscoverRecommendSpecial() ;
+
+                    discoverRecomendSpecial.parseJSON(specialColumnJson);
+
+                    ret.add(discoverRecomendSpecial) ;
+
 
 
                     // TODO 解析发现新奇
