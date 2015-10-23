@@ -15,4 +15,9 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Delen met"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Delen met %s"</string>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/ZhuFengFM/pulltorefresh/unspecified/res/values-nl/values-nl.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_pull_label">Sleep om te vernieuwen…</string>
+    <string name="pull_to_refresh_refreshing_label">Laden…</string>
+    <string name="pull_to_refresh_release_label">Loslaten om te vernieuwen…</string>
 </resources>

@@ -36,17 +36,33 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         setContentView(R.layout.activity_main);
 
         initTabBar();
-
+        fragments = new Fragment[4];
         if(savedInstanceState==null){
             fragments = new Fragment[4];
                 fragments[0] = new DiscoverFragment();
                 fragments[1] = new CustomFragment();
                 fragments[2] = new DownLoadTingFragment();
                 fragments[3] = new PersonalFragment();
+
+            //采用hide和show的形式，进行处理
+            Log.d("debug111","执行onResume方法");
+            manager = getSupportFragmentManager();
+            tx = manager.beginTransaction();
+            for (int i = 0; i < fragments.length; i++) {
+                Log.d("debug111","onResume 添加碎片");
+                tx.add(R.id.main_fragment_container, fragments[i], "tag" + i);
+                tx.hide(fragments[i]);
+            }
+            if(isLoad){
+                tx.show(fragments[current]);
+            }else
+                tx.show(fragments[0]);
+            tx.commit();
         }else{
-            fragments = (Fragment[]) savedInstanceState.getSerializable("fragments");
-            current = savedInstanceState.getInt("cur");
-            isLoad = true;
+            for (int i = 0; i < fragments.length; i++) {
+                fragments[i] = manager.findFragmentByTag("tag" + i);
+            }
+
         }
 
     }
@@ -75,39 +91,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             view[i].setOnClickListener(this);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        //采用hide和show的形式，进行处理
-        Log.d("debug111","执行onResume方法");
-        manager = getSupportFragmentManager();
-        tx = manager.beginTransaction();
-        for (int i = 0; i < fragments.length; i++) {
-                Log.d("debug111","onResume 添加碎片");
-                tx.add(R.id.main_fragment_container, fragments[i], "tag" + i);
-                tx.hide(fragments[i]);
-        }
-        if(isLoad){
-            tx.show(fragments[current]);
-        }else
-            tx.show(fragments[0]);
-        tx.commit();
-    }
 
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-
-        outState.putSerializable("fragments", fragments);
-        outState.putInt("cur",current);
-        tx = manager.beginTransaction();
-        for(int i=0;i<4;i++){
-            tx.remove(fragments[i]);
-        }
-        tx.commit();
-        super.onSaveInstanceState(outState);
-    }
 
     @Override
     public void onClick(View v) {

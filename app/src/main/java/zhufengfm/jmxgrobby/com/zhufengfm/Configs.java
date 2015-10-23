@@ -16,10 +16,20 @@ public class Configs {
     //json返回成功和失败判断的唯一标识
     public static final int TASK_RESULT_OK = 0;
 
-    //异步任务的action定义
+    //分类异步任务的action定义
     public static final int TASK_ACTION_DISCOVER_CATEGORIES = 1;
+
+    //发现推荐一步任务action定义
+    public static final int TASK_ACTION_DISCOVER_RECOMMENDS = 2;
+
+    //专辑详情异步任务定义
+    public static final int TASK_ACTION_ALBUM = 3;
 
     //是否为开发版本
     public static final boolean  ISDEBUG = true;
-    public static final int TASK_ACTION_DISCOVER_RECOMMENDS = 2;
+
+
+
+    //专辑接口
+    public static final String DISCOVER_ALBUM ="http://mobile.ximalaya.com/mobile/others/ca/album/track/%s/true/1/20";
 }

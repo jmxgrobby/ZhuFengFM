@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import com.jmxgrobby.View.Utility;
 import com.jmxgrobby.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
@@ -17,6 +19,7 @@ import zhufengfm.jmxgrobby.com.zhufengfm.tasks.DiscoverCategoryTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,6 +46,15 @@ public class DiscoverCategoryFragment extends BaseFragment implements TaskCallba
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_discover_category, container, false);
         listView = (ListView) view.findViewById(R.id.discover_categoryfragment_listview);
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            list.add("第"+i+"个");
+        }
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                getActivity(),
+                android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(adapter);
+
         return view;
     }
 

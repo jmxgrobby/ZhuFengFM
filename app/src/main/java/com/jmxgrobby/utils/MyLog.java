@@ -1,6 +1,8 @@
 package com.jmxgrobby.utils;
 
+import android.os.Build;
 import android.util.Log;
+import zhufengfm.jmxgrobby.com.zhufengfm.BuildConfig;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 
 /**
@@ -10,8 +12,10 @@ import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
  * Date: 15-10-20
  */
 public final class MyLog {
+    private static final boolean LOG_ON = BuildConfig.DEBUG;
+
     public static void d(String tag,String msg){
-        if(Configs.ISDEBUG){
+        if(LOG_ON){
             Log.d(tag,msg);
         }
     }

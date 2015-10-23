@@ -14,6 +14,7 @@ import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import com.lidroid.xutils.bitmap.core.BitmapSize;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendHead;
+import zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover.DiscoverRecommendFragment;
 
 import java.util.List;
 
@@ -28,6 +29,8 @@ public class PicPagerAdapter extends PagerAdapter {
     private BitmapUtils bitmapUtils;
     private BitmapDisplayConfig config;
     private Context context;
+
+    private View.OnClickListener onClickListener;
 
     public PicPagerAdapter(List<DiscoverRecommendHead> list,Context context) {
         this.list = list;
@@ -107,4 +110,6 @@ public class PicPagerAdapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);
     }
+
+
 }

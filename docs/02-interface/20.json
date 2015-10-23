@@ -2,6 +2,600 @@
   "ret": 0,
   "data": [
     {
+      "trackId": 9296897,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group7/M0A/86/19/wKgDX1Yg3z3zz5adACsEfD2rDhg598.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group7/M0A/86/19/wKgDX1Yg3zuhCYMMABWCXZjGhhg791.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group7/M01/86/0F/wKgDWlYg3zOCq3k5ABZR4hMcVH0274.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group7/M0A/86/19/wKgDX1Yg3zfzbhnzACuCMN8b6Ps663.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group7/M0A/86/19/wKgDX1Yg3zuxQV1TABCdrDbvPk0583.m4a",
+      "title": "首富养成记",
+      "duration": 352.3700000000000045474735088646411895751953125
+    },
+    {
+      "trackId": 9284515,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M03/78/84/wKgDa1YfvbiTgTuXADFisIxkZNM138.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M03/91/6D/wKgDbVYfvbajIi6qABixd_ZHh2g179.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M03/91/6D/wKgDbVYfvbHQUj3tABmfaJW4huY707.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M03/91/6D/wKgDbVYfvbSgdeG8ADHxjF-slsc800.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M03/78/84/wKgDa1YfvbOSCXKWABMSuFzBlIk733.m4a",
+      "title": "难忘李刚",
+      "duration": 404.529999999999972715158946812152862548828125
+    },
+    {
+      "trackId": 9260780,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M0A/84/64/wKgDZFYeNt6iN8WWAC9qIh_I9Lo808.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M03/84/9E/wKgDY1YeNtzhGSTLABe1KMhWOG8973.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M0A/84/64/wKgDZFYeNtizougGABiaMFyprhE895.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M03/84/9E/wKgDY1YeNtujCoy4AC_y7PsIHj4214.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M0A/84/64/wKgDZFYeNtnQE-BSABJPzFUiGRY482.m4a",
+      "title": "好工作，就是公务员",
+      "duration": 388.3899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 9249608,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group8/M04/84/15/wKgDYFYdKnazZ8ijAC2rmr55ORg759.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group8/M04/84/15/wKgDYFYdKnTRAMt9ABbV5Nz6Ng8630.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group8/M04/84/57/wKgDYVYdKnCwAMNfABeySXhdg0Q679.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M04/84/58/wKgDYVYdKnSzrKtHAC4wkpdBdWY397.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group8/M04/84/15/wKgDYFYdKnLwoLMpABGjkJKuAGg405.m4a",
+      "title": "幸福源“买买买”",
+      "duration": 374.1000000000000227373675443232059478759765625
+    },
+    {
+      "trackId": 9221232,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group12/M00/82/90/wKgDW1Ybjo2hwib4ADeoVolKYOI229.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M00/82/90/wKgDW1YbjouwMwDzABvUQrOWnMg240.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group7/M03/83/41/wKgDX1YbjoWDLVTTABzhAeMwf8c523.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M0A/82/F5/wKgDZFYbjomTrQJjADhHybU7yOQ129.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group7/M03/83/37/wKgDWlYbjofCwuZwABV957pwkik461.m4a",
+      "title": "专车身份证",
+      "duration": 455.92000000000001591615728102624416351318359375
+    },
+    {
+      "trackId": 9016175,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M0A/7A/8E/wKgDaVYLgZOila02ACutZgf5NVo427.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M0A/7A/8E/wKgDaVYLgZGzJXtqABXWymNPk4w995.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M0A/7A/88/wKgDZ1YLgY3jpWTiABapMBDm5kU601.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M0A/7A/8E/wKgDaVYLgZGxBGA9ACwsPMoYBQk445.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M0A/7A/8E/wKgDaVYLgY-SOmJRABDezkDKQtE034.m4a",
+      "title": "我的名字叫国庆",
+      "duration": 357.76999999999998181010596454143524169921875
+    },
+    {
+      "trackId": 9000448,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M09/79/E0/wKgDaVYKJpCij2b6ACN06WQxh-8991.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M09/79/E0/wKgDaVYKJo-Q5LbgABG6i7cuuck132.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M09/79/DF/wKgDaVYKJouQzZ9lABJlZ_stRd4379.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M09/79/E0/wKgDaVYKJo6QoEXAACPdRfYozKs352.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M09/79/DC/wKgDZ1YKJpSzTF-bAA2zC6F-eOg271.m4a",
+      "title": "我叫叶良辰",
+      "duration": 290.43000000000000682121026329696178436279296875
+    },
+    {
+      "trackId": 8986319,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group15/M06/79/B9/wKgDZVYJJ2XwwvgDACoaItMxTC8073.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group15/M06/79/E6/wKgDaFYJJ2PiWSXSABUNKLhuslA184.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M06/79/61/wKgDZ1YJJ1-SOnWiABXYlzXFSP4882.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group15/M06/79/E6/wKgDaFYJJ2Lh-8zdACqUcbtAf58948.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group15/M06/79/E6/wKgDaFYJJ2Dz1YOMABBC-R0wuYc988.m4a",
+      "title": "舌尖上的浪费",
+      "duration": 344.8700000000000045474735088646411895751953125
+    },
+    {
+      "trackId": 8937425,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M08/84/42/wKgDbVYFEjCicnepACllumhEGlc888.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M08/84/42/wKgDbVYFEi6yI0bJABSy9EL08-4759.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M08/6B/54/wKgDa1YFEivy8O2vABV6KszCBRs045.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M08/6B/54/wKgDa1YFEi6haVcnACnejb4Ouoc854.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M08/84/42/wKgDbVYFEiySXoleAA_9ItkMnWg189.m4a",
+      "title": "可以作的秀",
+      "duration": 339.1000000000000227373675443232059478759765625
+    },
+    {
+      "trackId": 8922120,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M00/76/D1/wKgDZ1YD2TDDqUh8AC7vr8gJ_Xk231.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M00/76/D3/wKgDaVYD2S3Qrk0zABd37phvF68032.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M00/76/D3/wKgDaVYD2SnCyKb1ABhZ0RZH5tk778.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M00/76/D3/wKgDaVYD2S3jLSoeAC93r6gG584142.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M00/76/D1/wKgDZ1YD2S3h5v-jABIgKpgsAQs853.m4a",
+      "title": "流量不清零，攒攒攒",
+      "duration": 384.470000000000027284841053187847137451171875
+    },
+    {
+      "trackId": 8906593,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group13/M09/77/3F/wKgDXVYCuG3wxKz9AC3-3l7rSPE409.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group13/M09/77/3F/wKgDXVYCuGrzTHEWABb_hlHEquY479.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group13/M09/77/1D/wKgDXlYCuGaSaM9rABfc0mN0icY657.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group13/M09/77/3F/wKgDXVYCuGmS_OsvAC6ELzP2eEs008.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group13/M09/77/3F/wKgDXVYCuGfzGc7yABHDO_md48Y391.m4a",
+      "title": "恨他就请他吃月饼吧",
+      "duration": 376.759999999999990905052982270717620849609375
+    },
+    {
+      "trackId": 8886897,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group9/M09/75/DE/wKgDYlYBbc6QsEgpACnqyZzOBlA978.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group9/M09/75/DD/wKgDYlYBbbnz42RyABT1e6SnX3I764.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group9/M09/75/DD/wKgDYlYBbbTCg4vkABW_cJJuFjg382.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group9/M09/75/DD/wKgDYlYBbbjReWk-ACpkCVo46lk151.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group9/M09/76/15/wKgDZlYBbbaCYRtDABAwFdZvpQQ256.m4a",
+      "title": "别让李嘉诚跑了",
+      "duration": 343.3500000000000227373675443232059478759765625
+    },
+    {
+      "trackId": 8865138,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M01/75/92/wKgDbFYABpXwD6mfACQz7gAekN4091.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M05/74/B3/wKgDXFYABpOT3e4aABIaDnDE2nk759.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M07/74/AD/wKgDW1YABpCi9iFBABLIc7Iogt8500.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group12/M07/74/AD/wKgDW1YABpPxEwCpACSdbk9BFpI182.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M05/74/B3/wKgDXFYABpKAKbpRAA37wrKlZXM025.m4a",
+      "title": "别了，央视",
+      "duration": 296.54000000000002046363078989088535308837890625
+    },
+    {
+      "trackId": 8816649,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group9/M07/73/87/wKgDZlX8G5rxFMaDACi77gf8D2g805.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group9/M07/73/4E/wKgDYlX8G3rQTPImABReDn6nRpw432.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group9/M07/73/87/wKgDZlX8G47BfgIrABUiERDIcds584.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group9/M07/73/4E/wKgDYlX8G3nSAIUZACky7ZBj9yU193.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group9/M07/73/4E/wKgDYlX8G3fD-XBjAA-7ovgLGoI575.m4a",
+      "title": "死去活来",
+      "duration": 333.66000000000002501110429875552654266357421875
+    },
+    {
+      "trackId": 8794432,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M07/72/D5/wKgDbFX6eKizVNb5AC1Q_UBCbkM978.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M01/7F/15/wKgDbVX6eG6h3GX2ABaolb2Hzpo423.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M01/7F/15/wKgDbVX6eGqhCWstABeDOPAOy3g259.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M01/7F/15/wKgDbVX6eG2gEBjWAC3UKRo5Mr8230.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M01/7F/15/wKgDbVX6eGvBxgrRABGADIopWQ0902.m4a",
+      "title": "扶不扶",
+      "duration": 371.19999999999998863131622783839702606201171875
+    },
+    {
+      "trackId": 8783293,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M02/71/A7/wKgDaVX5bTLziLxFACu4A8bV1zE346.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M02/71/A6/wKgDZ1X5bPeQVaQsABXcGNhNXsQ451.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group9/M08/72/32/wKgDZlX5bKXj0ZQZABau4m8SdF4774.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group9/M08/72/01/wKgDYlX5bJGSQC4xACw2gLQIt5U398.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group9/M08/72/01/wKgDYlX5bI_B7OpqABDiLLnvAXQ762.m4a",
+      "title": "中国好女友",
+      "duration": 358.1100000000000136424205265939235687255859375
+    },
+    {
+      "trackId": 8764797,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group12/M0A/70/D8/wKgDW1X37R-R1VkZACabcEyrVH0724.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M0A/70/DB/wKgDXFX37PCgXjJEABNNz55zZIM436.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M0A/70/DB/wKgDXFX37OySt-yHABQHtfnpx3g132.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group12/M0A/70/DB/wKgDXFX37O-zNqAAACcM2bniuWU873.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M0A/70/D8/wKgDW1X37RuCWWzQAA7psY63lTM479.m4a",
+      "title": "让中国文明国际化",
+      "duration": 316.240000000000009094947017729282379150390625
+    },
+    {
+      "trackId": 8755963,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M06/7D/70/wKgDbVX22hXRCMkaACdbR5Ie6Ws837.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M06/64/89/wKgDa1X22oewrH9VABOtuktgtBQ626.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M06/64/89/wKgDa1X22oHjYLCAABRrGauFEIw349.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M06/64/89/wKgDa1X22ofAkeONACfOerdggyU273.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M06/7D/70/wKgDbVX22hHhs-XfAA8zl3O1U60125.m4a",
+      "title": "中国临时工",
+      "duration": 322.3799999999999954525264911353588104248046875
+    },
+    {
+      "trackId": 8712031,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M03/6E/CE/wKgDZFXyscnwgzrqACv_CDRtPMc304.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M03/6F/02/wKgDY1XyshaCwaqDABX_m6rOhpQ421.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M03/6F/02/wKgDY1XyshKS3YiIABbTxyZNIWU671.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M03/6F/02/wKgDY1XyshnCudQGACx-YfiAflI276.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M03/6F/02/wKgDY1XyshPD0ChAABD9m-CHM88963.m4a",
+      "title": "再不结婚就老了",
+      "duration": 360.3899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 8698619,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M04/6D/F2/wKgDaVXxcwjDnzg2ACmiIua9YqA520.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group9/M01/6E/7C/wKgDZlXxcorwrhwKABTRKPCBacs569.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group9/M01/6E/7C/wKgDZlXxcoeD_vEaABWZ9sKNJMI326.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M04/6D/EF/wKgDZ1XxcteAmqduACoasVwQGAo053.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group9/M01/6E/7C/wKgDZlXxcoiyuLovABAUIUpL9qs966.m4a",
+      "title": "报告老师",
+      "duration": 341.029999999999972715158946812152862548828125
+    },
+    {
+      "trackId": 8682052,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group13/M0A/6E/16/wKgDXlXwIc_hYwQYADEBe3czFhY336.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group13/M0A/6E/25/wKgDXVXwIfGAh5gBABiA1D5paUQ558.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group13/M0A/6E/16/wKgDXlXwIcjDTOdCABlspt4T6KM599.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group13/M0A/6E/16/wKgDXlXwIcvQfPPwADGPHP9kOsE387.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group13/M0A/6E/16/wKgDXlXwIcnDqAntABLsgjFucuU872.m4a",
+      "title": "我叫雷锋",
+      "duration": 401.42000000000001591615728102624416351318359375
+    },
+    {
+      "trackId": 8665825,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M07/6C/AA/wKgDaVXuzrXT7m0FACqYqsDJP18786.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M07/6C/AA/wKgDaVXuzrKBa6AyABVMbCWKDYQ246.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M07/6C/AA/wKgDaVXuzq7jQOmCABYZyzzv2FU413.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M08/6C/A5/wKgDZ1XuzoGg-TEZACsUD87MHto195.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M07/6C/AA/wKgDaVXuzq_zevU9ABBzQ-liOQg643.m4a",
+      "title": "“急性短暂性精神障碍”",
+      "duration": 348.92000000000001591615728102624416351318359375
+    },
+    {
+      "trackId": 8649736,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group12/M08/6C/05/wKgDW1Xta9nCa93QACtyn-1svhI340.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M02/6C/A9/wKgDalXta46DxxhGABW5ZsATq5Q615.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group16/M02/6C/A9/wKgDalXta4qAS3TZABaLCJiPPgw906.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group13/M0B/6C/CB/wKgDXlXta4vRjWg0ACvwF0Y3vGI101.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group16/M02/6C/A9/wKgDalXta4vgDb39ABDIE9efOKc939.m4a",
+      "title": "女排创高度，冠军新起点",
+      "duration": 355.8899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 8603840,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M01/77/25/wKgDbVXpjH-ALTsYACoBpVIuVRY707.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M03/6A/0B/wKgDaVXpjQniqLpDABUA6fuRTlw216.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M03/6A/0B/wKgDaVXpjQax6lUEABXLfEXKrlg081.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M01/5E/31/wKgDa1XpjOmjfHl9ACp7gbihwvk457.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M00/6A/05/wKgDZ1XpjNjQV4QXABA5Cv2D_zE944.m4a",
+      "title": "老赵说天下-（中国地区性的教育差异）",
+      "duration": 344.08999999999997498889570124447345733642578125
+    },
+    {
+      "trackId": 8592647,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M05/69/F5/wKgDZFXoaGOBZbZQAENpUc1lyuk041.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M07/6A/18/wKgDY1XoaKrQekMhACG0v3f0Mlw865.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M07/6A/18/wKgDY1XoaKfBbIulACL5iI9kWXE018.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M07/6A/18/wKgDY1XoaKrxgjgeAEQqG75jEP4214.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M05/69/F5/wKgDZFXoaF2BA5wrABoGUU7dHLQ643.m4a",
+      "title": "9.3 中国的一天",
+      "duration": 552.200000000000045474735088646411895751953125
+    },
+    {
+      "trackId": 8576139,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group9/M00/69/41/wKgDYlXnAEqiHsoDACvDcC0Wz3g450.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group9/M00/69/41/wKgDYlXnAECSoEE3ABXhz5ltUK0116.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M01/68/DB/wKgDZ1XnAJfSU8VkABa06AYilqk391.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group9/M00/69/6F/wKgDZlXnAFjAn-mxACxCPEt-hLQ355.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M01/68/E5/wKgDaVXnAMbCnv3DABDmpxfvViA601.m4a",
+      "title": "丁页纟及体验新广告法",
+      "duration": 358.48000000000001818989403545856475830078125
+    },
+    {
+      "trackId": 8562378,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group8/M0B/69/48/wKgDYVXl1CCysMcnACiDmn2IgwM612.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group8/M0B/69/48/wKgDYVXl1B7wAeXfABRB5LSnVQQ330.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M08/68/53/wKgDZ1Xl1EfQVONUABUEtH-zYr0408.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M0B/69/05/wKgDYFXl1H6CqsqXACj5uMw3Uao987.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M08/68/5E/wKgDaVXl1HWypeAqAA-lzVACbiA887.m4a",
+      "title": "你患了开学综合症吗？",
+      "duration": 331.8600000000000136424205265939235687255859375
+    },
+    {
+      "trackId": 8539616,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M01/67/FA/wKgDY1XkFmigL3C8AC9h-DhavZs099.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M01/67/D2/wKgDZFXkFh2xdzyeABexEyBqwkg973.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M01/67/D2/wKgDZFXkFhnwyMXEABiVTauSXrw336.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M01/67/FA/wKgDY1XkFmTS_DdOAC_rkXrkksA088.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M01/67/D2/wKgDZFXkFhqTWHWnABJMZJAcuKo084.m4a",
+      "title": "坑爹的谣言时代",
+      "duration": 388.1299999999999954525264911353588104248046875
+    },
+    {
+      "trackId": 8479238,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M0A/65/E1/wKgDbFXe34-Rw1A2ACzXXGlYgDI400.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M0A/65/E1/wKgDbFXe342BKd8rABZrxU-dvNc656.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group16/M0A/65/E1/wKgDbFXe34migM7fABdD-J4N9yA649.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group16/M0A/65/CD/wKgDalXe32_x2w4lAC1Y8eM8TS4174.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group16/M0A/65/E1/wKgDbFXe34qxmhdNABFRBiAJprE491.m4a",
+      "title": "老赵说天下-（中国：我为和平代言）",
+      "duration": 367.31000000000000227373675443232059478759765625
+    },
+    {
+      "trackId": 8461903,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M01/65/35/wKgDbFXdhMSwRjWZACrQLWgxVdA524.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M01/65/35/wKgDbFXdhL_xXE9SABVoLVO-_8w586.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M08/64/92/wKgDXFXdhK-CYxGBABY2aJ-OfBc571.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group16/M01/65/34/wKgDbFXdhL2RkRMYACtNRUQgAak208.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M06/64/96/wKgDW1XdhNjD3VbIABCJKPu05oY498.m4a",
+      "title": "真人秀，除了真人就是秀？",
+      "duration": 350.68999999999999772626324556767940521240234375
+    },
+    {
+      "trackId": 8448673,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group15/M06/64/96/wKgDaFXcS_vTDI22ACuDxA-1Nx4483.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group15/M06/64/96/wKgDaFXcS_izHYA1ABXB-YKpj40720.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group15/M06/64/7C/wKgDZVXcTBHy-deSABaTxlVj4eY794.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group15/M06/64/96/wKgDaFXcS_vQ_QWfACwBsW8j10M607.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group15/M06/64/96/wKgDaFXcS_aCLUA8ABDOBSizNWQ773.m4a",
+      "title": "关键是要长得好！",
+      "duration": 356.43999999999999772626324556767940521240234375
+    },
+    {
+      "trackId": 8431395,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M05/63/B9/wKgDY1Xa4s-DtrF1ACv_CKhd0Js706.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M07/70/46/wKgDbVXa4j_BLHclABX_m6-zTWg274.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M07/70/46/wKgDbVXa4juBIhQzABbTx0u7XOs797.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M05/63/B9/wKgDY1Xa4tHRGSO1ACx-YTVqsAY418.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M07/57/61/wKgDa1Xa4p7zdEOjABD9m-suG24094.m4a",
+      "title": "开着飞船看《三体》",
+      "duration": 360.3899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 8403695,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M09/62/A6/wKgDY1XYLzmCKGKlADCh-NoqoLY222.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M09/62/A6/wKgDY1XYLzbw1hkrABhRE3TQwv4876.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M09/62/A6/wKgDY1XYLzHhggcHABk7tL3hGQw836.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M09/62/7B/wKgDZFXYLvbjt1pmADEuSwTJ_FQ333.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M09/62/A6/wKgDY1XYLzPDCGIeABLHjrJYXUs684.m4a",
+      "title": "老赵说天下-（贪官与情妇不得不说的秘密）",
+      "duration": 398.3700000000000045474735088646411895751953125
+    },
+    {
+      "trackId": 8388820,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M08/62/0C/wKgDY1XW27OgDkB7ACyRJ0lfhao504.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M08/61/E5/wKgDZFXW227D7eM7ABZIqjlRg7g877.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M08/62/0C/wKgDY1XW263g1i9lABcfE1y8TiU192.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M08/62/0C/wKgDY1XW27CChAxXAC0SiLl2F5s737.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M08/61/E5/wKgDZFXW22zx5GnhABE2JuytC8M978.m4a",
+      "title": "当老板加你微信时",
+      "duration": 365.06000000000000227373675443232059478759765625
+    },
+    {
+      "trackId": 8376778,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M07/6D/F8/wKgDbVXV2DDDxTJ4ADNGtMAUjsQ305.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group11/M07/6D/F8/wKgDbVXV2DCBUcKxABmjcYXPkJo213.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group11/M07/6D/F8/wKgDbVXV2CzSc5LUABqawnk22vE407.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group11/M07/6D/F8/wKgDbVXV2DKSMXHcADPZ2xCPH_8463.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group11/M07/6D/F8/wKgDbVXV2C_D1Ov3ABPMg27UOV8151.m4a",
+      "title": "老赵说天下-（七夕：单身狗之怒 ）",
+      "duration": 420.01999999999998181010596454143524169921875
+    },
+    {
+      "trackId": 8355368,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M03/60/EB/wKgDbFXUWEaTyoi4ACq2DZLgjrE417.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M03/60/CB/wKgDalXUWCijz92mABVbHYrG_9w283.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group16/M03/60/CB/wKgDalXUWCWy0I1pABYo29nzAqU096.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group16/M03/60/CB/wKgDalXUWCui4WaSACsy3f76OCo389.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group16/M03/60/EB/wKgDbFXUWEKxvmQ4ABB_FcbjZr8509.m4a",
+      "title": "作家与明星的激情碰撞",
+      "duration": 349.8600000000000136424205265939235687255859375
+    },
+    {
+      "trackId": 8334019,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M08/5F/FF/wKgDalXS9GiRdubtACxsaxQo-dg179.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M08/5F/FF/wKgDalXS9GahMgpaABY2TBXuLsY110.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group15/M0B/60/1C/wKgDaFXS9LXBdwj_ABcMQDUme2M288.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group16/M08/60/1B/wKgDbFXS9IHij975ACzt3Fqdqzs006.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group15/M0B/60/03/wKgDZVXS9NGzRVr9ABEoJwNRYL0581.m4a",
+      "title": "人丑就要多读书！",
+      "duration": 363.8899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 8318613,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group8/M09/5F/6E/wKgDYVXRk32gSl8mAC6vMslOynA783.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M01/5F/19/wKgDZFXRk5fzrfamABdXsLJAd6o369.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M01/5F/37/wKgDY1XRk9TA7ilVABg4r8xkZys372.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M01/5F/37/wKgDY1XRk9eAr3VIAC81rYTAM3s156.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M01/5F/19/wKgDZFXRk5ST3gxIABIG-Fd3ZxQ592.m4a",
+      "title": "舌尖上的“龙虾盖浇饭”",
+      "duration": 382.41000000000002501110429875552654266357421875
+    },
+    {
+      "trackId": 8303085,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M04/5E/24/wKgDaVXQPxiQk3MVACmw1GLQa20030.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M04/5E/24/wKgDaVXQPxWDg4XoABTYgdAZN9Y607.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group7/M01/5F/13/wKgDX1XQPvSzeU5lABWhUkvX960944.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group7/M01/5F/13/wKgDX1XQPveCowFdACoq1KDp4Vs629.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group7/M01/5F/09/wKgDWlXQPwnj6PnzABAaP7M7b2k872.m4a",
+      "title": "老赵说天下-（世界各国的奇葩规定）",
+      "duration": 341.5
+    },
+    {
+      "trackId": 8289495,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group8/M09/5D/E1/wKgDYFXO8f7w3Z9SACnRe0oKWwU384.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M09/5E/02/wKgDY1XO8gLC9OL2ABTo1NLiBmo059.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M09/5E/02/wKgDY1XO8f-RJf7YABWyowZ9kr4908.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M09/5E/2A/wKgDYVXO8avB_WEKACpLGRYJ1Fc226.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M09/5D/E6/wKgDZFXO8cHQR5LfABAmkD61O28513.m4a",
+      "title": "老赵说天下-（来人，将人民币打入冷宫）",
+      "duration": 342.54000000000002046363078989088535308837890625
+    },
+    {
+      "trackId": 8280276,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M07/5D/76/wKgDZFXN11CiStQWACWwVjW2EZc393.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M07/5D/76/wKgDZFXN106SVhA5ABLYQsMCUQU479.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M01/5D/93/wKgDY1XN14rAjpc7ABONuuSw9Ds845.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M01/5D/93/wKgDY1XN14_CPgDjACYfNzpB-T4564.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M01/5D/93/wKgDY1XN14rhYRv6AA6O_91lyog776.m4a",
+      "title": "这几大谣言千万不能信",
+      "duration": 308.720000000000027284841053187847137451171875
+    },
+    {
+      "trackId": 8263730,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group9/M02/5C/95/wKgDYlXMYlLxhQ12AC6I1HPAhCo087.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group9/M02/5C/D7/wKgDZlXMYlqCf-rQABdEgdh7P1M260.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group7/M08/5D/63/wKgDX1XMYpqzAD1JABgknP1Sib0391.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group9/M02/5C/94/wKgDYlXMYkvj-anKAC8PieTEwkY974.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group7/M08/5D/54/wKgDWlXMYq_A4KtaABH4k6B6Voc361.m4a",
+      "title": "我们能为天津做点儿什么",
+      "duration": 381.18000000000000682121026329696178436279296875
+    },
+    {
+      "trackId": 8250082,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M09/5C/4B/wKgDZFXLSK2zYc8lACj9PJoO3Og354.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M07/5C/66/wKgDY1XLSOLhdtsyABR-tRvEXns020.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M07/5C/66/wKgDY1XLSN6DZtxnABVD9KjvGfk986.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M00/5C/82/wKgDYVXLSKzi_ohcACl078XZvwE738.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M09/5C/4A/wKgDZFXLSKOT58YKAA_U0-fMQnA257.m4a",
+      "title": "老赵说天下-（无罪的呐喊）",
+      "duration": 335.75
+    },
+    {
+      "trackId": 8229764,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M00/5B/14/wKgDaVXJwhXhl3HOACanr0T7mYg328.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M00/5B/1D/wKgDZ1XJwe3TZL_CABNT7j8khfc800.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group13/M06/5B/AC/wKgDXVXJwcXw9AMBABQOe9PvuUM698.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M00/5B/14/wKgDaVXJwhOQbDaCACcYlVr1r6o200.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group13/M06/5B/A6/wKgDXlXJwarQpHruAA7uLNdqOHo944.m4a",
+      "title": "120首禁播歌曲，我一首都还没听过呐！！",
+      "duration": 316.6299999999999954525264911353588104248046875
+    },
+    {
+      "trackId": 8212430,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group7/M04/5B/4C/wKgDWlXIWJyhsdUeACg8lacMDxo665.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group7/M04/5B/57/wKgDX1XIWIbAQ1y0ABQeYW8JgWI518.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group7/M04/5B/57/wKgDX1XIWIPB2TmEABTgj4xk3kY427.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group7/M04/5B/4C/wKgDWlXIWJnCteUOACix16JiK5Q996.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group7/M04/5B/4C/wKgDWlXIWJiB7JffAA-KXv42rpw638.m4a",
+      "title": "古力娜扎张翰啦！",
+      "duration": 329.58999999999997498889570124447345733642578125
+    },
+    {
+      "trackId": 8201275,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group10/M00/5A/00/wKgDZ1XHLYvywENtACZ7mpTHNzo371.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group10/M00/59/F8/wKgDaVXHLafQcjGpABM95BtlXeE031.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group10/M00/59/F8/wKgDaVXHLaSw8JuQABP3JDCIsIo639.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group10/M00/59/F8/wKgDaVXHLaiArOMnACbslAT-YbE370.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group10/M00/5A/00/wKgDZ1XHLYHCoyXwAA7dYBXGEh0339.m4a",
+      "title": "老赵说天下-（派出所好声音）",
+      "duration": 315.220000000000027284841053187847137451171875
+    },
+    {
+      "trackId": 8187026,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group12/M0B/59/80/wKgDW1XF1hTyCcgTACe9Tb_IlTs789.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M0B/59/80/wKgDW1XF1hLxC-r9ABPexgfGFdM691.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M0B/59/7B/wKgDXFXF1e_QKW_iABSeTRpqYM4167.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group12/M0B/59/7B/wKgDXFXF1fLTP5nTACgw34enPlU900.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M0B/59/7B/wKgDXFXF1fDjUUg3AA9ZNzDctkE122.m4a",
+      "title": "老赵说天下-（未婚生了没）",
+      "duration": 325.509999999999990905052982270717620849609375
+    },
+    {
+      "trackId": 8176174,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group13/M01/59/89/wKgDXVXErjTy7-tEACz1ocUJ8wA581.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group8/M0A/59/46/wKgDYFXErnmT0JlXABZ68B5993U995.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group8/M0A/59/46/wKgDYFXErnWwB_xCABdUNoqP_0I630.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M0A/59/46/wKgDYFXErnqTV7wZAC133IWZT44833.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group8/M0A/59/46/wKgDYFXErnex6ASLABFdAidaQ9g404.m4a",
+      "title": "老赵说天下-（真正的男神宁泽涛）",
+      "duration": 368.26999999999998181010596454143524169921875
+    },
+    {
+      "trackId": 8158556,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group14/M04/58/CF/wKgDY1XDLYbR_iLsAC3kv8DNq64160.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group14/M04/58/B1/wKgDZFXDLUyyMzeUABbydlUeHFo780.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group14/M04/58/CF/wKgDY1XDLYDBY04jABfPRafTj_U222.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group14/M04/58/CF/wKgDY1XDLYWTAeIjAC5pyPUu4nc172.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group14/M04/58/B1/wKgDZFXDLUmAV4oCABG5J2rUdjk071.m4a",
+      "title": "珍惜“活着”",
+      "duration": 375.93000000000000682121026329696178436279296875
+    },
+    {
+      "trackId": 8143979,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group15/M05/58/3F/wKgDaFXBzPizSdp_ACeeSC0yrH4416.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group15/M05/58/3F/wKgDaFXBzPbCGZUIABPPQ983H84153.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group15/M05/58/2B/wKgDZVXBzQvjdIroABSNvDALPcE451.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group15/M05/58/2B/wKgDZVXBzQ7jOYomACgSEV-Jy1Q682.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group15/M05/58/3F/wKgDaFXBzPPCNdfIAA9NdX970w8693.m4a",
+      "title": "这一刻，我们重新定义借钱",
+      "duration": 324.51999999999998181010596454143524169921875
+    },
+    {
+      "trackId": 8126328,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group11/M03/59/AE/wKgDbVXAZzuTbAWaACViCYFjHdI136.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M02/56/D6/wKgDXFXAZ1ixrSeqABKxJDvr0DE272.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M02/56/D6/wKgDXFXAZ1Xww-mSABNlEc1RcRo404.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group12/M02/56/D6/wKgDXFXAZ1nBJqBoACXQHqFyok8983.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M02/56/D6/wKgDXFXAZ1fyDL83AA5w4cW9pI0362.m4a",
+      "title": "不想放假的员工不是好员工",
+      "duration": 306.20999999999997953636921010911464691162109375
+    },
+    {
+      "trackId": 8106253,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group8/M08/56/5F/wKgDYFW_KCGA1cqIACeKsPP-BGo707.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group8/M08/56/5F/wKgDYFW_KB_i9G3NABPFd-65jbs139.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group8/M08/56/9E/wKgDYVW_J9LQCyAIABSEWM3MueQ927.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group8/M08/56/9E/wKgDYVW_J9Xz_0P_ACf9h8OQmFM346.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group8/M08/56/9E/wKgDYVW_J9OgJZ39AA9GN9BmTHw256.m4a",
+      "title": "我反对！不以便民为目的的政策，都是耍流氓",
+      "duration": 323.8899999999999863575794734060764312744140625
+    },
+    {
+      "trackId": 8091918,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group16/M04/56/3F/wKgDbFW92_HR_3oNACjxDkY3VlI557.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group16/M04/56/24/wKgDalW929eADdU4ABR4pqYzLIc519.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group16/M04/56/24/wKgDalW929SCe6ZYABU97gr2Q7k492.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group16/M04/56/24/wKgDalW929fgGls9ACln2TcpQ84043.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group16/M04/56/24/wKgDalW929XTDy4xAA_P51WNQiQ313.m4a",
+      "title": "老赵说天下-（别拿外教不当豆包）",
+      "duration": 335.3600000000000136424205265939235687255859375
+    },
+    {
+      "trackId": 8080216,
+      "uid": 25806497,
+      "playUrl64": "http://fdfs.xmcdn.com/group9/M01/55/80/wKgDZlW8hvWhlydiAC3unOs9aQU154.mp3",
+      "playUrl32": "http://fdfs.xmcdn.com/group12/M03/55/32/wKgDW1W8hx7hLQUjABb3bbvWUI8340.mp3",
+      "downloadUrl": "http://download.xmcdn.com/group12/M03/55/2D/wKgDXFW8hv6CXvmYABfUvSdp3i4034.aac",
+      "playPathAacv164": "http://audio.xmcdn.com/group12/M03/55/32/wKgDW1W8hx_CNm98AC50KScFDQI167.m4a",
+      "playPathAacv224": "http://audio.xmcdn.com/group12/M03/55/32/wKgDW1W8hxzT0fEpABG9UrI88P8904.m4a",
+      "title": "老赵说天下-（打开奥运新姿势）",
+      "duration": 376.240000000000009094947017729282379150390625
+    },
+    {
       "trackId": 8069051,
       "uid": 25806497,
       "playUrl64": "http://fdfs.xmcdn.com/group8/M00/54/E1/wKgDYFW7MFHRZw4zACMb_waTWvM450.mp3",
@@ -9,8 +603,8 @@
       "downloadUrl": "http://download.xmcdn.com/group8/M00/55/1C/wKgDYVW7MATTQYW_ABI3THTfecA641.aac",
       "playPathAacv164": "http://audio.xmcdn.com/group8/M00/55/1D/wKgDYVW7MAfTDgN9ACOD5wAPCp8105.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M00/55/1D/wKgDYVW7MAXyDwN2AA2QhhD0QHc734.m4a",
-      "title": "老赵说天下-（LoL更健康）",
-      "duration": 287.58
+      "title": "游戏是永远的主角",
+      "duration": 287.57999999999998408384271897375583648681640625
     },
     {
       "trackId": 8060450,
@@ -21,7 +615,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M01/55/10/wKgDZVW6hLbSs8hsACsf6XPcDyE726.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M01/55/10/wKgDZVW6hLSgRziyABB32mQBiWs387.m4a",
       "title": "老赵说天下-（没有马震的戏你还看吗）",
-      "duration": 349.26
+      "duration": 349.259999999999990905052982270717620849609375
     },
     {
       "trackId": 8030266,
@@ -32,7 +626,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M01/54/0C/wKgDWlW4hvDgpQSxACUNBhW7YJs720.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M01/54/0C/wKgDWlW4hu7gbVilAA4mbErm-WY223.m4a",
       "title": "老赵说天下-（卖给大山的女人）",
-      "duration": 300.04
+      "duration": 300.04000000000002046363078989088535308837890625
     },
     {
       "trackId": 7988247,
@@ -43,7 +637,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M08/52/1E/wKgDXVW1yoXD0YePACaQRy0UGrI581.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M08/52/18/wKgDXlW1ymqRgClKAA66OIChU5w191.m4a",
       "title": "别让电梯成为“定时炸弹”",
-      "duration": 312.29
+      "duration": 312.29000000000002046363078989088535308837890625
     },
     {
       "trackId": 7981740,
@@ -54,7 +648,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M05/51/0D/wKgDZlW0_2qRYgpIACq5OuKRP0U780.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M07/51/97/wKgDWlW0_6_SFnyPABBQqvKWcI8479.m4a",
       "title": "老赵说天下-（报告，他出轨啦！）",
-      "duration": 346.04
+      "duration": 346.04000000000002046363078989088535308837890625
     },
     {
       "trackId": 7968966,
@@ -65,7 +659,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M00/50/1D/wKgDZVWzqg7yPdvGACSF9ag8tcg997.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M00/50/1D/wKgDZVWzqgyyXf2mAA3y-KpY7oc582.m4a",
       "title": "老赵说天下-（狸猫换太子）",
-      "duration": 295.78
+      "duration": 295.779999999999972715158946812152862548828125
     },
     {
       "trackId": 7950560,
@@ -76,7 +670,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M03/4E/08/wKgDbFWx8G3B-goeACb8txqpaT0301.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M03/4D/EC/wKgDalWx8FfQWD-bAA7jiYntZ5k451.m4a",
       "title": "来自另一个地球的你",
-      "duration": 315.74
+      "duration": 315.740000000000009094947017729282379150390625
     },
     {
       "trackId": 7943003,
@@ -87,7 +681,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M08/4D/0E/wKgDYlWxFlCjri_LAB_jMvJ2kFo211.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M08/4D/40/wKgDZlWxFl3gZOqmAAwuQsIz5Oc232.m4a",
       "title": "老赵说天下-（你准备“二”了吗？）",
-      "duration": 258.19
+      "duration": 258.18999999999999772626324556767940521240234375
     },
     {
       "trackId": 7923924,
@@ -98,7 +692,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M08/4B/3A/wKgDW1WvOq2R6S3HACfV7G7Mp9Q732.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M08/4B/3A/wKgDW1WvOqvTJeg2AA82gQgYdts577.m4a",
       "title": "对生命，请予以敬重！",
-      "duration": 322.64
+      "duration": 322.6399999999999863575794734060764312744140625
     },
     {
       "trackId": 7909662,
@@ -109,7 +703,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M02/4A/1C/wKgDXFWuI7XyatXgACjvkBLk5eU149.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M03/4A/C5/wKgDY1WuI_3TDRUAAA-iA6UIDDE624.m4a",
       "title": "考驾照，难！难于上青天",
-      "duration": 331.52
+      "duration": 331.51999999999998181010596454143524169921875
     },
     {
       "trackId": 7894793,
@@ -120,7 +714,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M09/48/DC/wKgDXVWsi4SRqD4DACrZgGEVW3o009.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M09/48/D1/wKgDXlWsi2vgPo2iABBc-0f1aiM273.m4a",
       "title": "老赵说天下-(跪下，唱认错)",
-      "duration": 347.06
+      "duration": 347.06000000000000227373675443232059478759765625
     },
     {
       "trackId": 7889977,
@@ -131,7 +725,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M04/49/01/wKgDZVWrxc6yiW7ZACth6_pjSKY296.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M04/49/02/wKgDaFWrxbeyqpAXABCRHAf7gF0530.m4a",
       "title": "老赵说天下-(这个座位被我承包了)",
-      "duration": 351.37
+      "duration": 351.3700000000000045474735088646411895751953125
     },
     {
       "trackId": 7878357,
@@ -142,7 +736,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group11/M08/48/20/wKgDa1WqXx7gsV-FAC2sqy-pMUE350.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M08/48/20/wKgDa1WqXxySL4kPABFxg-PM3Lc149.m4a",
       "title": "老赵说天下-(最炫小苹果)",
-      "duration": 369.95
+      "duration": 369.94999999999998863131622783839702606201171875
     },
     {
       "trackId": 7867311,
@@ -153,7 +747,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M02/48/30/wKgDWlWo_kWwgickACofNblueEM488.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M02/48/30/wKgDX1Wo_jXBWGKUABAV4vWHCwQ639.m4a",
       "title": "老赵说天下-(信用卡在手，说走咱就走)",
-      "duration": 341.13
+      "duration": 341.1299999999999954525264911353588104248046875
     },
     {
       "trackId": 7851344,
@@ -164,7 +758,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group11/M04/46/AD/wKgDbVWnuuaS95qKACu2_xFhvW8897.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M04/46/AD/wKgDbVWnuuTQK7kbABCxlAC_mAk157.m4a",
       "title": "盲目崇拜“大师”是一种信仰缺失病",
-      "duration": 354.04
+      "duration": 354.04000000000002046363078989088535308837890625
     },
     {
       "trackId": 7832809,
@@ -175,7 +769,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M05/45/39/wKgDYVWmiBmSh6WSACL_4tVjL5k083.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M05/45/07/wKgDYFWmiFLjSodxAA1d_2MdnCI338.m4a",
       "title": "老赵说天下-(以众筹之名)",
-      "duration": 283.43
+      "duration": 283.43000000000000682121026329696178436279296875
     },
     {
       "trackId": 7813891,
@@ -186,7 +780,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M0B/44/2C/wKgDX1WlJ0ez3s-_ACnndw35BWg463.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M0B/44/2B/wKgDX1WlJ0Swm482ABAAm0MArK4889.m4a",
       "title": "老赵说天下-(我该如何告别单身)",
-      "duration": 339.38
+      "duration": 339.3799999999999954525264911353588104248046875
     },
     {
       "trackId": 7799460,
@@ -197,7 +791,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M01/42/C8/wKgDYFWjxMjg35yAACgDZqQ80Hs933.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M01/42/FB/wKgDYVWjxI2RXmE4AA9IZVVXKNQ907.m4a",
       "title": "老赵说天下-(亲爱的)",
-      "duration": 324.05
+      "duration": 324.05000000000001136868377216160297393798828125
     },
     {
       "trackId": 7787104,
@@ -208,7 +802,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M08/42/6F/wKgDX1WigPLC-nXtACgE0co1yOA713.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M08/42/6F/wKgDX1WigO_z_u3-AA9Ia2DcMhs473.m4a",
       "title": "老赵说天下-(谁动了我的工资？)",
-      "duration": 324.13
+      "duration": 324.1299999999999954525264911353588104248046875
     },
     {
       "trackId": 7772702,
@@ -219,7 +813,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M09/40/83/wKgDalWhGhWhynU-ACDMmxlYofY980.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M09/40/82/wKgDalWhGhTSI192AAyHBJyJybE142.m4a",
       "title": "老赵说天下-(别动，把枪放下)",
-      "duration": 265.61
+      "duration": 265.6100000000000136424205265939235687255859375
     },
     {
       "trackId": 7750143,
@@ -230,7 +824,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M07/3D/F8/wKgDYlWfduTwBimxACImyaVjNR8302.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M02/3D/F0/wKgDW1WfdxCSvcswAA0LJGm0oow299.m4a",
       "title": "老赵说天下-(一个优秀的台风应该是怎样的？)",
-      "duration": 276.56
+      "duration": 276.56000000000000227373675443232059478759765625
     },
     {
       "trackId": 7739964,
@@ -241,7 +835,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M08/3D/C3/wKgDY1WeTWLA7F2KACoAZ-95XZY650.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M07/3D/76/wKgDYFWeTVzzCLkiABAKVdgLavs701.m4a",
       "title": "老赵说天下-(自拍是种病)",
-      "duration": 340.19
+      "duration": 340.18999999999999772626324556767940521240234375
     },
     {
       "trackId": 7722207,
@@ -252,7 +846,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M01/3C/5A/wKgDYlWdQKHCvoAIACes2tU8GSk252.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M08/3C/A6/wKgDbVWdQC7xtRSBAA8m1Nx8LRw373.m4a",
       "title": "老赵说天下-(文物交还国)",
-      "duration": 321.31
+      "duration": 321.31000000000000227373675443232059478759765625
     },
     {
       "trackId": 7704911,
@@ -263,7 +857,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M03/3B/38/wKgDYVWb7cOQND1LACjAoGvthdk818.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M03/3B/38/wKgDYVWb7cGCRUo3AA-QFGHH-JM820.m4a",
       "title": "老赵说天下-(悄悄的，你胖了)",
-      "duration": 330.06
+      "duration": 330.06000000000000227373675443232059478759765625
     },
     {
       "trackId": 7682803,
@@ -274,7 +868,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M06/39/72/wKgDYlWaoFPzI_CaACygO7ZdSWI416.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M06/39/8E/wKgDZlWaoFyjN-bGABEKmNsMgR4738.m4a",
       "title": "老赵说天下-(股市过山车，根本停不下来)",
-      "duration": 361.46
+      "duration": 361.45999999999997953636921010911464691162109375
     },
     {
       "trackId": 7661863,
@@ -285,7 +879,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M07/38/C3/wKgDYVWZHX_jdqWxACnnd5p291Q302.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M0B/38/8F/wKgDYFWZHbGAewzgABAAm_Xa1dA814.m4a",
       "title": "老赵说天下-(70.80.90年代的爱情)",
-      "duration": 339.38
+      "duration": 339.3799999999999954525264911353588104248046875
     },
     {
       "trackId": 7643192,
@@ -296,7 +890,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M00/38/3F/wKgDXlWX0cazo783ACoQifOCyNo273.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M00/38/2B/wKgDXVWX0dahYbPcABAQSPN2T3I185.m4a",
       "title": "老赵说天下-(生男还是生女？)",
-      "duration": 340.66
+      "duration": 340.66000000000002501110429875552654266357421875
     },
     {
       "trackId": 7625766,
@@ -307,7 +901,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M01/37/87/wKgDZFWWsaCjr_s8ACstHING5Sg562.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M01/37/87/wKgDZFWWsZ7hAYBIABB89Jy8cjM672.m4a",
       "title": "老赵说天下-(离婚进行时)",
-      "duration": 349.7
+      "duration": 349.69999999999998863131622783839702606201171875
     },
     {
       "trackId": 7606868,
@@ -318,7 +912,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M01/35/B5/wKgDYlWVVvXy2pjJACwTaVduwqw886.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M01/35/D5/wKgDZlWVVv6jiXBdABDU2ipFWmc263.m4a",
       "title": "老赵说天下-(选专业哪家强？)",
-      "duration": 356.99
+      "duration": 356.990000000000009094947017729282379150390625
     },
     {
       "trackId": 7586149,
@@ -329,7 +923,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M0A/34/AA/wKgDXlWT2AziYXDBACsG3AMIugQ273.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M0A/34/92/wKgDXVWT2ByAPS4fABBuOcMfKAc409.m4a",
       "title": "老赵说天下-(贫穷时代)",
-      "duration": 348.47
+      "duration": 348.470000000000027284841053187847137451171875
     },
     {
       "trackId": 7564817,
@@ -340,7 +934,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M0A/32/D5/wKgDX1WSeAaCwlEqACt_JNjKyCs800.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M0A/32/D2/wKgDWlWSeA-hAU-cABCcMXKVRys809.m4a",
       "title": "老赵说天下-(七一谁最大)",
-      "duration": 352.29
+      "duration": 352.29000000000002046363078989088535308837890625
     },
     {
       "trackId": 7544774,
@@ -351,7 +945,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M00/32/27/wKgDaFWRYV_T--x3ACmWrIZEvrg079.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M00/32/2E/wKgDZVWRYWvTWlcTAA_htDiijeQ333.m4a",
       "title": "老赵说天下-(全球发热)",
-      "duration": 336.82
+      "duration": 336.81999999999999317878973670303821563720703125
     },
     {
       "trackId": 7527182,
@@ -362,7 +956,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M00/31/4C/wKgDbFWQFJagRoBZACrSDc21mto076.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M00/31/4C/wKgDbFWQFJODi66yABBaEtLPlcE514.m4a",
       "title": "老赵说天下-(不作不乐)",
-      "duration": 346.8
+      "duration": 346.80000000000001136868377216160297393798828125
     },
     {
       "trackId": 7514671,
@@ -373,7 +967,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M00/30/D8/wKgDX1WOuCKgVsInACmvnO96bH8692.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M00/30/D8/wKgDX1WOuCDjavXmAA_rOKt4BfE407.m4a",
       "title": "老赵说天下-(我是民工我骄傲)",
-      "duration": 337.63
+      "duration": 337.6299999999999954525264911353588104248046875
     },
     {
       "trackId": 7503083,
@@ -384,7 +978,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M08/30/34/wKgDZFWNk4Tz_y8yACnOaiwbYHg759.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M08/30/4E/wKgDY1WNk6PSnik2AA_2-ppKGmk440.m4a",
       "title": "老赵说天下-(女人何苦为难女人)",
-      "duration": 338.6
+      "duration": 338.6000000000000227373675443232059478759765625
     },
     {
       "trackId": 7488198,
@@ -395,7 +989,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M03/2E/FB/wKgDZFWMGP_iW41HACoh-1Bgh44047.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M03/2E/FB/wKgDZFWMGP3C_ljSABAW41_eC48105.m4a",
       "title": "老赵说天下-(僵尸肉，新口味)",
-      "duration": 341.26
+      "duration": 341.259999999999990905052982270717620849609375
     },
     {
       "trackId": 7474985,
@@ -406,7 +1000,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M01/2E/34/wKgDY1WKxOyQJeCYACuuFQu4NM0110.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M01/2E/17/wKgDZFWKxMrSY3VLABCuG_WLza4950.m4a",
       "title": "老赵说天下-(十八岁禁不禁)",
-      "duration": 353.78
+      "duration": 353.779999999999972715158946812152862548828125
     },
     {
       "trackId": 7463107,
@@ -417,7 +1011,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M08/2C/C7/wKgDZVWJk-DxJXcbACqjHHu1WsE159.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M08/2C/BB/wKgDaFWJk9Ggv8dDABBIRzV0LMs852.m4a",
       "title": "老赵说天下-(桥塌：都是重量惹的祸)",
-      "duration": 345.31
+      "duration": 345.31000000000000227373675443232059478759765625
     },
     {
       "trackId": 7447550,
@@ -428,7 +1022,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M0B/2B/2C/wKgDYFWIOxLRyj11AC6RY9jwEgE300.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M0B/2B/2C/wKgDYFWIOxDypJiiABHIX5av2fk851.m4a",
       "title": "老赵说天下-(笑傲高考！！)",
-      "duration": 377.18
+      "duration": 377.18000000000000682121026329696178436279296875
     },
     {
       "trackId": 7436327,
@@ -439,7 +1033,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M05/2A/D5/wKgDbFWG6AGCgNdLACs9IjD0REo915.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M05/2A/D5/wKgDbFWG6ACTSoiOABCDAB2806o170.m4a",
       "title": "老赵说天下-(明日股市：做好跳楼的准备吗？)",
-      "duration": 350.2
+      "duration": 350.19999999999998863131622783839702606201171875
     },
     {
       "trackId": 7425704,
@@ -450,7 +1044,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M0B/29/DA/wKgDX1WFnBWBFCysACrX6wF3JV8242.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M0B/29/DA/wKgDX1WFnBKBOzvFABBcT6yx9ok620.m4a",
       "title": "老赵说天下-(爸爸去哪儿？)",
-      "duration": 347.01
+      "duration": 347.009999999999990905052982270717620849609375
     },
     {
       "trackId": 7416214,
@@ -461,7 +1055,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M04/28/2F/wKgDXFWEQyGQzpZeACmeAp085yc301.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M04/28/2F/wKgDXFWEQx_AIg5cAA_kgFcOz38638.m4a",
       "title": "老赵说天下-(屈原投江为了啥？)",
-      "duration": 337.08
+      "duration": 337.07999999999998408384271897375583648681640625
     },
     {
       "trackId": 7401454,
@@ -472,7 +1066,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M08/26/E9/wKgDXFWC6KCBaW2SACtaeI-tvxE476.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M08/26/DE/wKgDYFWC6MfCZVThABCOMmHt5VM497.m4a",
       "title": "老赵说天下-(老鬼：十点见~)",
-      "duration": 351.11
+      "duration": 351.1100000000000136424205265939235687255859375
     },
     {
       "trackId": 7384879,
@@ -483,7 +1077,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M06/26/13/wKgDZFWBn4rBvwFAACrU_KMgLvY268.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M06/26/13/wKgDZFWBn4XAX60UABBbMAjof-I004.m4a",
       "title": "老赵说天下-(亲，包邮么？)",
-      "duration": 346.91
+      "duration": 346.91000000000002501110429875552654266357421875
     },
     {
       "trackId": 7369479,
@@ -516,7 +1110,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group11/M0A/22/45/wKgDbVV9o-rAmheIADKaFKDrisI459.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M0A/22/44/wKgDbVV9o-eBAsbzABNSemkI-kQ927.m4a",
       "title": "老赵说天下-(城管来啦！！！！)",
-      "duration": 409.86
+      "duration": 409.8600000000000136424205265939235687255859375
     },
     {
       "trackId": 7327254,
@@ -527,7 +1121,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M01/21/E9/wKgDXVV839iA3P2vACrphaxDSPI621.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M01/21/E9/wKgDXVV839fxgJRPABBjBw5F5Q8280.m4a",
       "title": "老赵说天下-(全民炫腹风)",
-      "duration": 347.56
+      "duration": 347.56000000000000227373675443232059478759765625
     },
     {
       "trackId": 7310694,
@@ -538,7 +1132,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M00/20/1B/wKgDalV7GqTRx_BAAC7Nh5SDIMI601.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M00/20/1B/wKgDalV7GqPxAB2JABHfOdTbdRo933.m4a",
       "title": "老赵说天下-(放下手机，立地成佛)",
-      "duration": 379.09
+      "duration": 379.08999999999997498889570124447345733642578125
     },
     {
       "trackId": 7294690,
@@ -549,7 +1143,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M08/1E/E7/wKgDaVV5txqwp4IsAC9tanm6Dfs219.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M08/1E/EA/wKgDZ1V5twmDl3OQABIcP3b-QvY628.m4a",
       "title": "老赵说天下-(如何证明我妈是我妈)",
-      "duration": 384.13
+      "duration": 384.1299999999999954525264911353588104248046875
     },
     {
       "trackId": 7277411,
@@ -571,7 +1165,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M0B/1B/D6/wKgDW1V29QDjVf0HADE1rcUhK0Y693.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M0B/1B/D7/wKgDXFV29PDyibkEABLKW5d3LGQ867.m4a",
       "title": "老赵说天下-(小偷很忙)",
-      "duration": 398.6
+      "duration": 398.6000000000000227373675443232059478759765625
     },
     {
       "trackId": 7241936,
@@ -582,7 +1176,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M08/1B/0B/wKgDYVV1oTWxnlRFAC1QGI9qAig611.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M02/1A/DA/wKgDYFV1oU-xMoWlABFN29eP2Kc888.m4a",
       "title": "老赵说天下-(病友们，何弃疗)",
-      "duration": 366.99
+      "duration": 366.990000000000009094947017729282379150390625
     },
     {
       "trackId": 7224855,
@@ -593,7 +1187,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M0A/1A/A1/wKgDXVV0cN7DFC18ADMSXS7GcC0095.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M0A/1A/B5/wKgDXlV0cNHgz-PcABOATrSbGPQ675.m4a",
       "title": "老赵说天下-(高勒个考)",
-      "duration": 413.68
+      "duration": 413.68000000000000682121026329696178436279296875
     },
     {
       "trackId": 7202459,
@@ -604,7 +1198,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M09/19/89/wKgDalVy9tnzB4GiAClAIYRfXoI108.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M09/19/62/wKgDW1Vy9uqy5ry4AA_ArCocPVM751.m4a",
       "title": "老赵说天下-(不得不说的大长腿)",
-      "duration": 334.08
+      "duration": 334.07999999999998408384271897375583648681640625
     },
     {
       "trackId": 7180380,
@@ -615,7 +1209,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M09/18/9D/wKgDYlVx0KvCLAI3ADEPfWAYas4220.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M09/18/9C/wKgDYlVx0KmB6ETuABK7zR8VQp0508.m4a",
       "title": "老赵说天下-(致我们终将逝去的校园)",
-      "duration": 397.37
+      "duration": 397.3700000000000045474735088646411895751953125
     },
     {
       "trackId": 7166645,
@@ -626,7 +1220,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M09/17/4B/wKgDWlVweHPhFhsIAD_Tn_oFUro382.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M09/17/4A/wKgDWlVweG_geEaZABheoPnLmKE498.m4a",
       "title": "老赵说天下-(回家的路-2)",
-      "duration": 517.07
+      "duration": 517.0700000000000500222085975110530853271484375
     },
     {
       "trackId": 7153634,
@@ -637,7 +1231,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group11/M0A/15/FB/wKgDa1VvBKjyXpV5ADdRnaxS4fc012.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M0A/15/F9/wKgDbVVvBIPTuUd2ABUftk_a-JY458.m4a",
       "title": "老赵说天下-(回家的路)",
-      "duration": 448.1
+      "duration": 448.1000000000000227373675443232059478759765625
     },
     {
       "trackId": 7139258,
@@ -648,7 +1242,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M01/14/FF/wKgDaFVtzM7RbViTACmN00AjsDk161.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M01/14/FF/wKgDaFVtzM2DtIv4AA_eWCTBhUs828.m4a",
       "title": "老赵说天下-(前任撕逼大战)",
-      "duration": 336.54
+      "duration": 336.54000000000002046363078989088535308837890625
     },
     {
       "trackId": 7124897,
@@ -659,7 +1253,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M02/14/07/wKgDXVVsXEzCTz1wADCXNXoh3t4289.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M0B/14/03/wKgDZFVsXFKRvgL4ABKN5GY_RBw836.m4a",
       "title": "老赵说天下-(绝杀“新非典”)",
-      "duration": 393.59
+      "duration": 393.58999999999997498889570124447345733642578125
     },
     {
       "trackId": 7108681,
@@ -670,7 +1264,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M06/13/49/wKgDYVVrRCuDWHRAACipJ-6u5gA588.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M06/13/28/wKgDYFVrREGD6eJWAA-HtvxtP-M011.m4a",
       "title": "老赵说天下-(普天同庆过六一)",
-      "duration": 329.33
+      "duration": 329.32999999999998408384271897375583648681640625
     },
     {
       "trackId": 7093259,
@@ -681,7 +1275,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M00/12/D9/wKgDWlVp5rqz2_80ADOfL5GvBO4256.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M00/12/D8/wKgDWlVp5reRSgwcABO2DYMVG2s154.m4a",
       "title": "老赵说天下-(高考！高考！)",
-      "duration": 418.14
+      "duration": 418.1399999999999863575794734060764312744140625
     },
     {
       "trackId": 7067000,
@@ -692,7 +1286,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M01/11/86/wKgDW1Vok3XyrG5HADMFKSvFK0w969.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M01/11/7D/wKgDXFVok2rjWt8CABN7RFuBGbA568.m4a",
       "title": "老赵说天下-(娱乐没有圈.)",
-      "duration": 413.26
+      "duration": 413.259999999999990905052982270717620849609375
     },
     {
       "trackId": 7052068,
@@ -703,7 +1297,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M06/23/A1/wKgDX1V-7oOS06tsACq9hGFySF4162.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M07/1F/1B/wKgDaFV6BNKijspbABBSO9wMlQk898.m4a",
       "title": "老赵说天下-(放开那个女孩.让我来)",
-      "duration": 346.17
+      "duration": 346.17000000000001591615728102624416351318359375
     },
     {
       "trackId": 7035911,
@@ -714,7 +1308,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M0A/35/77/wKgDXFWVNKGT2nNJAC7jiMXGUu0106.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M0A/35/77/wKgDXFWVNKGzgc45ABHoQc12qM0527.m4a",
       "title": "老赵说天下-(创业创的好.人人韦小宝)",
-      "duration": 379.79
+      "duration": 379.79000000000002046363078989088535308837890625
     },
     {
       "trackId": 7020481,
@@ -725,7 +1319,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M00/4B/82/wKgDaFWu15zxIFa-AC8IMwPgy-I456.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M00/4B/7F/wKgDZVWu17CgsyjqABH2LLU2B_c487.m4a",
       "title": "老赵说天下-(感情骗子)",
-      "duration": 380.96
+      "duration": 380.95999999999997953636921010911464691162109375
     },
     {
       "trackId": 7002472,
@@ -736,7 +1330,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M0B/23/53/wKgDZlV-4I6SR-xsACu5xUcyJAI294.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M0B/1C/5B/wKgDbFV3VhHQppwiABCylomfO0g369.m4a",
       "title": "老赵说天下-(“歧视罪.斩立决”)",
-      "duration": 354.14
+      "duration": 354.1399999999999863575794734060764312744140625
     },
     {
       "trackId": 6982444,
@@ -747,7 +1341,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M09/46/A4/wKgDYlWoELPi-BiwAC7gmfhXKFQ131.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M09/46/D4/wKgDZlWoEMHDEhqKABHmgHkqJ4w196.m4a",
       "title": "老赵说天下-(关爱生命.远离马路杀手)",
-      "duration": 379.68
+      "duration": 379.68000000000000682121026329696178436279296875
     },
     {
       "trackId": 6974185,
@@ -758,7 +1352,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M03/4F/02/wKgDW1WzSVSAXob4ACu24i0wHN4381.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M03/4F/02/wKgDW1WzSVTBT-pBABCx21b44BQ624.m4a",
       "title": "老赵说天下-(那些年我们一起约过的炮)",
-      "duration": 354.06
+      "duration": 354.06000000000000227373675443232059478759765625
     },
     {
       "trackId": 6959469,
@@ -769,7 +1363,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M05/21/D4/wKgDXVV8nymQnfAAACo2hJLQrRU386.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M04/10/48/wKgDY1VlstnAmRktABAfTe0Cink671.m4a",
       "title": "老赵说天下-(老赵的爸爸叫李刚)",
-      "duration": 341.89
+      "duration": 341.8899999999999863575794734060764312744140625
     },
     {
       "trackId": 6943704,
@@ -780,7 +1374,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M06/34/8D/wKgDZ1WT8CywqP0SADg8ELlerng134.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M06/34/88/wKgDaVWT8ELB2_4PABV44p7bgLQ344.m4a",
       "title": "老赵说天下-(咱们绝食吧)",
-      "duration": 455.52
+      "duration": 455.51999999999998181010596454143524169921875
     },
     {
       "trackId": 6924020,
@@ -791,7 +1385,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M09/3B/6D/wKgDYVWcKzOjG_lrADFC1ZQKfPo686.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M08/3B/3E/wKgDYFWcK2ijzNIyABLPZcGLc4s583.m4a",
       "title": "老赵说天下-(超级奶爸是老赵)",
-      "duration": 399.02
+      "duration": 399.01999999999998181010596454143524169921875
     },
     {
       "trackId": 6912451,
@@ -802,7 +1396,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M05/21/64/wKgDalV8ad6xbqejAD4LeEwTZ7o445.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M01/10/21/wKgDYlVlnaLxpc71ABewZ2EgStw324.m4a",
       "title": "老赵说天下-(520燥起来吧)",
-      "duration": 502.62
+      "duration": 502.6200000000000045474735088646411895751953125
     },
     {
       "trackId": 6894604,
@@ -813,7 +1407,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M0B/42/FB/wKgDbFWje7LgNMfbADDiBF-mB94968.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M0A/42/D4/wKgDalWje6DCkBNRABKqiZ8v1lY595.m4a",
       "title": "老赵说天下-(赏我一颗茶叶蛋吧)",
-      "duration": 395.93
+      "duration": 395.93000000000000682121026329696178436279296875
     },
     {
       "trackId": 6880897,
@@ -824,7 +1418,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M0A/37/57/wKgDZlWWrL_CDxEQAC4HdOoY6FM091.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M0A/37/57/wKgDZlWWrL-zYXPEABGUOAjF_S8919.m4a",
       "title": "老赵说天下-(带崽装逼，带崽飞)",
-      "duration": 372.81
+      "duration": 372.81000000000000227373675443232059478759765625
     },
     {
       "trackId": 6870502,
@@ -835,7 +1429,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M07/35/E9/wKgDY1WVLvTzxUU9ACtpI3TjYvc828.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M07/35/CF/wKgDZFWVLtDQUUeoABCTy-lBPPE089.m4a",
       "title": "老赵说天下-(组团去自首)",
-      "duration": 351.58
+      "duration": 351.57999999999998408384271897375583648681640625
     },
     {
       "trackId": 6843656,
@@ -846,7 +1440,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M03/27/F8/wKgDYFWD-NiAAcKZACVzi7iAgFg705.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M03/28/21/wKgDYVWD-LGiMF_LAA5NmJoIycE855.m4a",
       "title": "老赵说天下-(特大喜讯)",
-      "duration": 303.3
+      "duration": 303.30000000000001136868377216160297393798828125
     },
     {
       "trackId": 6827081,
@@ -857,7 +1451,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M01/37/2D/wKgDW1WWqyqhKLtBACv9S17hI78465.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M01/37/26/wKgDXFWWqxbj9eiMABDMg4vizDE246.m4a",
       "title": "老赵说天下-(感谢室友不杀之恩)",
-      "duration": 356.28
+      "duration": 356.279999999999972715158946812152862548828125
     },
     {
       "trackId": 6812251,
@@ -868,7 +1462,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M06/29/3D/wKgDaVWFUyPTQciSACinkxYiuSI922.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M06/29/48/wKgDZ1WFUxGSshkZAA-GjhZ3gck023.m4a",
       "title": "老赵说天下-(最新流行病-路怒症.)",
-      "duration": 329.24
+      "duration": 329.240000000000009094947017729282379150390625
     },
     {
       "trackId": 6811850,
@@ -879,7 +1473,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M08/4E/D4/wKgDYVWy5rnANNaEACagTebyy5Q158.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M08/4E/A0/wKgDYFWy5vySZtlGAA7AhZLbdAE773.m4a",
       "title": "老赵说天下-(找呀找呀找工作)",
-      "duration": 312.81
+      "duration": 312.81000000000000227373675443232059478759765625
     },
     {
       "trackId": 6796497,
@@ -890,7 +1484,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M04/42/16/wKgDZ1WizyLD7iMXACbg2Ev6qcU515.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M04/42/12/wKgDaVWizz3zw0zZAA7ZGUSRr2Y163.m4a",
       "title": "老赵说天下-(你有病吧)",
-      "duration": 314.88
+      "duration": 314.8799999999999954525264911353588104248046875
     },
     {
       "trackId": 6766140,
@@ -901,7 +1495,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group16/M0A/36/2D/wKgDalWVe4XQYphFACz9_7sCZxc369.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group16/M0A/36/46/wKgDbFWVe5WicaD4ABEuUBtjVqo150.m4a",
       "title": "老赵说天下-(你妈催你结婚了吗？)",
-      "duration": 364.43
+      "duration": 364.43000000000000682121026329696178436279296875
     },
     {
       "trackId": 6765189,
@@ -912,7 +1506,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M04/4D/4F/wKgDY1WwxnXSId5JADvN4M6d5K0171.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M04/4D/2C/wKgDZFWwxkTBFd6TABbVgXT5SRE701.m4a",
       "title": "老赵说天下-(母仪天下)",
-      "duration": 484.44
+      "duration": 484.43999999999999772626324556767940521240234375
     },
     {
       "trackId": 6735825,
@@ -923,7 +1517,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M06/2E/58/wKgDXlWK-tDQZHMfACdZIG4FDdY263.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M06/2E/45/wKgDXVWK-t_yIEgvAA8Gzr_pAis706.m4a",
       "title": "老赵说天下-(明天天降人民币)",
-      "duration": 318.66
+      "duration": 318.66000000000002501110429875552654266357421875
     },
     {
       "trackId": 6735823,
@@ -934,7 +1528,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group11/M01/50/D5/wKgDbVW0puTAHx2wADNHKznf01U726.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M0A/50/BF/wKgDa1W0pziiCciXABOUdcfxxMM375.m4a",
       "title": "老赵说天下-(难忘邓丽君)",
-      "duration": 415.37
+      "duration": 415.3700000000000045474735088646411895751953125
     },
     {
       "trackId": 6717525,
@@ -945,7 +1539,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M05/3C/32/wKgDYFWdHErDO4L1ACb8t4cHYZg711.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group8/M05/3C/32/wKgDYFWdHEqgjbhFAA7jtWap5QM311.m4a",
       "title": "老赵说天下-(小明。滚出去)",
-      "duration": 315.74
+      "duration": 315.740000000000009094947017729282379150390625
     },
     {
       "trackId": 6698129,
@@ -956,7 +1550,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group7/M07/3D/AD/wKgDX1Wd_WaSIsi6ACaBfybdpt8562.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M02/3D/B3/wKgDWlWd_XOzPY92AA60v9tTkhY925.m4a",
       "title": "老赵说天下-(要嫁就嫁王思聪)",
-      "duration": 311.82
+      "duration": 311.81999999999999317878973670303821563720703125
     },
     {
       "trackId": 6681350,
@@ -967,7 +1561,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M01/52/58/wKgDXVW1-lbhhU2GACgwwjEjSXU435.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M01/52/52/wKgDXlW1-j2DPChMAA9ZGq3QEkg709.m4a",
       "title": "老赵说天下-(老赵的梦想)",
-      "duration": 325.48
+      "duration": 325.48000000000001818989403545856475830078125
     },
     {
       "trackId": 6534442,
@@ -978,7 +1572,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M04/4D/3D/wKgDY1Wwt0biiDxIACVWQY0nD3o784.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M04/4D/1B/wKgDZFWwtxXy_pOhAA5CTcvuwZ4080.m4a",
       "title": "老赵说天下-（大大喊你去整容）",
-      "duration": 302.36
+      "duration": 302.3600000000000136424205265939235687255859375
     },
     {
       "trackId": 6664629,
@@ -989,7 +1583,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M0A/1E/22/wKgDZFV5LJHx81E3ACgWTj1vzj0966.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M01/0A/99/wKgDYlVgAY-DkTAuAA9PL1dB8Dc883.m4a",
       "title": "老赵说天下-(导游大姐也疯狂)",
-      "duration": 324.64
+      "duration": 324.6399999999999863575794734060764312744140625
     },
     {
       "trackId": 6592796,
@@ -1000,7 +1594,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group13/M03/52/57/wKgDXlW1_NngLIrSAChp96ozAQE875.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group13/M03/52/5D/wKgDXVW1_PLSRU6uAA9u_8roTpI151.m4a",
       "title": "老赵说天下-(老赵约你去速八)",
-      "duration": 327.28
+      "duration": 327.279999999999972715158946812152862548828125
     },
     {
       "trackId": 6625533,
@@ -1011,7 +1605,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M00/2A/39/wKgDaVWGRtLBGA_vACg99WCb0_Q990.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M00/2A/45/wKgDZ1WGRr_Rz3T8AA9eJPS58Tc362.m4a",
       "title": "老赵说天下-(老赵碰上瓷儿)",
-      "duration": 325.92
+      "duration": 325.92000000000001591615728102624416351318359375
     },
     {
       "trackId": 6637482,
@@ -1022,7 +1616,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M05/20/04/wKgDYVV7BezBRGEoACfdJYKCfmI433.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group11/M09/0D/E0/wKgDbVVjuU3zb3NBAA85MY8vZKU968.m4a",
       "title": "老赵说天下-(堵车.非一般的赶脚)",
-      "duration": 322.84
+      "duration": 322.83999999999997498889570124447345733642578125
     },
     {
       "trackId": 6650104,
@@ -1033,7 +1627,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group8/M01/1F/AD/wKgDYVV6wp_y4ztjACcaDYHo07c302.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group7/M0A/0D/6C/wKgDX1ViZaPDRKAyAA7uu4V7x5M468.m4a",
       "title": "老赵说天下-(噩耗来袭)",
-      "duration": 316.68
+      "duration": 316.68000000000000682121026329696178436279296875
     },
     {
       "trackId": 6608906,
@@ -1044,7 +1638,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group12/M04/3F/E3/wKgDW1WgwxDjfqxRACZFW7mpm_Y000.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group12/M04/3F/E1/wKgDXFWgwvnAwsNcAA6djuzbv9M175.m4a",
       "title": "老赵说天下-(打开有奖！)",
-      "duration": 309.94
+      "duration": 309.93999999999999772626324556767940521240234375
     },
     {
       "trackId": 6577743,
@@ -1055,7 +1649,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group10/M04/42/09/wKgDZ1Wiuovz9TSbAClRu5UfAxY240.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group10/M04/42/05/wKgDaVWiuqXApI6lAA_HZPTV5Co722.m4a",
       "title": "老赵说天下-(纪念汪国真君)",
-      "duration": 334.62
+      "duration": 334.6200000000000045474735088646411895751953125
     },
     {
       "trackId": 6559490,
@@ -1066,7 +1660,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group9/M07/3B/80/wKgDZlWccrfyvfnAACUYvpDnCIQ192.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group9/M07/3B/61/wKgDYlWccqygfUJqAA4rW4dejA8474.m4a",
       "title": "老赵说天下-(左耳说它听见了青春)",
-      "duration": 300.4
+      "duration": 300.3999999999999772626324556767940521240234375
     },
     {
       "trackId": 6545152,
@@ -1077,7 +1671,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group15/M0A/3B/D6/wKgDZVWccsfA8g4KACR4wmPAE-w229.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group15/M0A/3B/D6/wKgDZVWccseizvb7AA3t6Ek9_-g554.m4a",
       "title": "老赵说天下-(老赵辞职)",
-      "duration": 295.34
+      "duration": 295.33999999999997498889570124447345733642578125
     },
     {
       "trackId": 6512104,
@@ -1088,7 +1682,7 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M06/4B/93/wKgDZFWvJQ_yP6ZrACDJhqYT3fI643.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M06/4B/BB/wKgDY1WvJT_QqVJlAAyGP-3-zbE495.m4a",
       "title": "老赵说天下-（毕姥爷约饭么？）",
-      "duration": 265.45
+      "duration": 265.44999999999998863131622783839702606201171875
     },
     {
       "trackId": 6492954,
@@ -1099,9 +1693,9 @@
       "playPathAacv164": "http://audio.xmcdn.com/group14/M01/44/A4/wKgDZFWl-SaiLcbDAByn4e3z3ZA362.m4a",
       "playPathAacv224": "http://audio.xmcdn.com/group14/M05/44/C0/wKgDY1Wl-VKweqxlAArylIugFDw777.m4a",
       "title": "老赵说天下-（红包大战）",
-      "duration": 232.01
+      "duration": 232.009999999999990905052982270717620849609375
     }
   ],
-  "albumTitle": "老赵说天下-话题脱口秀",
+  "albumTitle": " 老赵说天下-话题脱口秀",
   "msg": "0"
 }

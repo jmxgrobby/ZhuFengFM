@@ -15,4 +15,9 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/ZhuFengFM/pulltorefresh/unspecified/res/values-ja/values-ja.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_pull_label">画面を引っ張って…</string>
+    <string name="pull_to_refresh_refreshing_label">読み込み中…</string>
+    <string name="pull_to_refresh_release_label">指を離して更新…</string>
 </resources>

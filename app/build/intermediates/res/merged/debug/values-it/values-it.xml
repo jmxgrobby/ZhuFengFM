@@ -15,4 +15,9 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Ricerca vocale"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Condividi con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
+    <!-- From: file:/E:/studio_workspace/ZhuFengFM/app/build/intermediates/exploded-aar/ZhuFengFM/pulltorefresh/unspecified/res/values-it/values-it.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_pull_label">Tira per aggiornare…</string>
+    <string name="pull_to_refresh_refreshing_label">Caricamento…</string>
+    <string name="pull_to_refresh_release_label">Rilascia per aggionare…</string>
 </resources>

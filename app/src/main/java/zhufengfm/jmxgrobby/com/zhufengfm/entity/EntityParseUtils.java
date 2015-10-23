@@ -5,6 +5,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.AlbumEntity;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.AlbumItem;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.TrackEntity;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.*;
 
 import java.util.HashMap;
@@ -25,6 +28,11 @@ public class EntityParseUtils {
     public EntityParseUtils() {
     }
 
+    /**
+     * 解析发现类型
+     * @param jsonObject
+     * @return
+     */
     public static List<DiscoverCategory> parseDiscoverCategories(JSONObject jsonObject){
         List<DiscoverCategory> ret = null;
 
@@ -55,6 +63,11 @@ public class EntityParseUtils {
         return ret;
     }
 
+    /**
+     * 解析发现推荐
+     * @param jsonObject
+     * @return
+     */
     public static HashMap<String,Object> parseDiscoverRecomments(JSONObject jsonObject) {
 
         HashMap<String,Object> result = null;
@@ -124,5 +137,43 @@ public class EntityParseUtils {
         }
 
         return result;
+    }
+
+    /**
+     * 解析专辑
+     */
+    public static List<AlbumItem> parseAlbumItem(JSONObject jsonObject){
+        List<AlbumItem> ret = null;
+        if(jsonObject!=null){
+            try {
+                int code = jsonObject.getInt("ret");
+                if (code == Configs.TASK_RESULT_OK) {
+                    MyLog.d("debug111","code正确");
+                    ret = new LinkedList<>();
+                    //解析 正在播放的曲目
+                    JSONObject albumEntity = jsonObject.getJSONObject("album");
+                    AlbumEntity album = new AlbumEntity();
+                    album.parseJSON(albumEntity);
+                    ret.add(album);
+
+                    //解析 专辑
+                    JSONObject obj = jsonObject.getJSONObject("tracks");
+                    JSONArray array = obj.getJSONArray("list");
+                    for (int i = 0; i < array.length(); i++) {
+                        JSONObject trackObj = array.getJSONObject(i);
+                        TrackEntity trackEntity = new TrackEntity();
+                        trackEntity.parseJSON(trackObj);
+                        ret.add(trackEntity);
+                    }
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        MyLog.d("debug111",ret.size()+"长度");
+        return ret;
     }
 }

@@ -26,4 +26,5 @@ dependencies {
     //如果使用的是“groupid：名称 ：版本号”这种方式 ，
     // 代表从AndroidSDK或者网络中自动下载相应的jar包方式导入类库
     compile 'com.android.support:design:22.2.0'
+    compile project(':pulltorefresh')
 }

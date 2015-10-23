@@ -23,6 +23,7 @@ MERGED from [com.android.support:design:22.2.0] E:\studio_workspace\ZhuFengFM\ap
 MERGED from [com.android.support:appcompat-v7:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [ZhuFengFM:pulltorefresh:unspecified] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\ZhuFengFM\pulltorefresh\unspecified\AndroidManifest.xml:11:5-12:19
 	android:label
 		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:10:9-41
 	android:allowBackup
@@ -71,6 +72,7 @@ MERGED from [com.android.support:design:22.2.0] E:\studio_workspace\ZhuFengFM\ap
 MERGED from [com.android.support:appcompat-v7:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [ZhuFengFM:pulltorefresh:unspecified] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\ZhuFengFM\pulltorefresh\unspecified\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml
 		INJECTED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml

@@ -1,6 +1,7 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import com.jmxgrobby.utils.DimensionUtil;
 import com.jmxgrobby.utils.MyLog;
 import org.json.JSONException;
 import org.json.JSONObject;
+import zhufengfm.jmxgrobby.com.zhufengfm.AlbumDetailActivity;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.adapters.DiscoverRecommendAdapter;
@@ -67,12 +69,19 @@ public class DiscoverRecommendFragment extends BaseFragment implements TaskCallb
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 DimensionUtil.dpTopx(getActivity(),180)
         ) ;
+
         focusImageVpager.setLayoutParams(lp);
         headList = new LinkedList();
         picPagerAdapter = new PicPagerAdapter(headList,getActivity());
+
         focusImageVpager.setAdapter(picPagerAdapter);
         listview.addHeaderView(focusImageVpager);
+        focusImageVpager.setOnClickListener(this);
+        // TODO 广告栏响应事件
 
+        View footView  = LayoutInflater.from(getActivity())
+                .inflate(R.layout.discover_recommend_footview,null,false);
+        listview.addFooterView(footView);
         listview.setAdapter(adapter);
 
         return inflate;
@@ -150,8 +159,10 @@ public class DiscoverRecommendFragment extends BaseFragment implements TaskCallb
             DiscoverRecommendAlbums item = (DiscoverRecommendAlbums) list.get(Integer.parseInt(strings[0]));
             AlbumRecommend albumRecommend = item.getList().get(Integer.parseInt(strings[1]));
             //17 专辑详情
-
-            Toast.makeText(getActivity(), "点击了" + albumRecommend.getTitle(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), AlbumDetailActivity.class);
+            intent.putExtra("albumId", ""+albumRecommend.getAlbumId());
+            getActivity().startActivity(intent);
+           // Toast.makeText(getActivity(), "点击了" + albumRecommend.getTitle(), Toast.LENGTH_SHORT).show();
         }else if(tag instanceof  Integer){
             DiscoverRecommendAlbums item = (DiscoverRecommendAlbums) list.get((int) tag);
             Toast.makeText(getActivity(), "点击了更多" + item.getTitle(), Toast.LENGTH_SHORT).show();
