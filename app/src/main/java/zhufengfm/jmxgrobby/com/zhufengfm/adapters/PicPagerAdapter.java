@@ -7,14 +7,12 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.jmxgrobby.utils.DimensionUtil;
-import com.jmxgrobby.utils.MyLog;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import com.lidroid.xutils.bitmap.core.BitmapSize;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.discoverrecommend.DiscoverRecommendHead;
-import zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover.DiscoverRecommendFragment;
 
 import java.util.List;
 

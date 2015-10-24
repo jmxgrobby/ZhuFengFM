@@ -45,6 +45,11 @@
 
         <service android:name="zhufengfm.jmxgrobby.com.zhufengfm.service.MusicService" >
         </service>
+
+        <activity
+            android:name="zhufengfm.jmxgrobby.com.zhufengfm.MusicInfoActivity"
+            android:label="@string/title_activity_music_info" >
+        </activity>
     </application>
 
 </manifest>

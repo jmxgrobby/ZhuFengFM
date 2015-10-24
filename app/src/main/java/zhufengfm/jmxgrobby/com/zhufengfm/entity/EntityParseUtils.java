@@ -1,6 +1,6 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.entity;
 
-import com.jmxgrobby.utils.MyLog;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

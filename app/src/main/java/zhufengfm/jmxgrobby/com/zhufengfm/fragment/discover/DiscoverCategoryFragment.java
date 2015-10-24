@@ -9,18 +9,15 @@ import android.view.ViewGroup;
 
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.jmxgrobby.View.Utility;
-import com.jmxgrobby.utils.MyLog;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;
-import zhufengfm.jmxgrobby.com.zhufengfm.entity.DiscoverCategory;
 import zhufengfm.jmxgrobby.com.zhufengfm.fragment.BaseFragment;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.DiscoverCategoryTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.

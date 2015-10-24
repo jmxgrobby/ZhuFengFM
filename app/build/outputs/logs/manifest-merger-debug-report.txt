@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:7:5-44:19
+ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:7:5-47:19
 MERGED from [com.android.support:design:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
@@ -67,9 +67,15 @@ ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:35:9-3
 	android:name
 		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:36:13-48
 service#zhufengfm.jmxgrobby.com.zhufengfm.service.MusicService
-ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:40:9-43:19
+ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:40:9-41:19
 	android:name
-		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:41:13-49
+		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:40:18-54
+activity#zhufengfm.jmxgrobby.com.zhufengfm.MusicInfoActivity
+ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:43:9-46:20
+	android:label
+		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:45:13-62
+	android:name
+		ADDED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml:44:13-46
 uses-sdk
 INJECTED from E:\studio_workspace\ZhuFengFM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:22.2.0] E:\studio_workspace\ZhuFengFM\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:20:5-43

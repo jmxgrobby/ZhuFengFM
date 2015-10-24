@@ -37,10 +37,13 @@
             android:label="@string/title_activity_album_detail" >
         </activity>
 
-        <service
-            android:name=".service.MusicService"
-             >
+        <service android:name=".service.MusicService" >
         </service>
+
+        <activity
+            android:name=".MusicInfoActivity"
+            android:label="@string/title_activity_music_info" >
+        </activity>
     </application>
 
 </manifest>

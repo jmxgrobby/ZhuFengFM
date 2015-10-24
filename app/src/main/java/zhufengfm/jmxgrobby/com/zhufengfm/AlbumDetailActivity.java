@@ -2,16 +2,13 @@ package zhufengfm.jmxgrobby.com.zhufengfm;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.v7.internal.widget.ViewUtils;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.*;
-import com.jmxgrobby.utils.MyLog;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.DimensionUtil;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import zhufengfm.jmxgrobby.com.zhufengfm.adapters.AbsAdapter;
@@ -22,17 +19,20 @@ import zhufengfm.jmxgrobby.com.zhufengfm.service.MusicService;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.AlbumTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
+import zhufengfm.jmxgrobby.com.zhufengfm.widgets.MyScrollView;
+import zhufengfm.jmxgrobby.com.zhufengfm.widgets.ScrollViewListener;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-public class AlbumDetailActivity extends Activity implements View.OnClickListener, TaskCallback, AdapterView.OnItemClickListener {
+public class AlbumDetailActivity extends Activity implements View.OnClickListener, TaskCallback, AdapterView.OnItemClickListener, ScrollViewListener {
 
     private ListView listView;
     private ImageView album_back,album_setting,album_icon,album_small_icon;
     private TextView  album_title,album_info,album_tag,album_person_name;
+    //当前播放的是第几首
+    private  int currentPosition;
 
     @ViewInject(R.id.album_detail_collect0)
     private Button collect_0;
@@ -54,8 +54,12 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     private TextView selector_0;
     @ViewInject(R.id.album_detail_select_1)
     private TextView selector_1;
-@ViewInject(R.id.album_detail_scollview)
-    private ScrollView scrollView;
+    @ViewInject(R.id.album_detail_scollview)
+    private MyScrollView scrollView;
+    @ViewInject(R.id.album_detail_hide_layout)
+    private RelativeLayout hide_layout;
+    @ViewInject(R.id.album_detail_play)
+    private ImageButton play;
     private BitmapUtils bitmapUtils;
 
 
@@ -91,7 +95,6 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         listView = (ListView) findViewById(R.id.album_detail_listview);
         // 这是测试数据
         list = new ArrayList<>();
-
         adapter = new AbsAdapter<TrackEntity>(R.layout.discover_album_listview_item,
               this,list  ) {
             @Override
@@ -104,9 +107,13 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
                 playtime = (TextView) vHolder.getView(R.id.album_detail_listview_item_playtime);
                 takecount = (TextView) vHolder.getView(R.id.album_detail_listview_item_takecounts);
                 icon = (ImageView) vHolder.getView(R.id.album_detail_listview_item_isplay);
-                if(list.get(0) == data){
+
+                if(data == list.get(currentPosition)){
                     icon.setVisibility(View.VISIBLE);
-                }
+                    AnimationDrawable drawable = (AnimationDrawable) icon.getBackground();
+                    drawable.start();
+                }else
+                    icon.setVisibility(View.GONE);
                 down = (ImageView) vHolder.getView(R.id.album_detail_listview_item_download);
                 down.setTag(data);
                 down.setOnClickListener(AlbumDetailActivity.this);
@@ -141,7 +148,8 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         listView.setOnItemClickListener(this);
 
         // TODO 给ScroView设置滑动监听
-
+        scrollView.setScrollViewListener(this);
+        play.setOnClickListener(this);
     }
 
 
@@ -150,6 +158,9 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         if(v.getTag() instanceof TrackEntity){
             TrackEntity tag = (TrackEntity) v.getTag();
             Toast.makeText(this,"点击了下载"+tag.getTitle(),Toast.LENGTH_SHORT).show();
+        }else if(v.getId() == R.id.album_detail_play){
+            Intent  infoIntent = new Intent(AlbumDetailActivity.this,MusicInfoActivity.class);
+            startActivity(infoIntent);
         }
     }
 
@@ -194,6 +205,20 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         serviceIntent.putExtra("position",position);
+        currentPosition = position;
+        adapter.notifyDataSetChanged();
         startService(serviceIntent);
+    }
+
+    @Override
+    public void onScrollChanged(MyScrollView scrollView, int x, int y, int oldx, int oldy) {
+       if(y>= DimensionUtil.dpTopx(this,160)){
+           hide_layout.setVisibility(View.VISIBLE);
+          // hide_llayout.setVisibility(View.VISIBLE);
+       }else {
+           hide_layout.setVisibility(View.INVISIBLE);
+           //hide_llayout.setVisibility(View.GONE);
+       }
+
     }
 }

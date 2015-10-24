@@ -45,11 +45,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 fragments[3] = new PersonalFragment();
 
             //采用hide和show的形式，进行处理
-            Log.d("debug111","执行onResume方法");
             manager = getSupportFragmentManager();
             tx = manager.beginTransaction();
             for (int i = 0; i < fragments.length; i++) {
-                Log.d("debug111","onResume 添加碎片");
                 tx.add(R.id.main_fragment_container, fragments[i], "tag" + i);
                 tx.hide(fragments[i]);
             }

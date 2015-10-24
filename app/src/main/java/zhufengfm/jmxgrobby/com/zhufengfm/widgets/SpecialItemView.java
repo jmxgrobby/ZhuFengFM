@@ -1,6 +1,5 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.widgets;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -11,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.jmxgrobby.utils.DimensionUtil;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.DimensionUtil;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.bitmap.BitmapDisplayConfig;
 import zhufengfm.jmxgrobby.com.zhufengfm.R;

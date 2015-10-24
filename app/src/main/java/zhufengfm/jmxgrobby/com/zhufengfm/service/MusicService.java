@@ -4,9 +4,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
-import android.os.Parcelable;
 import android.support.v4.content.LocalBroadcastManager;
-import com.jmxgrobby.utils.MyLog;
+import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.TrackEntity;
 
@@ -75,12 +74,13 @@ public class MusicService extends Service {
            while(mediaPlayer!=null&&mediaPlayer.isPlaying()){
                 sumLength = mediaPlayer.getDuration();
                currentLength = mediaPlayer.getCurrentPosition();
-               if(sumLength ==currentLength){
-                    MyLog.d("debug111","sum="+sumLength+",current = "+currentLength);
-                    currentPlayer++;
-                    playMusic();
+               if(currentLength>=sumLength){
+                   currentPlayer++;
+                   playMusic();
                }
            }
+
+
         }
     }
 }
