@@ -36,6 +36,11 @@
             android:name=".AlbumDetailActivity"
             android:label="@string/title_activity_album_detail" >
         </activity>
+
+        <service
+            android:name=".service.MusicService"
+             >
+        </service>
     </application>
 
 </manifest>

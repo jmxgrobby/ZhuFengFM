@@ -32,4 +32,7 @@ public class Configs {
 
     //专辑接口
     public static final String DISCOVER_ALBUM ="http://mobile.ximalaya.com/mobile/others/ca/album/track/%s/true/1/20";
+
+    //音乐播放类型 点击推荐列表进入 传入一个List集合
+    public static final String MUSIC_TYPE_RECOMMEND = "typ1";
 }

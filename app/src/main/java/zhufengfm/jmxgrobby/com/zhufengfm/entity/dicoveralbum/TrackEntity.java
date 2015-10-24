@@ -1,7 +1,12 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import org.json.JSONException;
 import org.json.JSONObject;
+import zhufengfm.jmxgrobby.com.zhufengfm.entity.Parsable;
+
+import java.io.Serializable;
 
 /**
  * Created
@@ -9,7 +14,11 @@ import org.json.JSONObject;
  * Email: jmxgrobby@163.com
  * Date:  2015/10/23.
  */
-public class TrackEntity extends  AlbumItem{
+public class TrackEntity extends  AlbumItem implements  Serializable{
+
+
+
+
     /**
      *  "trackId": 9427338,
      "uid": 12495477,
@@ -42,23 +51,36 @@ public class TrackEntity extends  AlbumItem{
      "status": 1,
      "downloadSize": 8488868,
      "downloadAacSize": 6312972
+
      */
     public void TrackEntity(){
         this.tag = "tracks";
     }
+    private String playUrl64;
     private String title;
     private long playtimes;
     private int comments;
     private double duration;
+
     public void parseJSON(JSONObject json){
         try {
             title = json.getString("title");
             playtimes = json.getLong("playtimes");
             comments = json.getInt("comments");
             duration = json.getDouble("duration");
+            playUrl64 = json.getString("playUrl64");
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public String getPlayUrl64() {
+        return playUrl64;
+    }
+
+    public void setPlayUrl64(String playUrl64) {
+        this.playUrl64 = playUrl64;
     }
 
     public double getDuration() {
@@ -92,4 +114,7 @@ public class TrackEntity extends  AlbumItem{
     public void setComments(int comments) {
         this.comments = comments;
     }
+
+
+
 }

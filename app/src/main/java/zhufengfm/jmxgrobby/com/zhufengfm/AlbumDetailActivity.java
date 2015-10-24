@@ -1,6 +1,8 @@
 package zhufengfm.jmxgrobby.com.zhufengfm;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.internal.widget.ViewUtils;
@@ -16,6 +18,7 @@ import zhufengfm.jmxgrobby.com.zhufengfm.adapters.AbsAdapter;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.AlbumEntity;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.AlbumItem;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.TrackEntity;
+import zhufengfm.jmxgrobby.com.zhufengfm.service.MusicService;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.AlbumTask;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskCallback;
 import zhufengfm.jmxgrobby.com.zhufengfm.tasks.TaskResult;
@@ -25,7 +28,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class AlbumDetailActivity extends Activity implements View.OnClickListener, TaskCallback {
+public class AlbumDetailActivity extends Activity implements View.OnClickListener, TaskCallback, AdapterView.OnItemClickListener {
 
     private ListView listView;
     private ImageView album_back,album_setting,album_icon,album_small_icon;
@@ -57,9 +60,8 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
 
 
     private AbsAdapter<TrackEntity> adapter;
-    private List<TrackEntity> list;
-
-
+    private ArrayList<TrackEntity> list;
+    private Intent serviceIntent;
 
 
     @Override
@@ -68,6 +70,8 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_album_detail);
         com.lidroid.xutils.ViewUtils.inject(this);
+        serviceIntent = new Intent(getApplicationContext(), MusicService.class);
+        serviceIntent.putExtra("tag",Configs.MUSIC_TYPE_RECOMMEND);
         String url = String.format(Configs.DISCOVER_ALBUM,getIntent().getStringExtra("albumId"));
         bitmapUtils = new BitmapUtils(this);
         init();
@@ -86,7 +90,7 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         album_person_name= (TextView) findViewById(R.id.album_detail_person_name);
         listView = (ListView) findViewById(R.id.album_detail_listview);
         // 这是测试数据
-        list = new LinkedList<>();
+        list = new ArrayList<>();
 
         adapter = new AbsAdapter<TrackEntity>(R.layout.discover_album_listview_item,
               this,list  ) {
@@ -123,17 +127,18 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
                 int comments = data.getComments();
                 takecount.setText(comments +"");
 
-                //一个不知名的时间  第二排第二个 设计的是最后播放时间
+                //播放时长
                 double duration = data.getDuration();
                 int minute = (int) (duration)/60;
-                String minuteS = minute>60?minute+"":"0"+minute;
+                String minuteS = minute>10?minute+"":"0"+minute;
                 int secont = (int) duration %60;
-                String secoud = secont>60?secont+"":"0"+secont;
+                String secoud = secont>10?secont+"":"0"+secont;
                 playtime.setText(String.format("%s:%s",minuteS,secoud));
             }
         };
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(this);
 
         // TODO 给ScroView设置滑动监听
 
@@ -150,13 +155,10 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
 
     @Override
     public void onTaskFinished(TaskResult result) {
-        MyLog.d("debug111","判断返回结果");
         if(result!=null){
             if(result.action==Configs.TASK_ACTION_ALBUM
                     &&result.resultCode==Configs.TASK_RESULT_OK){
-                MyLog.d("debug111","正确的一步返回");
                 if(result.data instanceof List){
-                    MyLog.d("debug111","返回的时List");
                     List<AlbumItem >  albumItemList = (List<AlbumItem>) result.data;
                     list.clear();
                     for (int i = 0; i < albumItemList.size(); i++) {
@@ -179,9 +181,19 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
                         }
                     }
                     adapter.notifyDataSetChanged();
+                    serviceIntent.putExtra("list",list);
+                    MyLog.d("debug111", "开启服务");
+                    getApplicationContext().startService(serviceIntent);
 
                 }
             }
         }
+    }
+
+    //listview点击事件
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        serviceIntent.putExtra("position",position);
+        startService(serviceIntent);
     }
 }

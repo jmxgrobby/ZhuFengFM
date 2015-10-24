@@ -12,7 +12,7 @@
                 android:id="@+id/album_detail_listview_item_isplay"
                 android:visibility="gone"
                 android:layout_margin="10dp"
-                android:src="@mipmap/play_flag_wave_01"
+                android:background="@drawable/play_flag_wave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
