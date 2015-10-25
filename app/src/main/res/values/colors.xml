@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="bg_hide">#A3B3AA</color>
+    <color name="bg_music">#0d1b28</color>
 </resources>

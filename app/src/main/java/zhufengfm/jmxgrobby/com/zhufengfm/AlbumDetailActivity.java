@@ -137,9 +137,9 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
                 //播放时长
                 double duration = data.getDuration();
                 int minute = (int) (duration)/60;
-                String minuteS = minute>10?minute+"":"0"+minute;
+                String minuteS = minute>=10?minute+"":"0"+minute;
                 int secont = (int) duration %60;
-                String secoud = secont>10?secont+"":"0"+secont;
+                String secoud = secont>=10?secont+"":"0"+secont;
                 playtime.setText(String.format("%s:%s",minuteS,secoud));
             }
         };

@@ -35,4 +35,10 @@ public class Configs {
 
     //音乐播放类型 点击推荐列表进入 传入一个List集合
     public static final String MUSIC_TYPE_RECOMMEND = "typ1";
+
+
+    //音乐播放界面的广播，接受服务传来的广播
+    public static final String SERVICETOMUSIC_BROADCAST  = "servicetomusic";
+    //服务里面的广播，接受音乐播放界面调的进度广播
+    public static final String MUSICTOSERVICE_BROADCAST = "musictoservice";
 }

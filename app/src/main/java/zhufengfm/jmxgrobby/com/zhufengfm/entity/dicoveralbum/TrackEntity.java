@@ -61,6 +61,8 @@ public class TrackEntity extends  AlbumItem implements  Serializable{
     private long playtimes;
     private int comments;
     private double duration;
+    private String nickname;
+    private String coverSmall;
 
     public void parseJSON(JSONObject json){
         try {
@@ -69,11 +71,28 @@ public class TrackEntity extends  AlbumItem implements  Serializable{
             comments = json.getInt("comments");
             duration = json.getDouble("duration");
             playUrl64 = json.getString("playUrl64");
+            nickname = json.getString("nickname");
+            coverSmall = json.getString("coverSmall");
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
+    public String getCoverSmall() {
+        return coverSmall;
+    }
+
+    public void setCoverSmall(String coverSmall) {
+        this.coverSmall = coverSmall;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
 
     public String getPlayUrl64() {
         return playUrl64;
