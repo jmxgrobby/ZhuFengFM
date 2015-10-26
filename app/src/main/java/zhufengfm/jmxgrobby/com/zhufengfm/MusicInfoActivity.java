@@ -170,7 +170,7 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
                 isForst = false;
 
                 bitmapUtils.display(centerImg, trackEntity.getCoverSmall());
-                //  bitmapUtils.display(bgImg,trackEntity.getCoverSmall());
+                //bitmapUtils.display(bgImg,trackEntity.getCoverSmall());
             }
         }
     }
