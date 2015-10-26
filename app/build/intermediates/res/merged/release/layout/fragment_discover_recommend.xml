@@ -1,0 +1,11 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/discover_recommend_listview"
+             android:dividerHeight="@dimen/discover_recommend_list_divider_height"
+            android:descendantFocusability="afterDescendants"
+             tools:context="zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover.DiscoverRecommendFragment">
+
+</ListView>
+<!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/layout/fragment_discover_recommend.xml -->

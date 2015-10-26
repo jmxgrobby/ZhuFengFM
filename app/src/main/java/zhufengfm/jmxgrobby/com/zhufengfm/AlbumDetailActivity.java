@@ -1,9 +1,13 @@
 package zhufengfm.jmxgrobby.com.zhufengfm;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
 import android.view.Window;
 import android.widget.*;
@@ -33,6 +37,16 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     private TextView  album_title,album_info,album_tag,album_person_name;
     //当前播放的是第几首
     private  int currentPosition;
+
+    private BroadcastReceiver  playing = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            currentPosition = intent.getIntExtra("position", -1);
+            MyLog.d("debug111", "收到了改变界面的广播"+currentPosition);
+            adapter.notifyDataSetChanged();
+        }
+    };
 
     @ViewInject(R.id.album_detail_collect0)
     private Button collect_0;
@@ -152,6 +166,11 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         play.setOnClickListener(this);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        LocalBroadcastManager.getInstance(this).registerReceiver(playing,new IntentFilter(Configs.MUSICTOSERVICE_BROADCAST));
+    }
 
     @Override
     public void onClick(View v) {

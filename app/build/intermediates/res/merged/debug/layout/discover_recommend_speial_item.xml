@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/recommend_special_title"
+            android:drawableLeft="@mipmap/finding_title_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精品听单"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            />
+    <TextView
+            android:id="@+id/recommend_special_more"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:focusable="true"
+            android:text="更多"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    <LinearLayout
+            android:id="@+id/recommend_special_layout"
+            android:layout_below="@id/recommend_special_more"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></LinearLayout>
+</RelativeLayout><!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/layout/discover_recommend_speial_item.xml -->

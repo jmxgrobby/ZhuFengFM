@@ -39,6 +39,6 @@ public class Configs {
 
     //音乐播放界面的广播，接受服务传来的广播
     public static final String SERVICETOMUSIC_BROADCAST  = "servicetomusic";
-    //服务里面的广播，接受音乐播放界面调的进度广播
+    //初次点进专辑的广播，接受服务传来的音乐播放曲目改变得信息
     public static final String MUSICTOSERVICE_BROADCAST = "musictoservice";
 }

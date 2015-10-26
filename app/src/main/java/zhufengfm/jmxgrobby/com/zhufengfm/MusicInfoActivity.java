@@ -17,6 +17,7 @@ import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.TrackEntity;
+import zhufengfm.jmxgrobby.com.zhufengfm.service.MusicService;
 import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 
 import java.io.Serializable;
@@ -47,10 +48,12 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
     private ImageView bgImg;
     private SeekBar pro;
 
+    //判断目前是否正在播放
+    private boolean isPlaying = true ;
+
     private boolean isForst = true;
     private int currentPro;
 
-    private Intent changeProIntent;
     private BitmapUtils bitmapUtils;
     //广播接收器 用来接收播放信息的广播
     private ProgressBroadReceiver progressBroadReceiver;
@@ -70,8 +73,6 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
         pro.setMax(100000);
 
         instance = LocalBroadcastManager.getInstance(this);
-        changeProIntent = new Intent();
-        changeProIntent.setAction(Configs.MUSICTOSERVICE_BROADCAST);
         //点击事件声明
         initEvent(info_back, alarm, playList, playBefore, playNext, playPause, playHistory);
         pro.setOnSeekBarChangeListener(this);
@@ -87,6 +88,7 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
 
     @Override
     public void onClick(View v) {
+        Intent changeProIntent = new Intent(this,MusicService.class);
         switch (v.getId()) {
             case R.id.activity_music_info_back:
                 finish();
@@ -97,19 +99,26 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
             //下一首
             case R.id.activity_music_info_music_next:
                 changeProIntent.putExtra("tag", "next");
-                instance.sendBroadcast(changeProIntent);
                 isForst = true;
+                startService(changeProIntent);
                 break;
             //上一首
             case R.id.activity_music_info_music_before:
                 changeProIntent.putExtra("tag", "before");
-                instance.sendBroadcast(changeProIntent);
                 isForst = true;
+                startService(changeProIntent);
                 break;
             //暂停
             case R.id.activity_music_info_music_pause:
+                if(isPlaying){
+                    playPause.setBackgroundResource(R.mipmap.play_icon_transparent_normal);
+                    isPlaying = false;
+                }else{
+                    playPause.setBackgroundResource(R.mipmap.pause_icon_transparent_normal);
+                    isPlaying = true;
+                }
                 changeProIntent.putExtra("tag", "pause");
-                instance.sendBroadcast(changeProIntent);
+                startService(changeProIntent);
                 break;
         }
     }
@@ -127,9 +136,12 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
     // TODO 滑动调整有点bug 待修复
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
+        Intent changeProIntent;
+        changeProIntent = new Intent(this, MusicService.class);
         int progress = seekBar.getProgress();
+        changeProIntent.putExtra("tag","change");
         changeProIntent.putExtra("progress", progress);
-        instance.sendBroadcast(changeProIntent);
+        startService(changeProIntent);
     }
 
 

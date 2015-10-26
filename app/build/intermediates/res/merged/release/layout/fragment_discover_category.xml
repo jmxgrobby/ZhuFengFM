@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="zhufengfm.jmxgrobby.com.zhufengfm.fragment.discover.DiscoverCategoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <zhufengfm.jmxgrobby.com.zhufengfm.widgets.FullListView
+            android:id="@+id/discover_categoryfragment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    </zhufengfm.jmxgrobby.com.zhufengfm.widgets.FullListView>
+</LinearLayout>
+
+
+</ScrollView>
+<!-- From: file:/E:/studio_workspace/ZhuFengFM/app/src/main/res/layout/fragment_discover_category.xml -->

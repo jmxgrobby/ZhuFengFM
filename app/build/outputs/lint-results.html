@@ -1,0 +1,1935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Sat Oct 24 18:23:32 CST 2015.<br/>
+3 errors and 174 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#CommitTransaction">CommitTransaction: Missing <code>commit()</code> calls</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InflateParams">InflateParams: Layout Inflation without a Parent</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDependency">GradleDependency: Obsolete Gradle Dependency</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GetInstance">GetInstance: Cipher.getInstance with ECB</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TrulyRandom">TrulyRandom: Weak RNG</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ObsoleteLayoutParam">ObsoleteLayoutParam: Obsolete layout params</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseCompoundDrawables">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#MergeRootFrame">MergeRootFrame: FrameLayout can be replaced with <code>&lt;merge></code> tag</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseSparseArrays">UseSparseArrays: HashMap can be replaced with SparseArray</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#DisableBaselineAlignment">DisableBaselineAlignment: Missing <code>baselineAligned</code> attribute</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Overdraw">Overdraw: Overdraw: Painting regions more than once</a>
+</td></tr>
+<tr>
+<td class="countColumn">25</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UselessParent">UselessParent: Useless parent layout</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">11</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconLocation">IconLocation: Image defined in density-independent drawable folder</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
+<a href="#AppCompatResource">AppCompatResource: Menu namespace</a>
+</td></tr>
+<tr>
+<td class="countColumn">10</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#SmallSp">SmallSp: Text size is too small</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">25</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">43</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HardcodedText">HardcodedText: Hardcoded text</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Bi-directional Text">Bi-directional Text</a>
+</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#RtlSymmetry">RtlSymmetry: Padding and margin symmetry</a>
+</td></tr>
+<tr>
+<td class="countColumn">38</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#RtlHardcoded">RtlHardcoded: Using left/right instead of start/end attributes</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (11)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="CommitTransaction"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">CommitTransaction: Missing <code>commit()</code> calls</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/MainActivity.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/MainActivity.java</a>:50</span>: <span class="message">This transaction should be completed with a <code>commit()</code> call</span><br /><pre class="errorlines">
+<span class="lineno">  47</span>             //&#37319;&#29992;hide&#21644;show&#30340;&#24418;&#24335;&#65292;&#36827;&#34892;&#22788;&#29702;
+<span class="lineno">  48</span>             Log.d("debug111","&#25191;&#34892;onResume&#26041;&#27861;");
+<span class="lineno">  49</span>             manager = getSupportFragmentManager();
+<span class="lineno">  50</span>             tx = manager.<span class="errorspan">beginTransaction();</span>
+<span class="lineno">  51</span>             for (int i = 0; i &lt; fragments.length; i++) {
+<span class="lineno">  52</span>                 Log.d("debug111","onResume &#28155;&#21152;&#30862;&#29255;");
+</pre>
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/MainActivity.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/MainActivity.java</a>:105</span>: <span class="message">This transaction should be completed with a <code>commit()</code> call</span><br /><pre class="errorlines">
+<span class="lineno"> 102</span>         int index = 0;
+<span class="lineno"> 103</span>         int length = fragments.length;
+<span class="lineno"> 104</span>         manager = getSupportFragmentManager();
+<span class="lineno"> 105</span>         tx = manager.<span class="errorspan">beginTransaction();</span>
+<span class="lineno"> 106</span>         switch (v.getId()) {
+<span class="lineno"> 107</span>             case R.id.main_tab_item_discover_layout:
+</pre>
+</div>
+<div class="metadata">Priority: 7 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>commit()</code> calls.</div>
+<div class="explanation">
+After creating a <code>FragmentTransaction</code>, you typically need to commit it as well
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "CommitTransaction" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InflateParams"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InflateParams: Layout Inflation without a Parent</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/fragment/discover/DiscoverRecommendFragment.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/fragment/discover/DiscoverRecommendFragment.java</a>:82</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  79</span>         // TODO &#24191;&#21578;&#26639;&#21709;&#24212;&#20107;&#20214;
+<span class="lineno">  80</span> 
+<span class="lineno">  81</span>         View footView  = LayoutInflater.from(getActivity())
+<span class="lineno">  82</span>                 .inflate(R.layout.discover_recommend_footview,<span class="errorspan">null,false);</span>
+<span class="lineno">  83</span>         listview.addFooterView(footView);
+<span class="lineno">  84</span>         listview.setAdapter(adapter);
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Layout Inflation without a Parent.</div>
+<div class="explanation">
+When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://www.doubleencore.com/2013/05/layout-inflation-as-intended">http://www.doubleencore.com/2013/05/layout-inflation-as-intended</a>
+</div><br/>To suppress this error, use the issue id "InflateParams" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDependency"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDependency: Obsolete Gradle Dependency</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:44</span>: <span class="message">A newer version of com.android.support:design than 22.2.0 is available: 23.1.0</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>     compile fileTree(include: ['*.jar'], dir: 'libs')
+<span class="lineno">  42</span>     //&#22914;&#26524;&#20351;&#29992;&#30340;&#26159;&#8220;groupid&#65306;&#21517;&#31216; &#65306;&#29256;&#26412;&#21495;&#8221;&#36825;&#31181;&#26041;&#24335; &#65292;
+<span class="lineno">  43</span>     // &#20195;&#34920;&#20174;AndroidSDK&#25110;&#32773;&#32593;&#32476;&#20013;&#33258;&#21160;&#19979;&#36733;&#30456;&#24212;&#30340;jar&#21253;&#26041;&#24335;&#23548;&#20837;&#31867;&#24211;
+<span class="lineno">  44</span>     <span class="errorspan">compile 'com.android.support:design:22.2.0'</span>
+<span class="lineno">  45</span>     compile project(':pulltorefresh')
+<span class="lineno">  46</span> }
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Obsolete Gradle Dependency.</div>
+<div class="explanation">
+This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDependency" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="GetInstance"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GetInstance: Cipher.getInstance with ECB</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java</a>:134</span>: <span class="message"><code>Cipher.getInstance</code> should not be called without setting the encryption mode and padding</span><br /><pre class="errorlines">
+<span class="lineno"> 131</span>         byte ret[]=null;
+<span class="lineno"> 132</span>         if(data!=null&amp;&amp;data.length>0&amp;&amp;keyData!=null&amp;&amp;keyData.length==16){
+<span class="lineno"> 133</span>             try {
+<span class="lineno"> 134</span>                 Cipher cipher = Cipher.getInstance(<span class="errorspan">"AES");</span>
+<span class="lineno"> 135</span>                 //AES &#26041;&#24335;1 &#21333;&#19968;&#23494;&#30721;&#30340;&#24773;&#20917;
+<span class="lineno"> 136</span>                 SecretKeySpec keySpec = new SecretKeySpec(keyData,"AES");
+</pre>
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java</a>:261</span>: <span class="message"><code>Cipher.getInstance</code> should not be called without setting the encryption mode and padding</span><br /><pre class="errorlines">
+<span class="lineno"> 258</span>         if(data!=null&amp;&amp;data.length>0&amp;&amp;keyData!=null&amp;&amp; keyData.length==8){
+<span class="lineno"> 259</span>             try {
+<span class="lineno"> 260</span>                 //&#21019;&#24314;&#21152;&#23494;&#24341;&#25806;
+<span class="lineno"> 261</span>                 Cipher cipher = Cipher.getInstance(<span class="errorspan">"DES");</span>
+<span class="lineno"> 262</span>                 //3 &#20934;&#22791;key&#23545;&#35937;
+<span class="lineno"> 263</span>                 // 3.1 DES &#20351;&#29992; DESKeySpec,&#26500;&#36896;&#30340;&#26102;&#20505;&#25351;&#23450;8&#20010;&#23383;&#33410;&#30340;&#23494;&#30721;&#21363;&#21487;
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Cipher.getInstance with ECB.</div>
+<div class="explanation">
+<code>Cipher#getInstance</code> should not be called with ECB as the cipher mode or without setting the cipher mode because the default mode on android is ECB, which is insecure.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GetInstance" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TrulyRandom"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TrulyRandom: Weak RNG</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/utils/EncryptUtil.java</a>:40</span>: <span class="message">Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info.</span><br /><pre class="errorlines">
+<span class="lineno">  37</span>             try {
+<span class="lineno">  38</span>                 Cipher rsa = Cipher.getInstance("RSA");
+<span class="lineno">  39</span>                if(mode == EncryptUtil.ENCRYPT)
+<span class="lineno">  40</span>                 rsa.<span class="errorspan">init(Cipher.ENCRYPT_MODE,key);</span>
+<span class="lineno">  41</span>                 else if(mode==EncryptUtil.DECRYPT)
+<span class="lineno">  42</span>                    rsa.init(Cipher.DECRYPT_MODE,key);
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Weak RNG.</div>
+<div class="explanation">
+Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.<br/>
+<br/>
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .<br/>
+<br/>
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html">https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html</a>
+</div><br/>To suppress this error, use the issue id "TrulyRandom" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="ObsoleteLayoutParam"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ObsoleteLayoutParam: Obsolete layout params</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:40</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno">  37</span>                     />
+<span class="lineno">  38</span>             &lt;TextView
+<span class="lineno">  39</span>                     android:id="@+id/main_tab_item_discover_text"
+<span class="lineno">  40</span>                     <span class="errorspan">android:layout_below="@id/main_tab_item_discover_image"</span>
+<span class="lineno">  41</span>                     android:layout_width="match_parent"
+<span class="lineno">  42</span>                     android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:66</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno">  63</span>                     />
+<span class="lineno">  64</span>             &lt;TextView
+<span class="lineno">  65</span>                     android:id="@+id/main_tab_item_custom_text"
+<span class="lineno">  66</span>                     <span class="errorspan">android:layout_below="@id/main_tab_item_custom_image"</span>
+<span class="lineno">  67</span>                     android:layout_width="match_parent"
+<span class="lineno">  68</span>                     android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:96</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno">  93</span>                     />
+<span class="lineno">  94</span>             &lt;TextView
+<span class="lineno">  95</span>                     android:id="@+id/main_tab_item_download_text"
+<span class="lineno">  96</span>                     <span class="errorspan">android:layout_below="@id/main_tab_item_download_image"</span>
+<span class="lineno">  97</span>                     android:layout_width="match_parent"
+<span class="lineno">  98</span>                     android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:120</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno"> 117</span>                     />
+<span class="lineno"> 118</span>             &lt;TextView
+<span class="lineno"> 119</span>                     android:id="@+id/main_tab_item_personal_text"
+<span class="lineno"> 120</span>                     <span class="errorspan">android:layout_below="@id/main_tab_item_personal_image"</span>
+<span class="lineno"> 121</span>                     android:layout_width="match_parent"
+<span class="lineno"> 122</span>                     android:layout_height="wrap_content"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Obsolete layout params.</div>
+<div class="explanation">
+The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ObsoleteLayoutParam" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseCompoundDrawables"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseCompoundDrawables: Node can be replaced by a <code>TextView</code> with compound drawables</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/discover_categoryfragment_item.xml">../../src/main/res/layout/discover_categoryfragment_item.xml</a>:2</span>: <span class="message">This tag and its children can be replaced by one <code>&lt;TextView/></code> and a compound drawable</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;?xml version="1.0" encoding="utf-8"?>
+<span class="lineno">   2</span> <span class="errorspan">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">   3</span>               android:orientation="horizontal"
+<span class="lineno">   4</span>               android:layout_width="match_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Node can be replaced by a <code>TextView</code> with compound drawables.</div>
+<div class="explanation">
+A <code>LinearLayout</code> which contains an <code>ImageView</code> and a <code>TextView</code> can be more efficiently handled as a compound drawable (a single TextView, using the <code>drawableTop</code>, <code>drawableLeft</code>, <code>drawableRight</code> and/or <code>drawableBottom</code> attributes to draw one or more images adjacent to the text).<br/>
+<br/>
+If the two widgets are offset from each other with margins, this can be replaced with a <code>drawablePadding</code> attribute.<br/>
+<br/>
+There's a lint quickfix to perform this conversion in the Eclipse plugin.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseCompoundDrawables" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="MergeRootFrame"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">MergeRootFrame: FrameLayout can be replaced with <code>&lt;merge></code> tag</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:1</span>: <span class="message">This <code>&lt;FrameLayout></code> can be replaced with a <code>&lt;merge></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> <span class="errorspan">&lt;FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"</span>
+<span class="lineno">   2</span>                 xmlns:tools="http://schemas.android.com/tools"
+<span class="lineno">   3</span>                 android:layout_width="match_parent"
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: FrameLayout can be replaced with <code>&lt;merge></code> tag.</div>
+<div class="explanation">
+If a <code>&lt;FrameLayout></code> is the root of a layout and does not provide background or padding etc, it can often be replaced with a <code>&lt;merge></code> tag which is slightly more efficient. Note that this depends on context, so make sure you understand how the <code>&lt;merge></code> tag works before proceeding.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html">http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html</a>
+</div><br/>To suppress this error, use the issue id "MergeRootFrame" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseSparseArrays"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseSparseArrays: HashMap can be replaced with SparseArray</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/adapters/AbsAdapter.java">../../src/main/java/zhufengfm/jmxgrobby/com/zhufengfm/adapters/AbsAdapter.java</a>:73</span>: <span class="message">Use <code>new SparseArray&lt;View>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  70</span> 		public ViewHolder(View itemView) {
+<span class="lineno">  71</span> 			super();
+<span class="lineno">  72</span> 			this.itemView = itemView;
+<span class="lineno">  73</span> 			cacheView = <span class="errorspan">new HashMap&lt;Integer, View>();</span>
+<span class="lineno">  74</span> 		}
+<span class="lineno">  75</span> 		//&#26597;&#25214;&#25351;&#23450;id&#30340;&#23376;&#25511;&#20214;
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: HashMap can be replaced with SparseArray.</div>
+<div class="explanation">
+For maps where the keys are of type integer, it's typically more efficient to use the Android <code>SparseArray</code> API. This check identifies scenarios where you might want to consider using <code>SparseArray</code> instead of <code>HashMap</code> for better performance.<br/>
+<br/>
+This is <b>particularly</b> useful when the value types are primitives like ints, where you can use <code>SparseIntArray</code> and avoid auto-boxing the values from <code>int</code> to <code>Integer</code>.<br/>
+<br/>
+If you need to construct a <code>HashMap</code> because you need to call an API outside of your control which requires a <code>Map</code>, you can suppress this warning using for example the <code>@SuppressLint</code> annotation.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseSparseArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="DisableBaselineAlignment"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">DisableBaselineAlignment: Missing <code>baselineAligned</code> attribute</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:25</span>: <span class="message">Set <code>android:baselineAligned="false"</code> on this element for better performance</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+<span class="lineno">  23</span>             android:layout_height="wrap_content"
+<span class="lineno">  24</span>             />
+<span class="lineno">  25</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">  26</span>             android:layout_below="@id/recommend_album_title"
+<span class="lineno">  27</span>             android:orientation="horizontal"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>baselineAligned</code> attribute.</div>
+<div class="explanation">
+When a LinearLayout is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "DisableBaselineAlignment" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Overdraw"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Overdraw: Overdraw: Painting regions more than once</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_splash.xml">../../src/main/res/layout/activity_splash.xml</a>:5</span>: <span class="message">Possible overdraw: Root element paints background <code>@mipmap/bg_welcome</code> with a theme that also paints a background (inferred theme is <code>@style/AppTheme</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   2</span>                 xmlns:tools="http://schemas.android.com/tools"
+<span class="lineno">   3</span>                 android:layout_width="match_parent"
+<span class="lineno">   4</span>                 android:layout_height="match_parent"
+<span class="lineno">   5</span>                 <span class="errorspan">android:background="@mipmap/bg_welcome"</span>
+<span class="lineno">   6</span>                 tools:context="zhufengfm.jmxgrobby.com.zhufengfm.SplashActivity"
+<span class="lineno">   7</span>         >
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Overdraw: Painting regions more than once.</div>
+<div class="explanation">
+If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called "overdraw".<br/>
+<br/>
+NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.<br/>
+<br/>
+If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.<br/>
+<br/>
+Of course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.<br/>
+
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Overdraw" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/btn_collect.png">../../src/main/res/mipmap-mdpi/btn_collect.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/btn_collect.png" /><span class="message">The resource <code>R.mipmap.btn_collect</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/btn_collected.png">../../src/main/res/mipmap-mdpi/btn_collected.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/btn_collected.png" /><span class="message">The resource <code>R.mipmap.btn_collected</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/btn_rec_more_normal.png">../../src/main/res/mipmap-mdpi/btn_rec_more_normal.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/btn_rec_more_normal.png" /><span class="message">The resource <code>R.mipmap.btn_rec_more_normal</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/btn_rec_more_pressed.png">../../src/main/res/mipmap-mdpi/btn_rec_more_pressed.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/btn_rec_more_pressed.png" /><span class="message">The resource <code>R.mipmap.btn_rec_more_pressed</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/layout/discover_categoryfragment_item.xml">../../src/main/res/layout/discover_categoryfragment_item.xml</a></span>: <span class="message">The resource <code>R.layout.discover_categoryfragment_item</code> appears to be unused</span><br />
+<button id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 20 More Occurrences...</button>
+<div id="UnusedResourcesDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_album_sort_asc_disable.png">../../src/main/res/mipmap-mdpi/ic_album_sort_asc_disable.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/ic_album_sort_asc_disable.png" /><span class="message">The resource <code>R.mipmap.ic_album_sort_asc_disable</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_album_sort_desc.png">../../src/main/res/mipmap-mdpi/ic_album_sort_desc.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/ic_album_sort_desc.png" /><span class="message">The resource <code>R.mipmap.ic_album_sort_desc</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_album_sort_desc_disable.png">../../src/main/res/mipmap-mdpi/ic_album_sort_desc_disable.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/ic_album_sort_desc_disable.png" /><span class="message">The resource <code>R.mipmap.ic_album_sort_desc_disable</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/menu/menu_album_detail.xml">../../src/main/res/menu/menu_album_detail.xml</a></span>: <span class="message">The resource <code>R.menu.menu_album_detail</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/menu/menu_main.xml">../../src/main/res/menu/menu_main.xml</a></span>: <span class="message">The resource <code>R.menu.menu_main</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/menu/menu_splash.xml">../../src/main/res/menu/menu_splash.xml</a></span>: <span class="message">The resource <code>R.menu.menu_splash</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/menu/menu_welcome.xml">../../src/main/res/menu/menu_welcome.xml</a></span>: <span class="message">The resource <code>R.menu.menu_welcome</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/search_album.png">../../src/main/res/mipmap-mdpi/search_album.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/mipmap-mdpi/search_album.png" /><span class="message">The resource <code>R.mipmap.search_album</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:4</span>: <span class="message">The resource <code>R.string.hello_world</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   1</span> &lt;resources>
+<span class="lineno">   2</span>     &lt;string name="app_name">ZhuFengFM&lt;/string>
+<span class="lineno">   3</span> 
+<span class="lineno">   4</span>     &lt;string <span class="errorspan">name="hello_world">Hello world!&lt;/string></span>
+<span class="lineno">   5</span>     &lt;string name="action_settings">Settings&lt;/string>
+<span class="lineno">   6</span>     &lt;string name="title_activity_splash">SplashActivity&lt;/string>
+</pre>
+<span class="location"><a href="../../src/main/res/drawable/tab1_down.png">../../src/main/res/drawable/tab1_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab1_down.png" /><span class="message">The resource <code>R.drawable.tab1_down</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab1_image.xml">../../src/main/res/drawable/tab1_image.xml</a></span>: <span class="message">The resource <code>R.drawable.tab1_image</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/drawable/tab2_down.png">../../src/main/res/drawable/tab2_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab2_down.png" /><span class="message">The resource <code>R.drawable.tab2_down</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab2_image.xml">../../src/main/res/drawable/tab2_image.xml</a></span>: <span class="message">The resource <code>R.drawable.tab2_image</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/drawable/tab4.png">../../src/main/res/drawable/tab4.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab4.png" /><span class="message">The resource <code>R.drawable.tab4</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab4_image.xml">../../src/main/res/drawable/tab4_image.xml</a></span>: <span class="message">The resource <code>R.drawable.tab4_image</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/drawable/tab5_down.png">../../src/main/res/drawable/tab5_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab5_down.png" /><span class="message">The resource <code>R.drawable.tab5_down</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab5_image.xml">../../src/main/res/drawable/tab5_image.xml</a></span>: <span class="message">The resource <code>R.drawable.tab5_image</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/layout/test.xml">../../src/main/res/layout/test.xml</a></span>: <span class="message">The resource <code>R.layout.test</code> appears to be unused</span><br />
+<span class="location"><a href="../../src/main/res/drawable/title_logo.png">../../src/main/res/drawable/title_logo.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/title_logo.png" /><span class="message">The resource <code>R.drawable.title_logo</code> appears to be unused</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/mipmap-mdpi/tomorrow_back_bg.jpg">../../src/main/res/mipmap-mdpi/tomorrow_back_bg.jpg</a></span>: <span class="message">The resource <code>R.mipmap.tomorrow_back_bg</code> appears to be unused</span><br />
+</div>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UselessParent"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UselessParent: Useless parent layout</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:220</span>: <span class="message">This <code>LinearLayout</code> layout or its <code>RelativeLayout</code> parent is useless</span><br /><pre class="errorlines">
+<span class="lineno"> 217</span>                 android:layout_width="match_parent"
+<span class="lineno"> 218</span>                 android:layout_height="wrap_content"
+<span class="lineno"> 219</span>                 >
+<span class="lineno"> 220</span>                 <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno"> 221</span>                         android:orientation="vertical"
+<span class="lineno"> 222</span>                         android:layout_width="match_parent"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Useless parent layout.</div>
+<div class="explanation">
+A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UselessParent" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconLocation"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconLocation: Image defined in density-independent drawable folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/drawable/a1.png">../../src/main/res/drawable/a1.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/a1.png" /><span class="message">Found bitmap drawable <code>res/drawable/a1.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/bg_zone_img_big.9.png">../../src/main/res/drawable/bg_zone_img_big.9.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/bg_zone_img_big.9.png" /><span class="message">Found bitmap drawable <code>res/drawable/bg_zone_img_big.9.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab1.png">../../src/main/res/drawable/tab1.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab1.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab1.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab1_down.png">../../src/main/res/drawable/tab1_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab1_down.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab1_down.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab2.png">../../src/main/res/drawable/tab2.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab2.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab2.png</code> in densityless folder</span><br clear="right"/>
+<button id="IconLocationDivLink" onclick="reveal('IconLocationDiv');" />+ 6 More Occurrences...</button>
+<div id="IconLocationDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/drawable/tab2_down.png">../../src/main/res/drawable/tab2_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab2_down.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab2_down.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab4.png">../../src/main/res/drawable/tab4.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab4.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab4.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab4_down.png">../../src/main/res/drawable/tab4_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab4_down.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab4_down.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab5.png">../../src/main/res/drawable/tab5.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab5.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab5.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/tab5_down.png">../../src/main/res/drawable/tab5_down.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/tab5_down.png" /><span class="message">Found bitmap drawable <code>res/drawable/tab5_down.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../src/main/res/drawable/title_logo.png">../../src/main/res/drawable/title_logo.png</a></span>: <img class="embedimage" align="right" src="../../src/main/res/drawable/title_logo.png" /><span class="message">Found bitmap drawable <code>res/drawable/title_logo.png</code> in densityless folder</span><br clear="right"/>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image defined in density-independent drawable folder.</div>
+<div class="explanation">
+The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to <code>drawable-mdpi</code> and consider providing higher and lower resolution versions in <code>drawable-ldpi</code>, <code>drawable-hdpi</code> and <code>drawable-xhdpi</code>. If the icon <b>really</b> is density independent (for example a solid color) you can place it in <code>drawable-nodpi</code>.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconLocation" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="AppCompatResource"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">AppCompatResource: Menu namespace</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/menu/menu_main.xml">../../src/main/res/menu/menu_main.xml</a>:7</span>: <span class="message">Should use <code>app:showAsAction</code> with the appcompat library with <code>xmlns:app="http://schemas.android.com/apk/res-auto"</code></span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     &lt;item android:id="@+id/action_settings"
+<span class="lineno">   5</span>           android:title="@string/action_settings"
+<span class="lineno">   6</span>           android:orderInCategory="100"
+<span class="lineno">   7</span>           <span class="errorspan">android:showAsAction="never"/></span>
+<span class="lineno">   8</span> &lt;/menu>
+<span class="lineno">   9</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/menu/menu_splash.xml">../../src/main/res/menu/menu_splash.xml</a>:7</span>: <span class="message">Should use <code>app:showAsAction</code> with the appcompat library with <code>xmlns:app="http://schemas.android.com/apk/res-auto"</code></span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     &lt;item android:id="@+id/action_settings"
+<span class="lineno">   5</span>           android:title="@string/action_settings"
+<span class="lineno">   6</span>           android:orderInCategory="100"
+<span class="lineno">   7</span>           <span class="errorspan">android:showAsAction="never"/></span>
+<span class="lineno">   8</span> &lt;/menu>
+<span class="lineno">   9</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/menu/menu_welcome.xml">../../src/main/res/menu/menu_welcome.xml</a>:7</span>: <span class="message">Should use <code>app:showAsAction</code> with the appcompat library with <code>xmlns:app="http://schemas.android.com/apk/res-auto"</code></span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     &lt;item android:id="@+id/action_settings"
+<span class="lineno">   5</span>           android:title="@string/action_settings"
+<span class="lineno">   6</span>           android:orderInCategory="100"
+<span class="lineno">   7</span>           <span class="errorspan">android:showAsAction="never"/></span>
+<span class="lineno">   8</span> &lt;/menu>
+<span class="lineno">   9</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Menu namespace.</div>
+<div class="explanation">
+When using the appcompat library, menu resources should refer to the <code>showAsAction</code> in the <code>app:</code> namespace, not the <code>android:</code> namespace.<br/>
+<br/>
+Similarly, when <b>not</b> using the appcompat library, you should be using the <code>android:showAsAction</code> attribute.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "AppCompatResource" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SmallSp"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">SmallSp: Text size is too small</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:114</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 111</span>                                             >
+<span class="lineno"> 112</span>                                             &lt;Button
+<span class="lineno"> 113</span>                                                     android:id="@+id/album_detail_collect1"
+<span class="lineno"> 114</span>                                                     <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 115</span>                                                     android:background="#0000"
+<span class="lineno"> 116</span>                                                     android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:135</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 132</span>                                                     android:id="@+id/album_detail_downs1"
+<span class="lineno"> 133</span>                                                     android:background="#0000"
+<span class="lineno"> 134</span>                                                     android:padding="5dp"
+<span class="lineno"> 135</span>                                                     <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 136</span>                                                     android:gravity="center"
+<span class="lineno"> 137</span>                                                     android:layout_width="0dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:151</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 148</span>                                                     />
+<span class="lineno"> 149</span>                                             &lt;Button
+<span class="lineno"> 150</span>                                                     android:id="@+id/album_detail_like1"
+<span class="lineno"> 151</span>                                                     <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 152</span>                                                     android:background="#0000"
+<span class="lineno"> 153</span>                                                     android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:188</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 185</span>                                             android:layout_width="wrap_content"
+<span class="lineno"> 186</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 187</span>                                             android:text="&#25490;&#24207;"
+<span class="lineno"> 188</span>                                             <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 189</span>                                             android:drawableLeft="@mipmap/ic_album_sort_asc"
+<span class="lineno"> 190</span>                                             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:194</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 191</span>                                     &lt;TextView
+<span class="lineno"> 192</span>                                             android:id="@+id/album_detail_select_1"
+<span class="lineno"> 193</span>                                             android:layout_toLeftOf="@id/album_detail_order_1"
+<span class="lineno"> 194</span>                                             <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 195</span>                                             android:padding="5dp"
+<span class="lineno"> 196</span>                                             android:gravity="center"
+</pre>
+<button id="SmallSpDivLink" onclick="reveal('SmallSpDiv');" />+ 5 More Occurrences...</button>
+<div id="SmallSpDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:233</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 230</span>                                 >
+<span class="lineno"> 231</span>                                 &lt;Button
+<span class="lineno"> 232</span>                                         android:id="@+id/album_detail_collect0"
+<span class="lineno"> 233</span>                                         <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 234</span>                                         android:background="#0000"
+<span class="lineno"> 235</span>                                         android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:254</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 251</span>                                         android:id="@+id/album_detail_downs0"
+<span class="lineno"> 252</span>                                         android:background="#0000"
+<span class="lineno"> 253</span>                                         android:padding="5dp"
+<span class="lineno"> 254</span>                                         <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 255</span>                                         android:gravity="center"
+<span class="lineno"> 256</span>                                         android:layout_width="0dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:270</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 267</span>                                         />
+<span class="lineno"> 268</span>                                 &lt;Button
+<span class="lineno"> 269</span>                                         android:id="@+id/album_detail_like0"
+<span class="lineno"> 270</span>                                         <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 271</span>                                         android:background="#0000"
+<span class="lineno"> 272</span>                                         android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:305</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 302</span>                                         android:layout_width="wrap_content"
+<span class="lineno"> 303</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 304</span>                                         android:text="&#25490;&#24207;"
+<span class="lineno"> 305</span>                                         <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 306</span>                                         android:drawableLeft="@mipmap/ic_album_sort_asc"
+<span class="lineno"> 307</span>                                         />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:311</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno"> 308</span>                                 &lt;TextView
+<span class="lineno"> 309</span>                                         android:id="@+id/album_detail_select_0"
+<span class="lineno"> 310</span>                                         android:layout_toLeftOf="@id/album_detail_order_0"
+<span class="lineno"> 311</span>                                         <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno"> 312</span>                                         android:padding="5dp"
+<span class="lineno"> 313</span>                                         android:gravity="center"
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Text size is too small.</div>
+<div class="explanation">
+Avoid using sizes smaller than 12sp.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SmallSp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:29</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>                                             android:layout_width="match_parent"
+<span class="lineno">  27</span>                                             android:layout_height="60dp"
+<span class="lineno">  28</span>                                             >
+<span class="lineno">  29</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  30</span>                                                     android:id="@+id/album_detail_back"
+<span class="lineno">  31</span>                                                     android:layout_margin="15dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:44</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  41</span>                                                     android:layout_height="match_parent"
+<span class="lineno">  42</span>                                                     android:gravity="center"
+<span class="lineno">  43</span>                                                     />
+<span class="lineno">  44</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  45</span>                                                     android:id="@+id/album_detail_setting"
+<span class="lineno">  46</span>                                                     android:layout_gravity="right"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:58</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  55</span>                                             android:layout_width="match_parent"
+<span class="lineno">  56</span>                                             android:layout_height="100dp"
+<span class="lineno">  57</span>                                             >
+<span class="lineno">  58</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  59</span>                                                     android:src="@mipmap/bg_zone_img_small"
+<span class="lineno">  60</span>                                                     android:id="@+id/album_detail_icon"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:65</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  62</span>                                                     android:layout_width="80dp"
+<span class="lineno">  63</span>                                                     android:layout_height="match_parent"
+<span class="lineno">  64</span>                                                     />
+<span class="lineno">  65</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  66</span>                                                     android:layout_alignTop="@id/album_detail_icon"
+<span class="lineno">  67</span>                                                     android:src="@mipmap/bg_zone_img_small"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:126</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 123</span>                                                     android:drawableLeft="@mipmap/ic_album_collect"
+<span class="lineno"> 124</span>                                                     />
+<span class="lineno"> 125</span> 
+<span class="lineno"> 126</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 127</span>                                                     android:src="@mipmap/splite_line"
+<span class="lineno"> 128</span>                                                     android:layout_width="wrap_content"
+</pre>
+<button id="ContentDescriptionDivLink" onclick="reveal('ContentDescriptionDiv');" />+ 20 More Occurrences...</button>
+<div id="ContentDescriptionDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:144</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 141</span>                                                     android:textColor="#fff"
+<span class="lineno"> 142</span>                                                     android:drawableLeft="@mipmap/ic_album_download_normal"
+<span class="lineno"> 143</span>                                                     />
+<span class="lineno"> 144</span>                                             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 145</span>                                                     android:src="@mipmap/splite_line"
+<span class="lineno"> 146</span>                                                     android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:245</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 242</span>                                         android:drawableLeft="@mipmap/ic_album_collect"
+<span class="lineno"> 243</span>                                         />
+<span class="lineno"> 244</span> 
+<span class="lineno"> 245</span>                                 <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 246</span>                                         android:src="@mipmap/splite_line"
+<span class="lineno"> 247</span>                                         android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:263</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 260</span>                                         android:textColor="#fff"
+<span class="lineno"> 261</span>                                         android:drawableLeft="@mipmap/ic_album_download_normal"
+<span class="lineno"> 262</span>                                         />
+<span class="lineno"> 263</span>                                 <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 264</span>                                         android:src="@mipmap/splite_line"
+<span class="lineno"> 265</span>                                         android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:325</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 322</span> 
+<span class="lineno"> 323</span>         &lt;/RelativeLayout>
+<span class="lineno"> 324</span>         &lt;!-- TODO &#22278;&#24418;&#25353;&#38062;&#22270;&#29255;&#30340;&#22278;&#24418;&#21270;-->
+<span class="lineno"> 325</span>         <span class="errorspan">&lt;ImageButton</span>
+<span class="lineno"> 326</span>                 android:background="#F1F1F1"
+<span class="lineno"> 327</span>                 android:layout_gravity="center_horizontal|bottom"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:30</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  27</span>                 android:layout_weight="1"
+<span class="lineno">  28</span>                 android:layout_gravity="bottom"
+<span class="lineno">  29</span>                 >
+<span class="lineno">  30</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  31</span>                     android:id="@+id/main_tab_item_discover_image"
+<span class="lineno">  32</span>                     android:layout_width="45dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:56</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  53</span>                 android:orientation="vertical"
+<span class="lineno">  54</span>                 android:layout_gravity="bottom"
+<span class="lineno">  55</span>                 >
+<span class="lineno">  56</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  57</span>                     android:id="@+id/main_tab_item_custom_image"
+<span class="lineno">  58</span>                     android:layout_width="45dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:86</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  83</span>                 android:orientation="vertical"
+<span class="lineno">  84</span>                 android:layout_gravity="bottom"
+<span class="lineno">  85</span>                 >
+<span class="lineno">  86</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  87</span>                     android:id="@+id/main_tab_item_download_image"
+<span class="lineno">  88</span>                     android:layout_width="45dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:110</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 107</span>                 android:orientation="vertical"
+<span class="lineno"> 108</span>                 android:layout_gravity="bottom"
+<span class="lineno"> 109</span>                 >
+<span class="lineno"> 110</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 111</span>                     android:id="@+id/main_tab_item_personal_image"
+<span class="lineno"> 112</span>                     android:layout_width="45dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:11</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>             android:layout_width="match_parent"
+<span class="lineno">   9</span>             android:layout_height="40dp"
+<span class="lineno">  10</span>             >
+<span class="lineno">  11</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  12</span>                 android:id="@+id/album_detail_listview_item_isplay"
+<span class="lineno">  13</span>                 android:visibility="gone"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:77</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  74</span>                 android:gravity="center_vertical"
+<span class="lineno">  75</span>                 android:layout_height="match_parent"
+<span class="lineno">  76</span>                 />
+<span class="lineno">  77</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  78</span>                 android:id="@+id/album_detail_listview_item_download"
+<span class="lineno">  79</span>                 android:src="@mipmap/download_unpressed"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_categoryfragment_item.xml">../../src/main/res/layout/discover_categoryfragment_item.xml</a>:7</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   4</span>               android:layout_width="match_parent"
+<span class="lineno">   5</span>               android:layout_height="wrap_content"
+<span class="lineno">   6</span>         >
+<span class="lineno">   7</span> <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">   8</span>         android:layout_marginLeft="10dp"
+<span class="lineno">   9</span>         android:id="@+id/discover_categoryfragment_item_image"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:38</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  35</span>                 android:paddingLeft="5dp"
+<span class="lineno">  36</span>                 android:paddingRight="5dp"
+<span class="lineno">  37</span>                 >
+<span class="lineno">  38</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  39</span> 
+<span class="lineno">  40</span>                     android:id="@+id/recommend_album_icon_0"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:72</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  69</span>                 android:paddingLeft="5dp"
+<span class="lineno">  70</span>                 android:paddingRight="5dp"
+<span class="lineno">  71</span>                 >
+<span class="lineno">  72</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  73</span>                     android:id="@+id/recommend_album_icon_1"
+<span class="lineno">  74</span>                     android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:104</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno"> 101</span>                 android:paddingLeft="5dp"
+<span class="lineno"> 102</span>                 android:paddingRight="5dp"
+<span class="lineno"> 103</span>                 >
+<span class="lineno"> 104</span>             <span class="errorspan">&lt;ImageView</span>
+<span class="lineno"> 105</span>                     android:id="@+id/recommend_album_icon_2"
+<span class="lineno"> 106</span>                     android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:13</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>             android:layout_height="wrap_content"
+<span class="lineno">  11</span>             android:orientation="horizontal"
+<span class="lineno">  12</span>             >
+<span class="lineno">  13</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  14</span>                 android:layout_margin="5dp"
+<span class="lineno">  15</span>                 android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:26</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>                 android:layout_height="wrap_content"
+<span class="lineno">  24</span>                 android:text="&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;"
+<span class="lineno">  25</span>                 />
+<span class="lineno">  26</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  27</span>                 android:src="@mipmap/arrow_right"
+<span class="lineno">  28</span>                 android:layout_gravity="center"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:41</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>             android:layout_height="wrap_content"
+<span class="lineno">  39</span>             android:orientation="horizontal"
+<span class="lineno">  40</span>             >
+<span class="lineno">  41</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  42</span>                 android:layout_margin="5dp"
+<span class="lineno">  43</span>                 android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:54</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  51</span>                 android:layout_height="wrap_content"
+<span class="lineno">  52</span>                 android:text="&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;"
+<span class="lineno">  53</span>                 />
+<span class="lineno">  54</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  55</span>                 android:src="@mipmap/arrow_right"
+<span class="lineno">  56</span>                 android:layout_gravity="center"
+</pre>
+<span class="location"><a href="../../src/main/res/layout-land/fragment_discover.xml">../../src/main/res/layout-land/fragment_discover.xml</a>:16</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  13</span>             android:layout_height="wrap_content"
+<span class="lineno">  14</span>             >
+<span class="lineno">  15</span> 
+<span class="lineno">  16</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  17</span>                 android:layout_width="wrap_content"
+<span class="lineno">  18</span>                 android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout-land/fragment_discover.xml">../../src/main/res/layout-land/fragment_discover.xml</a>:24</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  21</span> 
+<span class="lineno">  22</span>                 />
+<span class="lineno">  23</span> 
+<span class="lineno">  24</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  25</span>                 android:layout_width="wrap_content"
+<span class="lineno">  26</span>                 android:layout_height="wrap_content"
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image without <code>contentDescription</code></div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Internationalization"></a>
+<div class="category"><a href="#" title="Return to top">Internationalization</a><div class="categorySeparator"></div>
+</div>
+<a name="HardcodedText"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HardcodedText: Hardcoded text</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:38</span>: <span class="message">[I18N] Hardcoded string "&#19987;&#36753;&#35814;&#24773;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  35</span>                                                     />
+<span class="lineno">  36</span>                                             &lt;TextView
+<span class="lineno">  37</span>                                                     android:id="@+id/album_detail_title"
+<span class="lineno">  38</span>                                                     <span class="errorspan">android:text="&#19987;&#36753;&#35814;&#24773;"</span>
+<span class="lineno">  39</span>                                                     android:textColor="#FFF"
+<span class="lineno">  40</span>                                                     android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:86</span>: <span class="message">[I18N] Hardcoded string "&#26242;&#26080;&#31616;&#20171;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  83</span>                                                     android:textColor="#fff"
+<span class="lineno">  84</span>                                                     android:layout_toRightOf="@id/album_detail_icon"
+<span class="lineno">  85</span>                                                     android:drawableRight="@mipmap/arrow_right_2"
+<span class="lineno">  86</span>                                                     <span class="errorspan">android:text="&#26242;&#26080;&#31616;&#20171;"</span>
+<span class="lineno">  87</span>                                                     android:ellipsize="end"
+<span class="lineno">  88</span>                                                     android:gravity="center_vertical"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:121</span>: <span class="message">[I18N] Hardcoded string "&#25910;&#34255;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 118</span>                                                     android:layout_width="0dp"
+<span class="lineno"> 119</span>                                                     android:layout_weight="1"
+<span class="lineno"> 120</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 121</span>                                                     <span class="errorspan">android:text="&#25910;&#34255;"</span>
+<span class="lineno"> 122</span>                                                     android:textColor="#fff"
+<span class="lineno"> 123</span>                                                     android:drawableLeft="@mipmap/ic_album_collect"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:140</span>: <span class="message">[I18N] Hardcoded string "&#25209;&#37327;&#19979;&#36733;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 137</span>                                                     android:layout_width="0dp"
+<span class="lineno"> 138</span>                                                     android:layout_weight="1"
+<span class="lineno"> 139</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 140</span>                                                     <span class="errorspan">android:text="&#25209;&#37327;&#19979;&#36733;"</span>
+<span class="lineno"> 141</span>                                                     android:textColor="#fff"
+<span class="lineno"> 142</span>                                                     android:drawableLeft="@mipmap/ic_album_download_normal"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:158</span>: <span class="message">[I18N] Hardcoded string "&#30456;&#20851;&#25512;&#33616;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 155</span>                                                     android:layout_width="0dp"
+<span class="lineno"> 156</span>                                                     android:layout_weight="1"
+<span class="lineno"> 157</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 158</span>                                                     <span class="errorspan">android:text="&#30456;&#20851;&#25512;&#33616;"</span>
+<span class="lineno"> 159</span>                                                     android:textColor="#fff"
+<span class="lineno"> 160</span>                                                     android:drawableLeft="@mipmap/ic_album_related_normal"
+</pre>
+<button id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 38 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:175</span>: <span class="message">[I18N] Hardcoded string "&#20849;0&#38598;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 172</span>                                             android:id="@+id/album_detail_sum_1"
+<span class="lineno"> 173</span>                                             android:layout_width="wrap_content"
+<span class="lineno"> 174</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 175</span>                                             <span class="errorspan">android:text="&#20849;0&#38598;"</span>
+<span class="lineno"> 176</span>                                             android:layout_centerVertical="true"
+<span class="lineno"> 177</span>                                             android:textSize="12sp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:187</span>: <span class="message">[I18N] Hardcoded string "&#25490;&#24207;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 184</span>                                             android:gravity="center"
+<span class="lineno"> 185</span>                                             android:layout_width="wrap_content"
+<span class="lineno"> 186</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 187</span>                                             <span class="errorspan">android:text="&#25490;&#24207;"</span>
+<span class="lineno"> 188</span>                                             android:textSize="10sp"
+<span class="lineno"> 189</span>                                             android:drawableLeft="@mipmap/ic_album_sort_asc"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:199</span>: <span class="message">[I18N] Hardcoded string "&#36873;&#38598;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 196</span>                                             android:gravity="center"
+<span class="lineno"> 197</span>                                             android:layout_width="wrap_content"
+<span class="lineno"> 198</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 199</span>                                             <span class="errorspan">android:text="&#36873;&#38598;"</span>
+<span class="lineno"> 200</span>                                             android:drawableLeft="@mipmap/pager_selector"
+<span class="lineno"> 201</span>                                             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:240</span>: <span class="message">[I18N] Hardcoded string "&#25910;&#34255;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 237</span>                                         android:layout_width="0dp"
+<span class="lineno"> 238</span>                                         android:layout_weight="1"
+<span class="lineno"> 239</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 240</span>                                         <span class="errorspan">android:text="&#25910;&#34255;"</span>
+<span class="lineno"> 241</span>                                         android:textColor="#fff"
+<span class="lineno"> 242</span>                                         android:drawableLeft="@mipmap/ic_album_collect"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:259</span>: <span class="message">[I18N] Hardcoded string "&#25209;&#37327;&#19979;&#36733;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 256</span>                                         android:layout_width="0dp"
+<span class="lineno"> 257</span>                                         android:layout_weight="1"
+<span class="lineno"> 258</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 259</span>                                         <span class="errorspan">android:text="&#25209;&#37327;&#19979;&#36733;"</span>
+<span class="lineno"> 260</span>                                         android:textColor="#fff"
+<span class="lineno"> 261</span>                                         android:drawableLeft="@mipmap/ic_album_download_normal"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:277</span>: <span class="message">[I18N] Hardcoded string "&#30456;&#20851;&#25512;&#33616;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 274</span>                                         android:layout_width="0dp"
+<span class="lineno"> 275</span>                                         android:layout_weight="1"
+<span class="lineno"> 276</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 277</span>                                         <span class="errorspan">android:text="&#30456;&#20851;&#25512;&#33616;"</span>
+<span class="lineno"> 278</span>                                         android:textColor="#fff"
+<span class="lineno"> 279</span>                                         android:drawableLeft="@mipmap/ic_album_related_normal"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:292</span>: <span class="message">[I18N] Hardcoded string "&#20849;0&#38598;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 289</span>                                         android:id="@+id/album_detail_sum_0"
+<span class="lineno"> 290</span>                                         android:layout_width="wrap_content"
+<span class="lineno"> 291</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 292</span>                                         <span class="errorspan">android:text="&#20849;0&#38598;"</span>
+<span class="lineno"> 293</span>                                         android:layout_centerVertical="true"
+<span class="lineno"> 294</span>                                         android:textSize="12sp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:304</span>: <span class="message">[I18N] Hardcoded string "&#25490;&#24207;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 301</span>                                         android:gravity="center"
+<span class="lineno"> 302</span>                                         android:layout_width="wrap_content"
+<span class="lineno"> 303</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 304</span>                                         <span class="errorspan">android:text="&#25490;&#24207;"</span>
+<span class="lineno"> 305</span>                                         android:textSize="10sp"
+<span class="lineno"> 306</span>                                         android:drawableLeft="@mipmap/ic_album_sort_asc"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:316</span>: <span class="message">[I18N] Hardcoded string "&#36873;&#38598;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 313</span>                                         android:gravity="center"
+<span class="lineno"> 314</span>                                         android:layout_width="wrap_content"
+<span class="lineno"> 315</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 316</span>                                         <span class="errorspan">android:text="&#36873;&#38598;"</span>
+<span class="lineno"> 317</span>                                         android:drawableLeft="@mipmap/pager_selector"
+<span class="lineno"> 318</span>                                         />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:45</span>: <span class="message">[I18N] Hardcoded string "&#21457;&#29616;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  42</span>                     android:layout_height="wrap_content"
+<span class="lineno">  43</span>                     android:gravity="center"
+<span class="lineno">  44</span>                     android:textColor="#fff60000"
+<span class="lineno">  45</span>                     <span class="errorspan">android:text="&#21457;&#29616;"/></span>
+<span class="lineno">  46</span>         &lt;/LinearLayout>
+<span class="lineno">  47</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:70</span>: <span class="message">[I18N] Hardcoded string "&#23450;&#21046;&#21548;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  67</span>                     android:layout_width="match_parent"
+<span class="lineno">  68</span>                     android:layout_height="wrap_content"
+<span class="lineno">  69</span>                     android:gravity="center"
+<span class="lineno">  70</span>                     <span class="errorspan">android:text="&#23450;&#21046;&#21548;"/></span>
+<span class="lineno">  71</span>         &lt;/LinearLayout>
+<span class="lineno">  72</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:100</span>: <span class="message">[I18N] Hardcoded string "&#19979;&#36733;&#21548;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  97</span>                     android:layout_width="match_parent"
+<span class="lineno">  98</span>                     android:layout_height="wrap_content"
+<span class="lineno">  99</span>                     android:gravity="center"
+<span class="lineno"> 100</span>                     <span class="errorspan">android:text="&#19979;&#36733;&#21548;"/></span>
+<span class="lineno"> 101</span>         &lt;/LinearLayout>
+<span class="lineno"> 102</span>         &lt;LinearLayout
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:124</span>: <span class="message">[I18N] Hardcoded string "&#25105;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 121</span>                     android:layout_width="match_parent"
+<span class="lineno"> 122</span>                     android:layout_height="wrap_content"
+<span class="lineno"> 123</span>                     android:gravity="center"
+<span class="lineno"> 124</span>                     <span class="errorspan">android:text="&#25105;"/></span>
+<span class="lineno"> 125</span>         &lt;/LinearLayout>
+<span class="lineno"> 126</span>     &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_splash.xml">../../src/main/res/layout/activity_splash.xml</a>:10</span>: <span class="message">[I18N] Hardcoded string "&#21551;&#21160;&#25161;&#39029;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   7</span>         >
+<span class="lineno">   8</span> 
+<span class="lineno">   9</span>     &lt;TextView
+<span class="lineno">  10</span>             <span class="errorspan">android:text="&#21551;&#21160;&#25161;&#39029;"</span>
+<span class="lineno">  11</span>             android:layout_width="wrap_content"
+<span class="lineno">  12</span>             android:layout_height="wrap_content"/>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_welcome.xml">../../src/main/res/layout/activity_welcome.xml</a>:12</span>: <span class="message">[I18N] Hardcoded string "&#27426;&#36814;&#39029;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>                 tools:context="zhufengfm.jmxgrobby.com.zhufengfm.WelcomeActivity">
+<span class="lineno">  10</span> 
+<span class="lineno">  11</span>     &lt;TextView
+<span class="lineno">  12</span>             <span class="errorspan">android:text="&#27426;&#36814;&#39029;"</span>
+<span class="lineno">  13</span>             android:layout_width="wrap_content"
+<span class="lineno">  14</span>             android:layout_height="wrap_content"/>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_welcome.xml">../../src/main/res/layout/activity_welcome.xml</a>:17</span>: <span class="message">[I18N] Hardcoded string "&#36339;&#36807;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>             android:layout_height="wrap_content"/>
+<span class="lineno">  15</span> 
+<span class="lineno">  16</span>     &lt;Button
+<span class="lineno">  17</span>             <span class="errorspan">android:text="&#36339;&#36807;"</span>
+<span class="lineno">  18</span>             android:onClick="btnJump"
+<span class="lineno">  19</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:24</span>: <span class="message">[I18N] Hardcoded string "&#21556;&#26195;&#27874;&#65306;&#8220;&#36305;&#30007;&#8221;&#26446;&#22025;&#35802;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  21</span>                 android:layout_gravity="center"
+<span class="lineno">  22</span>                 android:layout_margin="10dp"
+<span class="lineno">  23</span>                 android:textSize="15sp"
+<span class="lineno">  24</span>                 <span class="errorspan">android:text="&#21556;&#26195;&#27874;&#65306;&#8220;&#36305;&#30007;&#8221;&#26446;&#22025;&#35802;"</span>
+<span class="lineno">  25</span>                 android:layout_width="0dp"
+<span class="lineno">  26</span>                 android:layout_weight="1"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:33</span>: <span class="message">[I18N] Hardcoded string "23&#23567;&#26102;&#21069;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  30</span>         &lt;TextView
+<span class="lineno">  31</span>                 android:id="@+id/album_detail_listview_item_time"
+<span class="lineno">  32</span>                 android:layout_gravity="center"
+<span class="lineno">  33</span>                 <span class="errorspan">android:text="23&#23567;&#26102;&#21069;"</span>
+<span class="lineno">  34</span>                 android:layout_width="wrap_content"
+<span class="lineno">  35</span>                 android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:48</span>: <span class="message">[I18N] Hardcoded string "5.5&#19975;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>                 android:layout_marginEnd="10dp"
+<span class="lineno">  46</span>                 android:layout_marginRight="10dp"
+<span class="lineno">  47</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  48</span>                 <span class="errorspan">android:text="5.5&#19975;"</span>
+<span class="lineno">  49</span>                 android:gravity="center"
+<span class="lineno">  50</span>                 android:drawableLeft="@mipmap/play_icon_whtie"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:59</span>: <span class="message">[I18N] Hardcoded string "35:45", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>                 android:layout_marginEnd="10dp"
+<span class="lineno">  57</span>                 android:layout_marginRight="10dp"
+<span class="lineno">  58</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  59</span>                 <span class="errorspan">android:text="35:45"</span>
+<span class="lineno">  60</span>                 android:gravity="center"
+<span class="lineno">  61</span>                 android:drawableLeft="@mipmap/play_icon_whtie"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:70</span>: <span class="message">[I18N] Hardcoded string "27", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  67</span>                 android:layout_marginEnd="10dp"
+<span class="lineno">  68</span>                 android:layout_marginRight="10dp"
+<span class="lineno">  69</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  70</span>                 <span class="errorspan">android:text="27"</span>
+<span class="lineno">  71</span>                 android:drawableLeft="@mipmap/play_icon_whtie"
+<span class="lineno">  72</span>                 android:layout_width="0dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_categoryfragment_item.xml">../../src/main/res/layout/discover_categoryfragment_item.xml</a>:17</span>: <span class="message">[I18N] Hardcoded string "&#26377;&#22768;&#20070;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>         />
+<span class="lineno">  15</span>     &lt;TextView
+<span class="lineno">  16</span>             android:padding="20dp"
+<span class="lineno">  17</span>             <span class="errorspan">android:text="&#26377;&#22768;&#20070;"</span>
+<span class="lineno">  18</span>             android:layout_width="wrap_content"
+<span class="lineno">  19</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "&#23567;&#32534;&#25512;&#33616;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>             android:layout_height="wrap_content"
+<span class="lineno">   9</span>             android:gravity="center"
+<span class="lineno">  10</span>             android:drawableLeft="@mipmap/finding_title_tag"
+<span class="lineno">  11</span>             <span class="errorspan">android:text="&#23567;&#32534;&#25512;&#33616;"</span>
+<span class="lineno">  12</span>             android:paddingLeft="5dp"
+<span class="lineno">  13</span>             android:paddingTop="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:20</span>: <span class="message">[I18N] Hardcoded string "&#26356;&#22810;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  17</span>             android:paddingRight="5dp"
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:id="@+id/recommend_album_more"
+<span class="lineno">  20</span>             <span class="errorspan">android:text="&#26356;&#22810;"</span>
+<span class="lineno">  21</span>             android:layout_alignParentRight="true"
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:49</span>: <span class="message">[I18N] Hardcoded string "&#24863;&#24773;&#24863;&#24735;&#35828;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  46</span> 
+<span class="lineno">  47</span>                     android:id="@+id/recommend_album_name_0"
+<span class="lineno">  48</span>                     android:layout_alignBottom="@id/recommend_album_icon_0"
+<span class="lineno">  49</span>                     <span class="errorspan">android:text="&#24863;&#24773;&#24863;&#24735;&#35828;"</span>
+<span class="lineno">  50</span>                     android:ellipsize="end"
+<span class="lineno">  51</span>                     android:singleLine="true"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:59</span>: <span class="message">[I18N] Hardcoded string "&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>             &lt;TextView
+<span class="lineno">  57</span>                     android:layout_below="@id/recommend_album_icon_0"
+<span class="lineno">  58</span>                     android:id="@+id/recommend_album_track_0"
+<span class="lineno">  59</span>                     <span class="errorspan">android:text="&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;"</span>
+<span class="lineno">  60</span>                     android:maxLines="2"
+<span class="lineno">  61</span>                     android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:83</span>: <span class="message">[I18N] Hardcoded string "&#24863;&#24773;&#24863;&#24735;&#35828;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  80</span>                     android:singleLine="true"
+<span class="lineno">  81</span>                     android:id="@+id/recommend_album_name_1"
+<span class="lineno">  82</span>                     android:layout_alignBottom="@id/recommend_album_icon_1"
+<span class="lineno">  83</span>                     <span class="errorspan">android:text="&#24863;&#24773;&#24863;&#24735;&#35828;"</span>
+<span class="lineno">  84</span>                     android:background="#cccc"
+<span class="lineno">  85</span>                     android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:92</span>: <span class="message">[I18N] Hardcoded string "&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  89</span>                     android:maxLines="2"
+<span class="lineno">  90</span>                     android:layout_below="@id/recommend_album_icon_1"
+<span class="lineno">  91</span>                     android:id="@+id/recommend_album_track_1"
+<span class="lineno">  92</span>                     <span class="errorspan">android:text="&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;"</span>
+<span class="lineno">  93</span>                     android:layout_width="match_parent"
+<span class="lineno">  94</span>                     android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:113</span>: <span class="message">[I18N] Hardcoded string "&#24863;&#24773;&#24863;&#24735;&#35828;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 110</span>             &lt;TextView
+<span class="lineno"> 111</span>                     android:id="@+id/recommend_album_name_2"
+<span class="lineno"> 112</span>                     android:layout_alignBottom="@id/recommend_album_icon_2"
+<span class="lineno"> 113</span>                     <span class="errorspan">android:text="&#24863;&#24773;&#24863;&#24735;&#35828;"</span>
+<span class="lineno"> 114</span>                     android:ellipsize="end"
+<span class="lineno"> 115</span>                     android:singleLine="true"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:124</span>: <span class="message">[I18N] Hardcoded string "&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 121</span>                     android:maxLines="2"
+<span class="lineno"> 122</span>                     android:layout_below="@id/recommend_album_icon_2"
+<span class="lineno"> 123</span>                     android:id="@+id/recommend_album_track_2"
+<span class="lineno"> 124</span>                     <span class="errorspan">android:text="&#36234;&#26159;&#30456;&#29233;&#23601;&#36234;&#23481;&#26131;&#21557;&#26550;"</span>
+<span class="lineno"> 125</span>                     android:layout_width="match_parent"
+<span class="lineno"> 126</span>                     android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_column_item.xml">../../src/main/res/layout/discover_recommend_column_item.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "&#21457;&#29616;&#26032;&#22855;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>             android:drawableLeft="@mipmap/finding_title_tag"
+<span class="lineno">   9</span>             android:layout_width="wrap_content"
+<span class="lineno">  10</span>             android:layout_height="wrap_content"
+<span class="lineno">  11</span>             <span class="errorspan">android:text="&#21457;&#29616;&#26032;&#22855;"</span>
+<span class="lineno">  12</span>             android:gravity="center"
+<span class="lineno">  13</span>             android:paddingLeft="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:24</span>: <span class="message">[I18N] Hardcoded string "&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  21</span>                 android:layout_width="0dp"
+<span class="lineno">  22</span>                 android:layout_weight="1"
+<span class="lineno">  23</span>                 android:layout_height="wrap_content"
+<span class="lineno">  24</span>                 <span class="errorspan">android:text="&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;"</span>
+<span class="lineno">  25</span>                 />
+<span class="lineno">  26</span>         &lt;ImageView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:52</span>: <span class="message">[I18N] Hardcoded string "&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>                 android:layout_width="0dp"
+<span class="lineno">  50</span>                 android:layout_weight="1"
+<span class="lineno">  51</span>                 android:layout_height="wrap_content"
+<span class="lineno">  52</span>                 <span class="errorspan">android:text="&#26597;&#30475;&#26356;&#22810;&#20998;&#31867;"</span>
+<span class="lineno">  53</span>                 />
+<span class="lineno">  54</span>         &lt;ImageView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:10</span>: <span class="message">[I18N] Hardcoded string "&#31934;&#21697;&#21548;&#21333;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   7</span>             android:drawableLeft="@mipmap/finding_title_tag"
+<span class="lineno">   8</span>             android:layout_width="wrap_content"
+<span class="lineno">   9</span>             android:layout_height="wrap_content"
+<span class="lineno">  10</span>             <span class="errorspan">android:text="&#31934;&#21697;&#21548;&#21333;"</span>
+<span class="lineno">  11</span>             android:gravity="center"
+<span class="lineno">  12</span>             android:paddingLeft="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:20</span>: <span class="message">[I18N] Hardcoded string "&#26356;&#22810;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  17</span>             android:paddingRight="5dp"
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:focusable="true"
+<span class="lineno">  20</span>             <span class="errorspan">android:text="&#26356;&#22810;"</span>
+<span class="lineno">  21</span>             android:layout_alignParentRight="true"
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/fragment_custom.xml">../../src/main/res/layout/fragment_custom.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "&#23450;&#21046;&#21548;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>     &lt;TextView
+<span class="lineno">   9</span>             android:layout_width="match_parent"
+<span class="lineno">  10</span>             android:layout_height="match_parent"
+<span class="lineno">  11</span>             <span class="errorspan">android:text="&#23450;&#21046;&#21548;"/></span>
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span> &lt;/FrameLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/fragment_down_load_ting.xml">../../src/main/res/layout/fragment_down_load_ting.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "&#19979;&#36733;&#21548;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>     &lt;TextView
+<span class="lineno">   9</span>             android:layout_width="match_parent"
+<span class="lineno">  10</span>             android:layout_height="match_parent"
+<span class="lineno">  11</span>             <span class="errorspan">android:text="&#19979;&#36733;&#21548;"/></span>
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span> &lt;/FrameLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/fragment_personal.xml">../../src/main/res/layout/fragment_personal.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "&#25105;", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>     &lt;TextView
+<span class="lineno">   9</span>             android:layout_width="match_parent"
+<span class="lineno">  10</span>             android:layout_height="match_parent"
+<span class="lineno">  11</span>             <span class="errorspan">android:text="&#25105;"/></span>
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span> &lt;/FrameLayout>
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Internationalization</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Hardcoded text.</div>
+<div class="explanation">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Bi-directional Text"></a>
+<div class="category"><a href="#" title="Return to top">Bi-directional Text</a><div class="categorySeparator"></div>
+</div>
+<a name="RtlSymmetry"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlSymmetry: Padding and margin symmetry</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:12</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>             android:gravity="center"
+<span class="lineno">  10</span>             android:drawableLeft="@mipmap/finding_title_tag"
+<span class="lineno">  11</span>             android:text="&#23567;&#32534;&#25512;&#33616;"
+<span class="lineno">  12</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  13</span>             android:paddingTop="5dp"
+<span class="lineno">  14</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:17</span>: <span class="message">When you define <code>paddingRight</code> you should probably also define <code>paddingLeft</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>             />
+<span class="lineno">  15</span>     &lt;TextView
+<span class="lineno">  16</span>             android:focusable="true"
+<span class="lineno">  17</span>             <span class="errorspan">android:paddingRight="5dp"</span>
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:id="@+id/recommend_album_more"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_column_item.xml">../../src/main/res/layout/discover_recommend_column_item.xml</a>:13</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>             android:layout_height="wrap_content"
+<span class="lineno">  11</span>             android:text="&#21457;&#29616;&#26032;&#22855;"
+<span class="lineno">  12</span>             android:gravity="center"
+<span class="lineno">  13</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  14</span>             android:paddingTop="5dp"
+<span class="lineno">  15</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:12</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>             android:layout_height="wrap_content"
+<span class="lineno">  10</span>             android:text="&#31934;&#21697;&#21548;&#21333;"
+<span class="lineno">  11</span>             android:gravity="center"
+<span class="lineno">  12</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  13</span>             android:paddingTop="5dp"
+<span class="lineno">  14</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:17</span>: <span class="message">When you define <code>paddingRight</code> you should probably also define <code>paddingLeft</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>             />
+<span class="lineno">  15</span>     &lt;TextView
+<span class="lineno">  16</span>             android:id="@+id/recommend_special_more"
+<span class="lineno">  17</span>             <span class="errorspan">android:paddingRight="5dp"</span>
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:focusable="true"
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Padding and margin symmetry.</div>
+<div class="explanation">
+If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlSymmetry" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlHardcoded"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlHardcoded: Using left/right instead of start/end attributes</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:46</span>: <span class="message">Use "<code>end</code>" instead of "<code>right</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  43</span>                                                     />
+<span class="lineno">  44</span>                                             &lt;ImageView
+<span class="lineno">  45</span>                                                     android:id="@+id/album_detail_setting"
+<span class="lineno">  46</span>                                                     android:layout_gravity="<span class="errorspan">right"</span>
+<span class="lineno">  47</span>                                                     android:layout_margin="15dp"
+<span class="lineno">  48</span>                                                     android:src="@mipmap/ic_smartbar_back"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:69</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@id/album_detail_icon"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  66</span>                                                     android:layout_alignTop="@id/album_detail_icon"
+<span class="lineno">  67</span>                                                     android:src="@mipmap/bg_zone_img_small"
+<span class="lineno">  68</span>                                                     android:id="@+id/album_detail_person_icon"
+<span class="lineno">  69</span>                                                     <span class="errorspan">android:layout_toRightOf="@id/album_detail_icon"</span>
+<span class="lineno">  70</span>                                                     android:layout_width="20dp"
+<span class="lineno">  71</span>                                                     android:layout_height="20dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:77</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@id/album_detail_person_icon"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  74</span>                                                     android:id="@+id/album_detail_person_name"
+<span class="lineno">  75</span>                                                     android:textColor="#fff"
+<span class="lineno">  76</span>                                                     android:layout_alignTop="@id/album_detail_icon"
+<span class="lineno">  77</span>                                                     <span class="errorspan">android:layout_toRightOf="@id/album_detail_person_icon"</span>
+<span class="lineno">  78</span>                                                     android:layout_width="wrap_content"
+<span class="lineno">  79</span>                                                     android:layout_height="20dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:84</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@id/album_detail_icon"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  81</span>                                             &lt;TextView
+<span class="lineno">  82</span>                                                     android:id="@+id/album_detail_info"
+<span class="lineno">  83</span>                                                     android:textColor="#fff"
+<span class="lineno">  84</span>                                                     <span class="errorspan">android:layout_toRightOf="@id/album_detail_icon"</span>
+<span class="lineno">  85</span>                                                     android:drawableRight="@mipmap/arrow_right_2"
+<span class="lineno">  86</span>                                                     android:text="&#26242;&#26080;&#31616;&#20171;"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:85</span>: <span class="message">Consider adding <code>android:drawableEnd="@mipmap/arrow_right_2"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  82</span>                                                     android:id="@+id/album_detail_info"
+<span class="lineno">  83</span>                                                     android:textColor="#fff"
+<span class="lineno">  84</span>                                                     android:layout_toRightOf="@id/album_detail_icon"
+<span class="lineno">  85</span>                                                     <span class="errorspan">android:drawableRight="@mipmap/arrow_right_2"</span>
+<span class="lineno">  86</span>                                                     android:text="&#26242;&#26080;&#31616;&#20171;"
+<span class="lineno">  87</span>                                                     android:ellipsize="end"
+</pre>
+<button id="RtlHardcodedDivLink" onclick="reveal('RtlHardcodedDiv');" />+ 33 More Occurrences...</button>
+<div id="RtlHardcodedDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:100</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@id/album_detail_icon"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  97</span>                                                     android:id="@+id/album_detail_tag"
+<span class="lineno">  98</span>                                                     android:textColor="#fff"
+<span class="lineno">  99</span>                                                     android:layout_marginBottom="10dp"
+<span class="lineno"> 100</span>                                                     <span class="errorspan">android:layout_toRightOf="@id/album_detail_icon"</span>
+<span class="lineno"> 101</span>                                                     android:layout_alignParentBottom="true"
+<span class="lineno"> 102</span>                                                     android:gravity="center_vertical"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:123</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_collect"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 120</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 121</span>                                                     android:text="&#25910;&#34255;"
+<span class="lineno"> 122</span>                                                     android:textColor="#fff"
+<span class="lineno"> 123</span>                                                     <span class="errorspan">android:drawableLeft="@mipmap/ic_album_collect"</span>
+<span class="lineno"> 124</span>                                                     />
+<span class="lineno"> 125</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:142</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_download_normal"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 139</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 140</span>                                                     android:text="&#25209;&#37327;&#19979;&#36733;"
+<span class="lineno"> 141</span>                                                     android:textColor="#fff"
+<span class="lineno"> 142</span>                                                     <span class="errorspan">android:drawableLeft="@mipmap/ic_album_download_normal"</span>
+<span class="lineno"> 143</span>                                                     />
+<span class="lineno"> 144</span>                                             &lt;ImageView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:160</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_related_normal"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 157</span>                                                     android:layout_height="match_parent"
+<span class="lineno"> 158</span>                                                     android:text="&#30456;&#20851;&#25512;&#33616;"
+<span class="lineno"> 159</span>                                                     android:textColor="#fff"
+<span class="lineno"> 160</span>                                                     <span class="errorspan">android:drawableLeft="@mipmap/ic_album_related_normal"</span>
+<span class="lineno"> 161</span>                                                     />
+<span class="lineno"> 162</span>                                     &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:182</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 179</span>                                             />
+<span class="lineno"> 180</span>                                     &lt;TextView
+<span class="lineno"> 181</span>                                             android:id="@+id/album_detail_order_1"
+<span class="lineno"> 182</span>                                             <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno"> 183</span>                                             android:padding="5dp"
+<span class="lineno"> 184</span>                                             android:gravity="center"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:189</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_sort_asc"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 186</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 187</span>                                             android:text="&#25490;&#24207;"
+<span class="lineno"> 188</span>                                             android:textSize="10sp"
+<span class="lineno"> 189</span>                                             <span class="errorspan">android:drawableLeft="@mipmap/ic_album_sort_asc"</span>
+<span class="lineno"> 190</span>                                             />
+<span class="lineno"> 191</span>                                     &lt;TextView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:193</span>: <span class="message">Consider adding <code>android:layout_toStartOf="@id/album_detail_order_1"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 190</span>                                             />
+<span class="lineno"> 191</span>                                     &lt;TextView
+<span class="lineno"> 192</span>                                             android:id="@+id/album_detail_select_1"
+<span class="lineno"> 193</span>                                             <span class="errorspan">android:layout_toLeftOf="@id/album_detail_order_1"</span>
+<span class="lineno"> 194</span>                                             android:textSize="10sp"
+<span class="lineno"> 195</span>                                             android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:200</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/pager_selector"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 197</span>                                             android:layout_width="wrap_content"
+<span class="lineno"> 198</span>                                             android:layout_height="match_parent"
+<span class="lineno"> 199</span>                                             android:text="&#36873;&#38598;"
+<span class="lineno"> 200</span>                                             <span class="errorspan">android:drawableLeft="@mipmap/pager_selector"</span>
+<span class="lineno"> 201</span>                                             />
+<span class="lineno"> 202</span>                             &lt;/RelativeLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:242</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_collect"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 239</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 240</span>                                         android:text="&#25910;&#34255;"
+<span class="lineno"> 241</span>                                         android:textColor="#fff"
+<span class="lineno"> 242</span>                                         <span class="errorspan">android:drawableLeft="@mipmap/ic_album_collect"</span>
+<span class="lineno"> 243</span>                                         />
+<span class="lineno"> 244</span> 
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:261</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_download_normal"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 258</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 259</span>                                         android:text="&#25209;&#37327;&#19979;&#36733;"
+<span class="lineno"> 260</span>                                         android:textColor="#fff"
+<span class="lineno"> 261</span>                                         <span class="errorspan">android:drawableLeft="@mipmap/ic_album_download_normal"</span>
+<span class="lineno"> 262</span>                                         />
+<span class="lineno"> 263</span>                                 &lt;ImageView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:279</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_related_normal"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 276</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 277</span>                                         android:text="&#30456;&#20851;&#25512;&#33616;"
+<span class="lineno"> 278</span>                                         android:textColor="#fff"
+<span class="lineno"> 279</span>                                         <span class="errorspan">android:drawableLeft="@mipmap/ic_album_related_normal"</span>
+<span class="lineno"> 280</span>                                         />
+<span class="lineno"> 281</span>                         &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:299</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 296</span>                                         />
+<span class="lineno"> 297</span>                                 &lt;TextView
+<span class="lineno"> 298</span>                                         android:id="@+id/album_detail_order_0"
+<span class="lineno"> 299</span>                                         <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno"> 300</span>                                         android:padding="5dp"
+<span class="lineno"> 301</span>                                         android:gravity="center"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:306</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/ic_album_sort_asc"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 303</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 304</span>                                         android:text="&#25490;&#24207;"
+<span class="lineno"> 305</span>                                         android:textSize="10sp"
+<span class="lineno"> 306</span>                                         <span class="errorspan">android:drawableLeft="@mipmap/ic_album_sort_asc"</span>
+<span class="lineno"> 307</span>                                         />
+<span class="lineno"> 308</span>                                 &lt;TextView
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:310</span>: <span class="message">Consider adding <code>android:layout_toStartOf="@id/album_detail_order_0"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 307</span>                                         />
+<span class="lineno"> 308</span>                                 &lt;TextView
+<span class="lineno"> 309</span>                                         android:id="@+id/album_detail_select_0"
+<span class="lineno"> 310</span>                                         <span class="errorspan">android:layout_toLeftOf="@id/album_detail_order_0"</span>
+<span class="lineno"> 311</span>                                         android:textSize="10sp"
+<span class="lineno"> 312</span>                                         android:padding="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/activity_album_detail.xml">../../src/main/res/layout/activity_album_detail.xml</a>:317</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/pager_selector"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 314</span>                                         android:layout_width="wrap_content"
+<span class="lineno"> 315</span>                                         android:layout_height="match_parent"
+<span class="lineno"> 316</span>                                         android:text="&#36873;&#38598;"
+<span class="lineno"> 317</span>                                         <span class="errorspan">android:drawableLeft="@mipmap/pager_selector"</span>
+<span class="lineno"> 318</span>                                         />
+<span class="lineno"> 319</span>                         &lt;/RelativeLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:50</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/play_icon_whtie"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  47</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  48</span>                 android:text="5.5&#19975;"
+<span class="lineno">  49</span>                 android:gravity="center"
+<span class="lineno">  50</span>                 <span class="errorspan">android:drawableLeft="@mipmap/play_icon_whtie"</span>
+<span class="lineno">  51</span>                 android:layout_width="wrap_content"
+<span class="lineno">  52</span>                 android:layout_height="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:61</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/play_icon_whtie"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  58</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  59</span>                 android:text="35:45"
+<span class="lineno">  60</span>                 android:gravity="center"
+<span class="lineno">  61</span>                 <span class="errorspan">android:drawableLeft="@mipmap/play_icon_whtie"</span>
+<span class="lineno">  62</span>                 android:layout_width="wrap_content"
+<span class="lineno">  63</span>                 android:layout_height="match_parent"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:71</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/play_icon_whtie"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  68</span>                 android:layout_marginRight="10dp"
+<span class="lineno">  69</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  70</span>                 android:text="27"
+<span class="lineno">  71</span>                 <span class="errorspan">android:drawableLeft="@mipmap/play_icon_whtie"</span>
+<span class="lineno">  72</span>                 android:layout_width="0dp"
+<span class="lineno">  73</span>                 android:layout_weight="1"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_album_listview_item.xml">../../src/main/res/layout/discover_album_listview_item.xml</a>:83</span>: <span class="message">Consider adding <code>android:layout_marginEnd="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  80</span>                 android:layout_gravity="center"
+<span class="lineno">  81</span>                 android:layout_width="wrap_content"
+<span class="lineno">  82</span>                 android:layout_height="wrap_content"
+<span class="lineno">  83</span>                 <span class="errorspan">android:layout_marginRight="10dp"</span>
+<span class="lineno">  84</span>                 android:layout_marginBottom="10dp"
+<span class="lineno">  85</span>                 />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_categoryfragment_item.xml">../../src/main/res/layout/discover_categoryfragment_item.xml</a>:8</span>: <span class="message">Consider adding <code>android:layout_marginStart="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   5</span>               android:layout_height="wrap_content"
+<span class="lineno">   6</span>         >
+<span class="lineno">   7</span> &lt;ImageView
+<span class="lineno">   8</span>         <span class="errorspan">android:layout_marginLeft="10dp"</span>
+<span class="lineno">   9</span>         android:id="@+id/discover_categoryfragment_item_image"
+<span class="lineno">  10</span>         android:layout_width="20dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:10</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/finding_title_tag"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   7</span>             android:layout_width="wrap_content"
+<span class="lineno">   8</span>             android:layout_height="wrap_content"
+<span class="lineno">   9</span>             android:gravity="center"
+<span class="lineno">  10</span>             <span class="errorspan">android:drawableLeft="@mipmap/finding_title_tag"</span>
+<span class="lineno">  11</span>             android:text="&#23567;&#32534;&#25512;&#33616;"
+<span class="lineno">  12</span>             android:paddingLeft="5dp"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:12</span>: <span class="message">Consider adding <code>android:paddingStart="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>             android:gravity="center"
+<span class="lineno">  10</span>             android:drawableLeft="@mipmap/finding_title_tag"
+<span class="lineno">  11</span>             android:text="&#23567;&#32534;&#25512;&#33616;"
+<span class="lineno">  12</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  13</span>             android:paddingTop="5dp"
+<span class="lineno">  14</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:17</span>: <span class="message">Consider adding <code>android:paddingEnd="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>             />
+<span class="lineno">  15</span>     &lt;TextView
+<span class="lineno">  16</span>             android:focusable="true"
+<span class="lineno">  17</span>             <span class="errorspan">android:paddingRight="5dp"</span>
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:id="@+id/recommend_album_more"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_album_item.xml">../../src/main/res/layout/discover_recommend_album_item.xml</a>:21</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:id="@+id/recommend_album_more"
+<span class="lineno">  20</span>             android:text="&#26356;&#22810;"
+<span class="lineno">  21</span>             <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+<span class="lineno">  23</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_column_item.xml">../../src/main/res/layout/discover_recommend_column_item.xml</a>:8</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/finding_title_tag"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   5</span> 
+<span class="lineno">   6</span>     &lt;TextView
+<span class="lineno">   7</span>             android:id="@+id/recommend_column_title"
+<span class="lineno">   8</span>             <span class="errorspan">android:drawableLeft="@mipmap/finding_title_tag"</span>
+<span class="lineno">   9</span>             android:layout_width="wrap_content"
+<span class="lineno">  10</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_column_item.xml">../../src/main/res/layout/discover_recommend_column_item.xml</a>:13</span>: <span class="message">Consider adding <code>android:paddingStart="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>             android:layout_height="wrap_content"
+<span class="lineno">  11</span>             android:text="&#21457;&#29616;&#26032;&#22855;"
+<span class="lineno">  12</span>             android:gravity="center"
+<span class="lineno">  13</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  14</span>             android:paddingTop="5dp"
+<span class="lineno">  15</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:31</span>: <span class="message">Consider adding <code>android:layout_marginEnd="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  28</span>                 android:layout_gravity="center"
+<span class="lineno">  29</span>                 android:layout_width="wrap_content"
+<span class="lineno">  30</span>                 android:layout_height="wrap_content"
+<span class="lineno">  31</span>                 <span class="errorspan">android:layout_marginRight="5dp"</span>
+<span class="lineno">  32</span>                 />
+<span class="lineno">  33</span>     &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_footview.xml">../../src/main/res/layout/discover_recommend_footview.xml</a>:59</span>: <span class="message">Consider adding <code>android:layout_marginEnd="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>                 android:layout_gravity="center"
+<span class="lineno">  57</span>                 android:layout_width="wrap_content"
+<span class="lineno">  58</span>                 android:layout_height="wrap_content"
+<span class="lineno">  59</span>                 <span class="errorspan">android:layout_marginRight="5dp"</span>
+<span class="lineno">  60</span>                 />
+<span class="lineno">  61</span>     &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:7</span>: <span class="message">Consider adding <code>android:drawableStart="@mipmap/finding_title_tag"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   4</span>                 android:layout_height="match_parent">
+<span class="lineno">   5</span>     &lt;TextView
+<span class="lineno">   6</span>             android:id="@+id/recommend_special_title"
+<span class="lineno">   7</span>             <span class="errorspan">android:drawableLeft="@mipmap/finding_title_tag"</span>
+<span class="lineno">   8</span>             android:layout_width="wrap_content"
+<span class="lineno">   9</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:12</span>: <span class="message">Consider adding <code>android:paddingStart="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>             android:layout_height="wrap_content"
+<span class="lineno">  10</span>             android:text="&#31934;&#21697;&#21548;&#21333;"
+<span class="lineno">  11</span>             android:gravity="center"
+<span class="lineno">  12</span>             <span class="errorspan">android:paddingLeft="5dp"</span>
+<span class="lineno">  13</span>             android:paddingTop="5dp"
+<span class="lineno">  14</span>             />
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:17</span>: <span class="message">Consider adding <code>android:paddingEnd="5dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>             />
+<span class="lineno">  15</span>     &lt;TextView
+<span class="lineno">  16</span>             android:id="@+id/recommend_special_more"
+<span class="lineno">  17</span>             <span class="errorspan">android:paddingRight="5dp"</span>
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:focusable="true"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/discover_recommend_speial_item.xml">../../src/main/res/layout/discover_recommend_speial_item.xml</a>:21</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>             android:paddingTop="5dp"
+<span class="lineno">  19</span>             android:focusable="true"
+<span class="lineno">  20</span>             android:text="&#26356;&#22810;"
+<span class="lineno">  21</span>             <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  22</span>             android:layout_width="wrap_content"
+<span class="lineno">  23</span>             android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../src/main/res/layout/fragment_discover.xml">../../src/main/res/layout/fragment_discover.xml</a>:29</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>                 android:layout_width="wrap_content"
+<span class="lineno">  27</span>                 android:layout_height="wrap_content"
+<span class="lineno">  28</span>                 android:src="@mipmap/ic_search_normal"
+<span class="lineno">  29</span>                 <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  30</span>                 android:layout_centerVertical="true"
+<span class="lineno">  31</span>                 />
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using left/right instead of start/end attributes.</div>
+<div class="explanation">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Back button.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains easter egg.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using getter instead of field.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon has incorrect size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="LogConditional"></a>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unconditional Logging Calls.</div>
+<div class="explanation">
+The BuildConfig class (available in Tools 17) provides a constant, "DEBUG", which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a "if (false)" check, surrounding your logging calls with a check for BuildConfig.DEBUG is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a @SuppressLint annotation for the intentional logging calls.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NegativeMargin"></a>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Negative Margins.</div>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Dynamic text should probably be selectable.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains <code>STOPSHIP</code> marker.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Straight quotes can be replaced with curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+4. With a <code>lint.xml</code> configuration file in the project<br/>
+5. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+6. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+<br/>
+android {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;lintOptions {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disable 'TypographyFractions','TypographyQuotes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+}<br/>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the project in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Disable this given check in this project --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="ObsoleteLayoutParam"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="UselessLeaf"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/main.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="http://g.co/androidstudio/suppressing-lint-warnings">http://g.co/androidstudio/suppressing-lint-warnings</a><br/>
+
+
+</body>
+</html>
