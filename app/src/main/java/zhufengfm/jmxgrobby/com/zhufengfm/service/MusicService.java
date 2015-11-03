@@ -1,14 +1,10 @@
 package zhufengfm.jmxgrobby.com.zhufengfm.service;
 
 import android.app.Service;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
 import android.widget.Toast;
 import zhufengfm.jmxgrobby.com.zhufengfm.utils.MyLog;
 import zhufengfm.jmxgrobby.com.zhufengfm.Configs;
@@ -17,7 +13,25 @@ import zhufengfm.jmxgrobby.com.zhufengfm.entity.dicoveralbum.TrackEntity;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class MusicService extends Service {
+public class MusicService extends Service implements MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener {
+
+    //服务创建成功
+    public static final int STATE_CREATED  =0;
+    //服务销毁
+    public static final int STATE_DESTROY  =1;
+    //服务准备中
+    public static final int STATE_PREPARING = 2;
+    //正在播放状态
+    private static final int STATE_PLAYING = 3;
+    //暂停状态
+    private static final int STATE_PAUSE = 4;
+    //播放完成状态
+    private static final int STATE_STOP = 5;
+
+    /**
+     * 使用整形代表播放器的状态
+     */
+    private int playerState;
 
     private MediaPlayer mediaPlayer;
     private LocalBroadcastManager broadcastManager;
@@ -27,8 +41,9 @@ public class MusicService extends Service {
     private ArrayList<TrackEntity> list;
     private Intent progressIntent;
     private float currentPro;
-   // private ChangeProBroadCast changeProBroadCast;
 
+    private String play_tag;
+    private Intent changePlayingIntent;
 
     @Override
     public void onCreate() {
@@ -36,13 +51,17 @@ public class MusicService extends Service {
         MyLog.d("debug111", "开启mediaplayer");
         mediaPlayer = new MediaPlayer();
         broadcastManager = LocalBroadcastManager.getInstance(getApplicationContext());
-        progressIntent = new Intent();
-        progressIntent.setAction(Configs.SERVICETOMUSIC_BROADCAST);
+
+        playerState = STATE_CREATED;
+
+
+        mediaPlayer.setOnPreparedListener(this);
+
+        mediaPlayer.setOnCompletionListener(this);
 
     }
 
     /**
-     *
      * @param intent
      * @param flags
      * @param startId
@@ -52,41 +71,53 @@ public class MusicService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         String tag = intent.getStringExtra("tag");
         if (tag != null) {
-            Intent testIntent = new Intent();
-            testIntent.setAction(Configs.MUSICTOSERVICE_BROADCAST);
-            MyLog.d("debug111", "接收到的意图的tag为：" + tag);
+            //
+            changePlayingIntent = new Intent();
+            changePlayingIntent.setAction(Configs.SERVICETOMUSIC);
+
+            progressIntent = new Intent();
+            progressIntent.setAction(Configs.SERVICETOMUSICINFO_BROADCAST);
             if (Configs.MUSIC_TYPE_RECOMMEND.equals(tag)) {
-                list = (ArrayList<TrackEntity>) intent.getSerializableExtra("list");
-                currentPlayer = intent.getIntExtra("position", 0);
-                // 设置新的数据源（新的音频文件），进入初始化状态
-                MyLog.d("debug111", "obStartCommand " + currentPlayer+"listsize="+list.size());
-                playMusic();
-            }else if ("change".equals(tag)) {
+                //当音乐不在播放，或者点击的是不同的专辑的时候要更换list
+                if (!(playerState==STATE_PLAYING )||
+                        ( play_tag != null &&
+                                play_tag.equals(intent.getStringExtra("play_tag"))==false
+                        )) {
+                    list = (ArrayList<TrackEntity>) intent.getSerializableExtra("list");
+                    play_tag = intent.getStringExtra("play_tag");
+
+                    MyLog.d("debug11","初次启动播放器");
+                    currentPlayer = intent.getIntExtra("position", 0);
+                    // 设置新的数据源（新的音频文件），进入初始化状态
+                    MyLog.d("debug111", "obStartCommand " + currentPlayer + "listsize=" + list.size());
+                    playMusic();
+                }
+            } else if ("change".equals(tag)) {
                 MyLog.d("debug11", " obStartCommand 调整进度的位置");
                 int progress = intent.getIntExtra("progress", currentLength);
                 float atterChange = (float) progress * sumLength / 100000;
                 mediaPlayer.seekTo((int) atterChange);
-            }else if ("pause".equals(tag)) {
-                if (mediaPlayer.isPlaying()){
-                    MyLog.d("debug11", " obStartCommand 暂停"+"listsize="+list.size());
+            } else if ("pause".equals(tag)) {
+                if (playerState == STATE_PLAYING) {
                     mediaPlayer.pause();
+                    playerState = STATE_PAUSE;
                 } else {
-                    MyLog.d("debug11", " obStartCommand 播放");
                     mediaPlayer.start();
+                    playerState = STATE_PLAYING;
                 }
-            }else if ("before".equals(tag)) {
+            } else if ("before".equals(tag)) {//上一首
                 if (currentPlayer != 0) {
                     currentPlayer--;
-                    testIntent.putExtra("position",currentPlayer);
-                    broadcastManager.sendBroadcast(testIntent);
+                    changePlayingIntent.putExtra("position", currentPlayer);
+                    broadcastManager.sendBroadcast(changePlayingIntent);
                     playMusic();
                 } else
                     Toast.makeText(getApplicationContext(), "没有上一首", Toast.LENGTH_SHORT).show();
-            }else if ("next".equals(tag)) {
+            } else if ("next".equals(tag)) {
                 if (currentPlayer != list.size() - 1) {
                     currentPlayer++;
-                    testIntent.putExtra("position",currentPlayer);
-                    broadcastManager.sendBroadcast(testIntent);
+                    changePlayingIntent.putExtra("position", currentPlayer);
+                    broadcastManager.sendBroadcast(changePlayingIntent);
                     playMusic();
                 } else
                     Toast.makeText(getApplicationContext(), "没有下一首", Toast.LENGTH_SHORT).show();
@@ -96,13 +127,16 @@ public class MusicService extends Service {
     }
 
     private void playMusic() {
+        if(playerState==STATE_PLAYING){
+            mediaPlayer.pause();
+            playerState=STATE_PAUSE;
+        }
         mediaPlayer.reset();
         String url = list.get(currentPlayer).getPlayUrl64();
         try {
             mediaPlayer.setDataSource(url);
-            mediaPlayer.prepare();// 进入就绪状态
-            mediaPlayer.start();
-            new ProgressThread().start();
+            mediaPlayer.prepareAsync();// 进入就绪状态
+            playerState = STATE_PREPARING;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -111,6 +145,7 @@ public class MusicService extends Service {
     @Override
     public void onDestroy() {
         mediaPlayer.stop();
+        playerState = STATE_DESTROY;
         super.onDestroy();
 
     }
@@ -120,13 +155,32 @@ public class MusicService extends Service {
         return null;
     }
 
+    @Override
+    public void onPrepared(MediaPlayer mp) {
+        MyLog.d("debug111","prepatring");
+        playerState = STATE_PLAYING;
+        mediaPlayer.start();
+        new ProgressThread().start();
+    }
+
+    @Override
+    public void onCompletion(MediaPlayer mp) {
+        MyLog.d("debug111","触发了onCompletion方法");
+//        currentPlayer++;
+//        playMusic();
+//        Intent changePlayingIntent = new Intent();
+//        changePlayingIntent.setAction(Configs.SERVICETOMUSIC);
+//        changePlayingIntent.putExtra("position", currentPlayer);
+//        broadcastManager.sendBroadcast(changePlayingIntent);
+    }
+
 
     //发送进度的广播-》给详情界面
     class ProgressThread extends Thread {
         @Override
         public void run() {
 
-            while (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            while (mediaPlayer != null && playerState == STATE_PLAYING) {
                 //当前播放的曲目对象
                 sumLength = mediaPlayer.getDuration();
                 currentLength = mediaPlayer.getCurrentPosition();
@@ -142,7 +196,6 @@ public class MusicService extends Service {
             //playMusic();
         }
     }
-
 
 
 }

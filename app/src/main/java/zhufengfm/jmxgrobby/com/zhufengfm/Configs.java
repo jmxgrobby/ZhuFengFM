@@ -37,8 +37,10 @@ public class Configs {
     public static final String MUSIC_TYPE_RECOMMEND = "typ1";
 
 
-    //音乐播放界面的广播，接受服务传来的广播
-    public static final String SERVICETOMUSIC_BROADCAST  = "servicetomusic";
+
     //初次点进专辑的广播，接受服务传来的音乐播放曲目改变得信息
-    public static final String MUSICTOSERVICE_BROADCAST = "musictoservice";
+    public static final String SERVICETOMUSIC = "musictoservice";
+
+    //服务传消息 接受进度改变的广播
+    public static final String SERVICETOMUSICINFO_BROADCAST ="servicemusicinfo_broadcast";
 }

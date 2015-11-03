@@ -54,6 +54,9 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
     private boolean isForst = true;
     private int currentPro;
 
+    private int listSize;
+    private int currentSize;
+
     private BitmapUtils bitmapUtils;
     //广播接收器 用来接收播放信息的广播
     private ProgressBroadReceiver progressBroadReceiver;
@@ -68,7 +71,7 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
         progressBroadReceiver = new ProgressBroadReceiver();
         bitmapUtils = new BitmapUtils(this);
         LocalBroadcastManager.getInstance(getApplicationContext())
-                .registerReceiver(progressBroadReceiver, new IntentFilter(Configs.SERVICETOMUSIC_BROADCAST));
+                .registerReceiver(progressBroadReceiver, new IntentFilter(Configs.SERVICETOMUSICINFO_BROADCAST));
         pro = (SeekBar) findViewById(R.id.activity_music_info_music_progress);
         pro.setMax(100000);
 
@@ -76,6 +79,12 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
         //点击事件声明
         initEvent(info_back, alarm, playList, playBefore, playNext, playPause, playHistory);
         pro.setOnSeekBarChangeListener(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LocalBroadcastManager.getInstance(getApplicationContext()).unregisterReceiver(progressBroadReceiver);
     }
 
     private void initEvent(View... view) {
@@ -98,12 +107,20 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
                 break;
             //下一首
             case R.id.activity_music_info_music_next:
+                if(listSize != currentSize+1){
+                    playPause.setBackgroundResource(R.mipmap.pause_icon_transparent_normal);
+                    isPlaying = true;
+                }
                 changeProIntent.putExtra("tag", "next");
                 isForst = true;
                 startService(changeProIntent);
                 break;
             //上一首
             case R.id.activity_music_info_music_before:
+                if(currentSize!=0){
+                    playPause.setBackgroundResource(R.mipmap.pause_icon_transparent_normal);
+                    isPlaying = true;
+                }
                 changeProIntent.putExtra("tag", "before");
                 isForst = true;
                 startService(changeProIntent);
@@ -133,9 +150,10 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
 
     }
 
-    // TODO 滑动调整有点bug 待修复
+
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
+        MyLog.d("debug111","触发了onStop的seekbar监听");
         Intent changeProIntent;
         changeProIntent = new Intent(this, MusicService.class);
         int progress = seekBar.getProgress();
@@ -146,7 +164,7 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
 
 
     /**
-     * 进度广播接收器
+     * 进度广播接收器,用于修改音乐播放详情界面的进度广播
      */
     class ProgressBroadReceiver extends BroadcastReceiver {
 
@@ -157,6 +175,8 @@ public class MusicInfoActivity extends Activity implements View.OnClickListener,
             currentPro = (int) intent.getFloatExtra("currentPro", 0);
             pro.setProgress(currentPro);
             if(isForst) {
+                currentSize = intent.getIntExtra("cs",0);
+                listSize = intent.getIntExtra("ls",0);
                 trackEntity = (TrackEntity) intent.getSerializableExtra("item");
                 music_title.setText(trackEntity.getTitle());
                 long playtimes = trackEntity.getPlaytimes();

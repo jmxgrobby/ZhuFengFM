@@ -38,12 +38,15 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     //当前播放的是第几首
     private  int currentPosition;
 
+
+
+
+    //这个是用来修改界面的弹跳动画的位置的广播
     private BroadcastReceiver  playing = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-
-            currentPosition = intent.getIntExtra("position", -1);
-            MyLog.d("debug111", "收到了改变界面的广播"+currentPosition);
+            currentPosition = intent.getIntExtra("position", currentPosition);
+            MyLog.d("debug111", "专辑界面收到了改变界面的广播"+currentPosition);
             adapter.notifyDataSetChanged();
         }
     };
@@ -92,6 +95,9 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
         serviceIntent.putExtra("tag",Configs.MUSIC_TYPE_RECOMMEND);
         String url = String.format(Configs.DISCOVER_ALBUM,getIntent().getStringExtra("albumId"));
         bitmapUtils = new BitmapUtils(this);
+
+        LocalBroadcastManager.getInstance(this).
+                registerReceiver(playing,new IntentFilter(Configs.SERVICETOMUSIC));
         init();
         AlbumTask task = new AlbumTask(this);
         task.execute(url);
@@ -167,9 +173,14 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LocalBroadcastManager.getInstance(getApplicationContext()).unregisterReceiver(playing);
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
-        LocalBroadcastManager.getInstance(this).registerReceiver(playing,new IntentFilter(Configs.MUSICTOSERVICE_BROADCAST));
     }
 
     @Override
@@ -212,6 +223,7 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
                     }
                     adapter.notifyDataSetChanged();
                     serviceIntent.putExtra("list",list);
+                    serviceIntent.putExtra("play_tag",list.get(0).getTitle()+0);
                     MyLog.d("debug111", "开启服务");
                     getApplicationContext().startService(serviceIntent);
 
@@ -224,6 +236,7 @@ public class AlbumDetailActivity extends Activity implements View.OnClickListene
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         serviceIntent.putExtra("position",position);
+        serviceIntent.putExtra("play_tag",list.get(position).getTitle()+position);
         currentPosition = position;
         adapter.notifyDataSetChanged();
         startService(serviceIntent);
